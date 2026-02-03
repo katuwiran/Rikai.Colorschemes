@@ -5,30 +5,7 @@ using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.Fonts;
 using SixLabors.ImageSharp.Drawing;
 
-public class ColorEntry
-{
-	public required string Name    { get; set; }
-	public required string HexCode { get; set; }
-	public required int    Index   { get; set; }
-
-	public ColorEntry()
-	{
-	}
-
-	public ColorEntry(string name, string hexCode, int index)
-	{
-		this.Name    = name;
-		this.HexCode = hexCode;
-		this.Index   = index;
-	}
-
-	public override string ToString()
-	{
-		return HexCode;
-	}
-}
-
-public class PaletteGenerator
+public class DiagramGenerator
 {
 	// Configuration constants
 	private const int CellWidth     = 200;
@@ -41,7 +18,7 @@ public class PaletteGenerator
 	private readonly Font _fontLarge;
 	private readonly Font _fontSmall;
 
-	public PaletteGenerator()
+	public DiagramGenerator()
 	{
 		// Attempt to find a Monospace font on the system (Consolas, Menlo, Courier)
 		// In a real app, you might embed a .ttf file and load it specifically.
@@ -61,7 +38,7 @@ public class PaletteGenerator
 		using (var image = new Image<Rgba32>(width, height))
 		{
 			// Set a default background (optional, usually covered by cells)
-			image.Mutate(ctx => ctx.Fill(Color.White));
+			image.Mutate(ctx => ctx.Fill(Color.Transparent));
 
 			// 3. Loop through colors and draw cells
 			for (int i = 0; i < colors.Count; i++)
@@ -130,7 +107,16 @@ public class PaletteGenerator
 			HorizontalAlignment = HorizontalAlignment.Center,
 			VerticalAlignment   = VerticalAlignment.Bottom
 		};
-		ctx.DrawText(hexOpts, entry.HexCode, dimTextColor);
+		
+		// If no hexcode provided, treat as an empty
+		if (Color.ParseHex(entry.HexCode) == Color.Transparent)
+		{
+			ctx.DrawText(hexOpts, "", dimTextColor);
+		}
+		else 
+		{
+			ctx.DrawText(hexOpts, entry.HexCode, dimTextColor);
+		}
 	}
 
 	private Color GetContrastingTextColor(string hex)
