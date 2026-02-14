@@ -1,16 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="SixLabors.Fonts" Version="2.1.3" />
-    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.12" />
-    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.7" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="SixLabors.Fonts" Version="2.1.3"/>
+        <PackageReference Include="SixLabors.ImageSharp" Version="3.1.12"/>
+        <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.7"/>
+    </ItemGroup>
 
+<!-- spaghetti to immediately copy/paste output files to where they are supposed to go. I'm sorry. -->
+    <Target Name="CopyFiles" AfterTargets="Build">
+        <Exec Command="dotnet &quot;$(TargetPath)&quot;" />
+        <ItemGroup>
+            <Diagrams Include="$(TargetDir)outputs/moonlight.png"/>
+            <Diagrams Include="$(TargetDir)outputs/skylight.png"/>
+        </ItemGroup>
+        <Copy SourceFiles="@(Diagrams)"
+              DestinationFolder="$(ProjectDir)../assets/"
+              SkipUnchangedFiles="true"/>
+        <ItemGroup>
+            <Jetbrains Include="$(TargetDir)outputs/Moonlight.theme.json"/>
+            <Jetbrains Include="$(TargetDir)outputs/Skylight.theme.json"/>
+            <Jetbrains Include="$(TargetDir)outputs/Moonlight.xml"/>
+            <Jetbrains Include="$(TargetDir)outputs/Skylight.xml"/>
+        </ItemGroup>
+        <Copy SourceFiles="@(Jetbrains)"
+              DestinationFolder="$(ProjectDir)../platforms/Jetbrains/resources/theme"
+              SkipUnchangedFiles="true"/>
+        <ItemGroup>
+            <Sublime Include="$(TargetDir)outputs/Moonlight.sublime-color-scheme"/>
+            <Sublime Include="$(TargetDir)outputs/Skylight.sublime-color-scheme"/>
+        </ItemGroup>
+        <Copy SourceFiles="@(Sublime)"
+              DestinationFolder="$(ProjectDir)../platforms/Sublime Text/"
+              SkipUnchangedFiles="true"/>
+    </Target>
 </Project>
