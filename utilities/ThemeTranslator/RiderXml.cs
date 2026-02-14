@@ -52,7 +52,7 @@ public static partial class ThemeTranslator
 			     <option name="RIGHT_MARGIN_COLOR" value="{{scheme.Overlay}}" />
 			     <option name="SELECTED_INDENT_GUIDE" value="{{scheme.Overlay}}" />
 			     <option name="SELECTED_TEARLINE_COLOR" value="{{scheme.Muted}}" />
-			     <option name="SELECTION_BACKGROUND" value="{{scheme.CyanAlt}}" />
+			     <option name="SELECTION_BACKGROUND" value="{{scheme.Highlight}}" />
 			     <option name="SELECTION_FOREGROUND" value="{{scheme.Base}}" />
 			     <option name="ScrollBar.hoverThumbColor" value="{{scheme.Muted}}A6" />
 			     <option name="ScrollBar.thumbColor" value="{{scheme.Muted}}A6" />
@@ -175,7 +175,7 @@ public static partial class ThemeTranslator
 			     </option>
 			     <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
 			       <value>
-			         <option name="FOREGROUND" value="{{scheme.GreenAlt}}" />
+			         <option name="FOREGROUND" value="{{scheme.Green}}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_IDENTIFIER">
@@ -223,7 +223,7 @@ public static partial class ThemeTranslator
 			     </option>
 			     <option name="DEFAULT_METADATA">
 			       <value>
-			         <option name="FOREGROUND" value="{{scheme.YellowAlt}}" />
+			         <option name="FOREGROUND" value="{{scheme.Yellow}}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_NUMBER">
@@ -484,7 +484,7 @@ public static partial class ThemeTranslator
 			     </option>
 			     <option name="SUGGESTION">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{{scheme.YellowAlt}}" />
+			         <option name="EFFECT_COLOR" value="{{scheme.Yellow}}" />
 			         <option name="EFFECT_TYPE" value="2" />
 			       </value>
 			     </option>
