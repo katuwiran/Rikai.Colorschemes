@@ -1,35 +1,28 @@
-﻿using System;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-
-namespace ColorschemeUtils;
+﻿namespace ColorschemeUtils;
 
 public class Program
 {
-	static ColorScheme currentScheme = ColorScheme.Moonlight;
-
 	public static void Main()
 	{
 		int    columns   = 8;
-		string moonlight = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/moonlight.png";
-		string skylight  = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/skylight.png";
-		string test      = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/test.png";
+		string prefix    = $"outputs{Path.DirectorySeparatorChar}";
+		string moonlight = $"{prefix}moonlight.png";
+		string skylight  = $"{prefix}skylight.png";
 
-		string riderJsonDarkFilepath = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/Moonlight.theme.json";
-		string riderJsonLightFilepath = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/Skylight.theme.json";
+		string riderJsonDarkFilepath = $"{prefix}Moonlight.theme.json";
+		string riderJsonLightFilepath = $"{prefix}Skylight.theme.json";
 		
-		string riderXmlDarkFilepath  = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/Moonlight.xml";
-		string riderXmlLightFilepath  = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/Skylight.xml";
+		string riderXmlDarkFilepath  = $"{prefix}Moonlight.xml";
+		string riderXmlLightFilepath  = $"{prefix}Skylight.xml";
 
-		string sublimeDarkPath  = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/Moonlight.sublime-color-scheme";
-		string sublimeLightPath = "/mnt/Rikai/Projects/Programming/Colorschemes/Moonlight/Skylight.sublime-color-scheme";
+		string sublimeDarkPath  = $"{prefix}Moonlight.sublime-color-scheme";
+		string sublimeLightPath = $"{prefix}Skylight.sublime-color-scheme";
 
-		PublishRiderJson(riderJsonDarkFilepath);
-		PublishRiderJson(riderJsonLightFilepath);
+		PublishRiderJson(ColorScheme.Moonlight, riderJsonDarkFilepath);
+		PublishRiderJson(ColorScheme.Skylight, riderJsonLightFilepath);
 		
-		PublishRiderXml(riderXmlDarkFilepath);
-		PublishRiderXml(riderXmlLightFilepath);
+		PublishRiderXml(ColorScheme.Moonlight, riderXmlDarkFilepath);
+		PublishRiderXml(ColorScheme.Skylight, riderXmlLightFilepath);
 		
 		PublishSublime(ColorScheme.Moonlight, sublimeDarkPath);
 		PublishSublime(ColorScheme.Skylight,  sublimeLightPath);
@@ -38,7 +31,6 @@ public class Program
 
 		generator.Generate(ColorSchemeEntry.Moonlight, columns, moonlight);
 		generator.Generate(ColorSchemeEntry.Skylight,  columns, skylight);
-		generator.Generate(ColorSchemeEntry.Test,      columns, test);
 	}
 
 	static void PublishSublime(ColorScheme scheme, string filePath)
@@ -49,19 +41,19 @@ public class Program
 		}
 	}
 
-	static void PublishRiderJson(string filePath)
+	static void PublishRiderJson(ColorScheme scheme, string filePath)
 	{
 		using (StreamWriter sw = new StreamWriter(filePath))
 		{
-			sw.Write(ThemeTranslator.RiderJson(currentScheme));
+			sw.Write(ThemeTranslator.RiderJson(scheme));
 		}
 	}
 
-	static void PublishRiderXml(string filePath)
+	static void PublishRiderXml(ColorScheme scheme, string filePath)
 	{
 		using (StreamWriter sw = new StreamWriter(filePath))
 		{
-			sw.Write(ThemeTranslator.RiderXml(currentScheme));
+			sw.Write(ThemeTranslator.RiderXml(scheme));
 		}
 	}
 }
