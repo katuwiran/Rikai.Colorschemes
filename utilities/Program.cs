@@ -23,6 +23,10 @@ public class Program
 		string sublimeMoonlight = $"{prefix}Moonlight.sublime-color-scheme";
 		string sublimeSkylight  = $"{prefix}Skylight.sublime-color-scheme";
 
+		// kcolorscheme
+		string kcolorschemeMoonlight = $"{prefix}moonlight.colors";
+		string kcolorschemeSkylight  = $"{prefix}skylight.colors";
+
 		PublishRiderJson(ColorScheme.Moonlight, riderJsonMoonlight);
 		PublishRiderJson(ColorScheme.Skylight,  riderJsonSkylight);
 
@@ -31,7 +35,10 @@ public class Program
 
 		PublishSublime(ColorScheme.Moonlight, sublimeMoonlight);
 		PublishSublime(ColorScheme.Skylight,  sublimeSkylight);
-		
+
+		PublishKColorscheme(ColorScheme.Moonlight, kcolorschemeMoonlight);
+		PublishKColorscheme(ColorScheme.Skylight,  kcolorschemeSkylight);
+
 		DiagramGenerator generator = new();
 
 		generator.Generate(ColorSchemeEntry.Moonlight, columns, ConvertToTargetDir(diagramMoonlight));
@@ -51,6 +58,7 @@ public class Program
 	static void PublishSublime(ColorScheme      scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.Sublime);
 	static void PublishRiderJson(ColorScheme    scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.RiderJson);
 	static void PublishRiderXml(ColorScheme     scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.RiderXml);
+	static void PublishKColorscheme(ColorScheme scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.KColorscheme);
 
 	static string ConvertToTargetDir(string path)
 	{

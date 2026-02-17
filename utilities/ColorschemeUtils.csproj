@@ -13,9 +13,9 @@
         <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.7"/>
     </ItemGroup>
 
-<!-- spaghetti to immediately copy/paste output files to where they are supposed to go. I'm sorry. -->
+    <!-- spaghetti to immediately copy/paste output files to where they are supposed to go. I'm sorry. -->
     <Target Name="CopyFiles" AfterTargets="Build">
-        <Exec Command="dotnet &quot;$(TargetPath)&quot;" />
+        <Exec Command="dotnet &quot;$(TargetPath)&quot;"/>
         <ItemGroup>
             <Diagrams Include="$(TargetDir)outputs/moonlight.png"/>
             <Diagrams Include="$(TargetDir)outputs/skylight.png"/>
@@ -38,6 +38,13 @@
         </ItemGroup>
         <Copy SourceFiles="@(Sublime)"
               DestinationFolder="$(ProjectDir)../platforms/Sublime Text/"
+              SkipUnchangedFiles="true"/>
+        <ItemGroup>
+            <kcolorscheme Include="$(TargetDir)outputs/moonlight.colors"/>
+            <kcolorscheme Include="$(TargetDir)outputs/skylight.colors"/>
+        </ItemGroup>
+        <Copy SourceFiles="@(kcolorscheme)"
+              DestinationFolder="$(ProjectDir)../platforms/kcolorscheme/"
               SkipUnchangedFiles="true"/>
     </Target>
 </Project>
