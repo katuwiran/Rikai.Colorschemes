@@ -78,7 +78,7 @@ public class DiagramGenerator
 		// (ImageSharp's Color doesn't expose Luminance easily directly in Rgba32 
 		// without casting, so we use a simple math approximation).
 		Color textColor    = GetContrastingTextColor(entry.HexCode);
-		Color dimTextColor = textColor.WithAlpha(0.6f); // Slightly transparent for secondary info
+		Color dimTextColor = textColor.WithAlpha(0.75f); // Slightly transparent for secondary info
 
 		// -- DRAW TEXT --
 
