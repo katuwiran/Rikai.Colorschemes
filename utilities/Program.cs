@@ -5,6 +5,7 @@ public class Program
 	public static void Main()
 	{
 		int    columns = 8;
+		// todo: can probably DRY this thing more, but sometime
 		string prefix  = $"outputs{Path.DirectorySeparatorChar}";
 
 		// diagrams
@@ -27,6 +28,14 @@ public class Program
 		string kcolorschemeMoonlight = $"{prefix}moonlight.colors";
 		string kcolorschemeSkylight  = $"{prefix}skylight.colors";
 
+		// kvantum svg
+		string kvantumSvgMoonlight = $"{prefix}Moonlight.svg";
+		string kvantumSvgSkylight  = $"{prefix}Skylight.svg";
+
+		// kvantum kvconfig
+		string kvantumCfgMoonlight = $"{prefix}Moonlight.kvconfig";
+		string kvantumCfgSkylight  = $"{prefix}Skylight.kvconfig";
+
 		PublishRiderJson(ColorScheme.Moonlight, riderJsonMoonlight);
 		PublishRiderJson(ColorScheme.Skylight,  riderJsonSkylight);
 
@@ -38,6 +47,12 @@ public class Program
 
 		PublishKColorscheme(ColorScheme.Moonlight, kcolorschemeMoonlight);
 		PublishKColorscheme(ColorScheme.Skylight,  kcolorschemeSkylight);
+
+		PublishKvantumSvg(ColorScheme.Moonlight, kvantumSvgMoonlight);
+		PublishKvantumSvg(ColorScheme.Skylight,  kvantumSvgSkylight);
+
+		PublishKvantumCfg(ColorScheme.Moonlight, kvantumCfgMoonlight);
+		PublishKvantumCfg(ColorScheme.Skylight,  kvantumCfgSkylight);
 
 		DiagramGenerator generator = new();
 
@@ -59,6 +74,8 @@ public class Program
 	static void PublishRiderJson(ColorScheme    scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.RiderJson);
 	static void PublishRiderXml(ColorScheme     scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.RiderXml);
 	static void PublishKColorscheme(ColorScheme scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.KColorscheme);
+	static void PublishKvantumSvg(ColorScheme   scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.KvantumSvg);
+	static void PublishKvantumCfg(ColorScheme   scheme, string filePath) => Publish(scheme, filePath, ThemeTranslator.KvantumConfig);
 
 	static string ConvertToTargetDir(string path)
 	{
