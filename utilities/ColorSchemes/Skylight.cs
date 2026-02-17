@@ -27,7 +27,7 @@ public partial class ColorScheme
 		Red      = "f04f4e",
 		Orange   = "f28a70",
 
-		HighlightInactive = "dde4ea",
+		HighlightInactive = "e3e9ed",
 		Highlight         = "acc2df",
 		HighlightOverlay  = "85bbff"
 	};
