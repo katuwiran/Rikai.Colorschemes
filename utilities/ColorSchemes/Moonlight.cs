@@ -12,7 +12,7 @@ public partial class ColorScheme
 		Base     = "2a2840",
 		Surface  = "332e51",
 		Overlay  = "3d375f",
-		Muted    = "444158",
+		Muted    = "696383",
 		Inactive = "666684",
 		Subtle   = "908caa",
 		Text     = "c0c0ff",
