@@ -21,7 +21,7 @@ public static partial class ThemeTranslator
 
 		// Typography
 		string TextPrimary  = $"#{scheme.Text}";
-		string TextPressed  = $"#{scheme.Text}";     // Slightly darker for active states
+		string TextPressed  = $"#{scheme.Overlay}";     // Slightly darker for active states
 		string TextDisabled = $"#{scheme.Inactive}"; // Primary with alpha
 
 		return
