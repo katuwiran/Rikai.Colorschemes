@@ -67,5 +67,12 @@
         <Copy SourceFiles="@(konsole)"
               DestinationFolder="$(ProjectDir)../platforms/Konsole"
               SkipUnchangedFiles="true"/>
+        <ItemGroup>
+            <alacritty Include="$(TargetDir)outputs/Moonlight.toml"/>
+            <alacritty Include="$(TargetDir)outputs/Skylight.toml"/>
+        </ItemGroup>
+        <Copy SourceFiles="@(alacritty)"
+              DestinationFolder="$(ProjectDir)../platforms/Alacritty"
+              SkipUnchangedFiles="true"/>
     </Target>
 </Project>

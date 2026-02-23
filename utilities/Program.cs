@@ -5,10 +5,11 @@ public class Program
 	public static void Main()
 	{
 		// todo: can probably DRY this thing more, but sometime
-		// todo: kcolorschemes
-		// todo: konsole setup
-		// todo: alacritty
+		// todo: btop
 		// todo: fix bugs
+		// - highlighting is wrong
+		// - red is ugly.
+		// - highlighted text in rider
 		int columns = 8;
 
 		List<ITheme> themes = new()
@@ -27,6 +28,8 @@ public class Program
 			new Kcolorscheme(ColorScheme.Skylight),
 			new Konsole(ColorScheme.Moonlight),
 			new Konsole(ColorScheme.Skylight),
+			new Alacritty(ColorScheme.Moonlight),
+			new Alacritty(ColorScheme.Skylight),
 		};
 
 		foreach (ITheme theme in themes)
