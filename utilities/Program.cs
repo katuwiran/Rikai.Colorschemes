@@ -32,46 +32,72 @@ public class Program
 			new Alacritty(ColorScheme.Skylight),
 		};
 
+		Console.WriteLine("Generating themes...");
 		foreach (ITheme theme in themes)
 		{
-			Publish(theme);
+			string targetDir  = ConvertToTargetPath($"{theme.FilePath}");
+			string projectDir = ConvertToPlatformsPath($"{theme.FilePath}");
+			
+			Publish(theme, targetDir);
+			CopyThemeToProjectDir(targetDir, projectDir);
 		}
 
 		DiagramGenerator generator = new();
+		
+		generator.Generate(ColorSchemeEntry.Moonlight, columns, $"{AssetsPath}moonlight.png");
+		generator.Generate(ColorSchemeEntry.Skylight,  columns, $"{AssetsPath}skylight.png");
 
-		generator.Generate(ColorSchemeEntry.Moonlight, columns, ConvertToTargetDir($"{Prefix}moonlight.png"));
-		generator.Generate(ColorSchemeEntry.Skylight,  columns, ConvertToTargetDir($"{Prefix}skylight.png"));
+		Console.WriteLine("Finished.");
 	}
 
-	static void Publish(ITheme theme)
+	static void Publish(ITheme theme, string path)
 	{
-		using (StreamWriter sw = new StreamWriter(ConvertToTargetDir($"{Prefix}{theme.FilePath}")))
+		using (StreamWriter sw = new StreamWriter(path))
 		{
 			sw.Write(theme);
 		}
-
-		Console.WriteLine($"Generated Sublime Color scheme for {theme.Scheme.Name}");
 	}
 
-	static string ConvertToTargetDir(string path)
+	static string ConvertToTargetPath(string themePath)
 	{
 		// Get the path to the bin folder (TargetDir)
-		string binPath = AppContext.BaseDirectory;
+		string binPath = BinPath;
 
 		// Combine with filename
-		string filePath = Path.Combine(binPath, path);
-
-		// Get the directory path (handles just filename cases too)
-		string? directory = Path.GetDirectoryName(filePath);
-
+		string filePath = Path.Combine(binPath, themePath);
+		
 		// Create the directory if it's not null/empty
-		if (!string.IsNullOrEmpty(directory))
+		if (!string.IsNullOrEmpty(Path.GetDirectoryName(filePath)))
 		{
-			Directory.CreateDirectory(directory);
+			Directory.CreateDirectory(Path.GetDirectoryName(filePath));
 		}
 
 		return filePath;
 	}
 
-	private static string Prefix => $"outputs{Path.DirectorySeparatorChar}";
+	static string ConvertToPlatformsPath(string themePath)
+	{
+		// Get the path to output folder
+		string targetPath = PlatformsPath;
+
+		// Combine with filename
+		string sourceFilePath = Path.Combine(targetPath, themePath);
+
+		// Create the directory if it's not null/empty
+		if (!string.IsNullOrEmpty(Path.GetDirectoryName(sourceFilePath)))
+		{
+			Directory.CreateDirectory(Path.GetDirectoryName(sourceFilePath));
+		}
+
+		return sourceFilePath;
+	}
+
+	static void CopyThemeToProjectDir(string sourcePath, string platformsPath)
+	{
+		File.Copy(sourcePath, platformsPath, overwrite: true);
+	}
+	
+	static string AssetsPath => $"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}assets{Path.DirectorySeparatorChar}";
+	static string BinPath => $"{Directory.GetParent(AppContext.BaseDirectory).FullName}";
+	static string PlatformsPath => $"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}platforms{Path.DirectorySeparatorChar}";
 }

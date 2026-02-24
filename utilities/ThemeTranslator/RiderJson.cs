@@ -7,9 +7,12 @@ public class RiderJson : ITheme
 
 	public RiderJson(ColorScheme colorScheme)
 	{
-		FilePath = $"{colorScheme.Name}.theme.json";
+		FilePath = $"{_prefix}{colorScheme.Name}.theme.json";
 		Scheme   = colorScheme;
 	}
+
+	private string _prefix => $"Jetbrains{_sep}resources{_sep}theme{_sep}";
+	private string _sep    => $"{Path.DirectorySeparatorChar}";
 
 	// for Kvantum's svg format
 	public override string ToString()

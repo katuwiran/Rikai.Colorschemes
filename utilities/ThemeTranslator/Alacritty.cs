@@ -7,7 +7,7 @@ public class Alacritty : ITheme
 
 	public Alacritty(ColorScheme colorScheme)
 	{
-		FilePath = $"{colorScheme.Name}.toml";
+		FilePath = $"Alacritty{Path.DirectorySeparatorChar}{colorScheme.Name}.toml";
 		Scheme   = colorScheme;
 	}
 

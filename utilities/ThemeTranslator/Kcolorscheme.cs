@@ -7,7 +7,7 @@ public class Kcolorscheme : ITheme
 
 	public Kcolorscheme(ColorScheme colorScheme)
 	{
-		FilePath = $"{colorScheme.Name.ToLower()}.colors";
+		FilePath = $"Kcolorscheme{Path.DirectorySeparatorChar}{colorScheme.Name.ToLower()}.colors";
 		Scheme   = colorScheme;
 	}
 

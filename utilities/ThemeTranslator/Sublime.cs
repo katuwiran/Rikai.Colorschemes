@@ -7,7 +7,7 @@ public class Sublime : ITheme
 
 	public Sublime(ColorScheme colorScheme)
 	{
-		FilePath    = $"{colorScheme.Name}.sublime-color-scheme";
+		FilePath    = $"Sublime Text{Path.DirectorySeparatorChar}{colorScheme.Name}.sublime-color-scheme";
 		Scheme = colorScheme;
 	}
 

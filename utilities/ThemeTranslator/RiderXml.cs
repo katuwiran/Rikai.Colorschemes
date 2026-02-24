@@ -7,9 +7,12 @@ public class RiderXml : ITheme
 
 	public RiderXml(ColorScheme colorScheme)
 	{
-		FilePath = $"{colorScheme.Name}.xml";
+		FilePath = $"{_prefix}{colorScheme.Name}.xml";
 		Scheme   = colorScheme;
 	}
+
+	private string _prefix => $"Jetbrains{_sep}resources{_sep}theme{_sep}";
+	private string _sep    => $"{Path.DirectorySeparatorChar}";
 
 	// for Kvantum's svg format
 	public override string ToString()

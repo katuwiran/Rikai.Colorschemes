@@ -7,7 +7,7 @@ public class Konsole : ITheme
 
 	public Konsole(ColorScheme colorScheme)
 	{
-		FilePath = $"{colorScheme.Name}.colorscheme";
+		FilePath = $"Konsole{Path.DirectorySeparatorChar}{colorScheme.Name}.colorscheme";
 		Scheme   = colorScheme;
 	}
 

@@ -2,14 +2,16 @@ namespace ColorschemeUtils;
 
 public class KvantumSvg : ITheme
 {
-	public string      FilePath    { get; set; }
-	public ColorScheme Scheme { get; set; }
+	public string      FilePath { get; set; }
+	public ColorScheme Scheme   { get; set; }
 
 	public KvantumSvg(ColorScheme colorScheme)
 	{
-		FilePath    = $"{colorScheme.Name}.svg";
-		Scheme = colorScheme;
+		FilePath = $"Kvantum{_sep}{colorScheme.Name}{_sep}{colorScheme.Name}.svg";
+		Scheme   = colorScheme;
 	}
+
+	private static string _sep = $"{Path.DirectorySeparatorChar}";
 
 	// for Kvantum's svg format
 	public override string ToString()

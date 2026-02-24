@@ -7,9 +7,11 @@ public class KvantumConfig : ITheme
 
 	public KvantumConfig(ColorScheme colorScheme)
 	{
-		FilePath = $"{colorScheme.Name}.kvconfig";
+		FilePath = $"Kvantum{_sep}{colorScheme.Name}{_sep}{colorScheme.Name}.kvconfig";
 		Scheme  = colorScheme;
 	}
+
+	private static string _sep    = $"{Path.DirectorySeparatorChar}";
 
 	// for Kvantum's svg format
 	public override string ToString()
