@@ -24,7 +24,7 @@ public class KvantumConfig : ITheme
 		string darkGray         = $"#{Scheme.Muted}";
 
 		// Accents
-		string highlight   = $"#{Scheme.Highlight}";
+		string highlight   = $"#{Scheme.HighlightOverlay}";
 		string link        = $"#{Scheme.Magenta}";
 		string linkVisited = $"#{Scheme.Lavender}";
 

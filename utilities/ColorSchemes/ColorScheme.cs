@@ -30,7 +30,7 @@ public partial class ColorScheme
 	public required string HighlightOverlay  { get; set; }
 
 	public string Caret => Text;
-	
+
 	public string MenuBackground => Base;
 	public string TextForeground => Text;
 	public string Error          => Red;
@@ -54,4 +54,40 @@ public partial class ColorScheme
 	public string DiffModified => Purple;
 	public string DiffIgnored  => Subtle;
 	public string DiffConflict => Lavender;
+
+	public static string ToRGB(string hex)
+	{
+		string r = $"{HexadecimalToDecimal(hex.Substring(0,2))}";
+		string g = $"{HexadecimalToDecimal(hex.Substring(2,2))}";
+		string b = $"{HexadecimalToDecimal(hex.Substring(4,2))}";
+
+		return $"{r},{g},{b}";
+	}
+
+	private static int HexadecimalToDecimal(string hex)
+	{
+		hex = hex.ToUpper();
+
+		int    hexLength = hex.Length;
+		double dec       = 0;
+
+		for (int i = 0; i < hexLength; ++i)
+		{
+			byte b = (byte)hex[i];
+
+			if (b >= 48 && b <= 57)
+				b -= 48;
+			else if (b >= 65 && b <= 70)
+				b -= 55;
+
+			dec += b * Math.Pow(16, ((hexLength - i) - 1));
+		}
+
+		return (int)dec;
+	}
+
+	public override string ToString()
+	{
+		return $"{Name}";
+	}
 }
