@@ -21,6 +21,7 @@ public class Program
 			(scheme) => new Kcolorscheme(scheme),
 			(scheme) => new Konsole(scheme),
 			(scheme) => new Alacritty(scheme),
+			(scheme) => new Btop(scheme),
 		};
 
 		// create a list that holds all themes later
