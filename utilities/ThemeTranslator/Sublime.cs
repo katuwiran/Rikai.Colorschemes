@@ -121,7 +121,7 @@ public class Sublime : ITheme
 		                 "selection_border":              "var(highlight-med)",
 		                 "selection_border_width":        "1",
 		                 "inactive_selection":            "var(highlight-low)",
-		                 "inactive_selection_border":     "var(highlight-low)",
+		                 "inactive_selection_border":     "var(match_foreground)",
 		                 "inactive_selection_foreground": "var(text)",
 		                 "selection_corner_style":        "rounded",
 		                 "selection_corner_radius":       "2",                  // default
