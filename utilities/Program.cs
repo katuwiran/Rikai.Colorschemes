@@ -10,7 +10,7 @@ public class Program
 		// - highlighting is wrong
 		// - red is ugly.
 		// - highlighted text in rider
-		int columns = 8;
+		int columns = 7;
 
 		List<ITheme> themes = new()
 		{
