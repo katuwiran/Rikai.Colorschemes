@@ -4,46 +4,53 @@ public class Program
 {
 	public static void Main()
 	{
-		// todo: can probably DRY this thing more, but sometime
 		// todo: btop
 		// todo: fix bugs
 		// - highlighting is wrong
-		// - red is ugly.
 		// - highlighted text in rider
 		int columns = 7;
 
-		List<ITheme> themes = new()
+		// create a list of ITheme constructors.
+		List<Func<ColorScheme, ITheme>> constructors = new()
 		{
-			new RiderJson(ColorScheme.Moonlight),
-			new RiderJson(ColorScheme.Skylight),
-			new RiderXml(ColorScheme.Moonlight),
-			new RiderXml(ColorScheme.Skylight),
-			new Sublime(ColorScheme.Moonlight),
-			new Sublime(ColorScheme.Skylight),
-			new KvantumConfig(ColorScheme.Moonlight),
-			new KvantumConfig(ColorScheme.Skylight),
-			new KvantumSvg(ColorScheme.Moonlight),
-			new KvantumSvg(ColorScheme.Skylight),
-			new Kcolorscheme(ColorScheme.Moonlight),
-			new Kcolorscheme(ColorScheme.Skylight),
-			new Konsole(ColorScheme.Moonlight),
-			new Konsole(ColorScheme.Skylight),
-			new Alacritty(ColorScheme.Moonlight),
-			new Alacritty(ColorScheme.Skylight),
+			(scheme) => new RiderJson(scheme),
+			(scheme) => new RiderXml(scheme),
+			(scheme) => new Sublime(scheme),
+			(scheme) => new KvantumConfig(scheme),
+			(scheme) => new KvantumSvg(scheme),
+			(scheme) => new Kcolorscheme(scheme),
+			(scheme) => new Konsole(scheme),
+			(scheme) => new Alacritty(scheme),
 		};
 
+		// create a list that holds all themes later
+		List<ITheme> themes = new();
+
+		// iterates over the constructors list, creating one for each color scheme below
+		foreach (var constructor in constructors)
+		{
+			themes.Add(constructor(ColorScheme.Moonlight));
+			themes.Add(constructor(ColorScheme.Skylight));
+		}
+
 		Console.WriteLine("Generating themes...");
+		
+		// for each theme configuration file generated,
+		// copy from the target directory the files
+		// to the platforms directory.
+		// the file structure definitions defined in each theme.cs is respected
+		// hence one only has to bother with the individual files themselves.
 		foreach (ITheme theme in themes)
 		{
 			string targetDir  = ConvertToTargetPath($"{theme.FilePath}");
 			string projectDir = ConvertToPlatformsPath($"{theme.FilePath}");
-			
+
 			Publish(theme, targetDir);
 			CopyThemeToProjectDir(targetDir, projectDir);
 		}
 
 		DiagramGenerator generator = new();
-		
+
 		generator.Generate(ColorSchemeEntry.Moonlight, columns, $"{AssetsPath}moonlight.png");
 		generator.Generate(ColorSchemeEntry.Skylight,  columns, $"{AssetsPath}skylight.png");
 
@@ -65,7 +72,7 @@ public class Program
 
 		// Combine with filename
 		string filePath = Path.Combine(binPath, themePath);
-		
+
 		// Create the directory if it's not null/empty
 		if (!string.IsNullOrEmpty(Path.GetDirectoryName(filePath)))
 		{
@@ -96,8 +103,12 @@ public class Program
 	{
 		File.Copy(sourcePath, platformsPath, overwrite: true);
 	}
-	
-	static string AssetsPath => $"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}assets{Path.DirectorySeparatorChar}";
+
+	static string AssetsPath =>
+		$"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}assets{Path.DirectorySeparatorChar}";
+
 	static string BinPath => $"{Directory.GetParent(AppContext.BaseDirectory).FullName}";
-	static string PlatformsPath => $"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}platforms{Path.DirectorySeparatorChar}";
+
+	static string PlatformsPath =>
+		$"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}platforms{Path.DirectorySeparatorChar}";
 }
