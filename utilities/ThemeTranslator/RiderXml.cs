@@ -35,9 +35,9 @@ public class RiderXml : ITheme
 			     <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="{Scheme.Background}"/>
 			     <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="{Scheme.Text}"/>
 			     <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="{Scheme.Red}"/>
-			     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="{Scheme.HighlightInactive}"/>
+			     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="{Scheme.HighlightLow}"/>
 			     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="{Scheme.BackgroundOverlay}"/>
-			     <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="{Scheme.HighlightInactive}"/>
+			     <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="{Scheme.HighlightLow}"/>
 			     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="{Scheme.BackgroundEdges}"/>
 			     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="{Scheme.Blue}"/>
 			     <option name="CARET_COLOR" value="{Scheme.Text}"/>
@@ -107,11 +107,11 @@ public class RiderXml : ITheme
 			     <option name="ScrollBar.thumbColor" value="{Scheme.TextHidden}" />
 			     <option name="ScrollBar.thumbBorderColor" value="{Scheme.BackgroundEdges}"/>
 			     <option name="ScrollBar.hoverThumbColor" value="{Scheme.TextHidden}" />
-			     <option name="ScrollBar.hoverThumbBorderColor" value="{Scheme.HighlightInactive}"/>
+			     <option name="ScrollBar.hoverThumbBorderColor" value="{Scheme.HighlightLow}"/>
 			     <option name="ScrollBar.Mac.thumbColor" value="{Scheme.BackgroundEdges}"/>
 			     <option name="ScrollBar.Mac.thumbBorderColor" value="{Scheme.BackgroundEdges}"/>
-			     <option name="ScrollBar.Mac.hoverThumbColor" value="{Scheme.HighlightInactive}"/>
-			     <option name="ScrollBar.Mac.hoverThumbBorderColor" value="{Scheme.HighlightInactive}"/>
+			     <option name="ScrollBar.Mac.hoverThumbColor" value="{Scheme.HighlightLow}"/>
+			     <option name="ScrollBar.Mac.hoverThumbBorderColor" value="{Scheme.HighlightLow}"/>
 			     <option name="VCS_ANNOTATIONS_COLOR_1" value="{Scheme.Text}"/>
 			     <option name="VCS_ANNOTATIONS_COLOR_2" value="{Scheme.Text}"/>
 			     <option name="VCS_ANNOTATIONS_COLOR_3" value="{Scheme.Text}"/>
@@ -1095,7 +1095,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="INLINE_STACK_FRAMES">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.HighlightInactive}"/>
+			         <option name="BACKGROUND" value="{Scheme.HighlightLow}"/>
 			       </value>
 			     </option>
 			     <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
@@ -1163,7 +1163,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="LOG_EXPIRED_ENTRY">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.HighlightInactive}"/>
+			         <option name="FOREGROUND" value="{Scheme.HighlightLow}"/>
 			       </value>
 			     </option>
 			     <option name="LOG_INFO_OUTPUT">
@@ -1531,7 +1531,7 @@ public class RiderXml : ITheme
 			     <option name="TAB_SELECTED_INACTIVE">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
-			         <option name="BACKGROUND" value="{Scheme.HighlightInactive}"/>
+			         <option name="BACKGROUND" value="{Scheme.HighlightLow}"/>
 			       </value>
 			     </option>
 			     <option name="TAG_ATTR_KEY">
@@ -1546,7 +1546,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.HighlightInactive}"/>
+			         <option name="BACKGROUND" value="{Scheme.HighlightLow}"/>
 			       </value>
 			     </option>
 			     <option name="TEXT">

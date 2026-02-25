@@ -38,9 +38,9 @@ public class Sublime : ITheme
 		                 "yellow":         "#{{Scheme.Yellow}}",
 		                 "red":            "#{{Scheme.Red}}",
 		                 "orange":         "#{{Scheme.Orange}}",
-		                 "high-inactive":  "#{{Scheme.HighlightInactive}}",
+		                 "high-inactive":  "#{{Scheme.HighlightLow}}",
 		                 "highlight":      "#{{Scheme.Highlight}}",
-		                 "high-focused":   "#{{Scheme.HighlightFocused}}",
+		                 "high-focused":   "#{{Scheme.HighlightHigh}}",
 
 		                 "comments":    "var(faded)",
 		                 "variables":   "var(text)",

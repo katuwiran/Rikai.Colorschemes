@@ -26,8 +26,8 @@ public partial class ColorScheme
 		Red     = "f04f4e",
 		Orange  = "f28a70",
 
-		HighlightInactive = "e3e9ed",
+		HighlightLow = "e3e9ed",
 		Highlight         = "acc2df",
-		HighlightFocused  = "85bbff"
+		HighlightHigh  = "85bbff"
 	};
 }

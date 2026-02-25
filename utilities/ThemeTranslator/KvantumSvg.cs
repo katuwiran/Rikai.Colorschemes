@@ -28,7 +28,7 @@ public class KvantumSvg : ITheme
 		// UI Neutrals
 		string white    = $"#{Scheme.Background}";
 		string black    = $"#{Scheme.Text}";
-		string iconGray = $"#{Scheme.HighlightInactive}";
+		string iconGray = $"#{Scheme.HighlightLow}";
 		string border   = $"#{Scheme.BackgroundOverlay}";
 		string desk     = $"#{Scheme.TextInactive}";
 

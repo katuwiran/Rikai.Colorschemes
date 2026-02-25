@@ -32,15 +32,15 @@ public class Alacritty : ITheme
 
 			 [colors.search.matches]
 			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.HighlightInactive}"
+			 background = "#{Scheme.HighlightLow}"
 
 			 [colors.search.focused_match]
 			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.HighlightInactive}"
+			 background = "#{Scheme.HighlightLow}"
 
 			 [colors.footer_bar]
 			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.HighlightInactive}"
+			 background = "#{Scheme.HighlightLow}"
 
 			 [colors.hints.start]
 			 foreground = "#{Scheme.Background}"
@@ -48,7 +48,7 @@ public class Alacritty : ITheme
 
 			 [colors.hints.end]
 			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.HighlightInactive}"
+			 background = "#{Scheme.HighlightLow}"
 
 			 [colors.selection]
 			 text = "#{Scheme.Background}"

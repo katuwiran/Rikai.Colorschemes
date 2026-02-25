@@ -26,23 +26,20 @@ public partial class ColorScheme
 	public required string Red     { get; set; }
 	public required string Orange  { get; set; }
 
-	// Highlights
-	public required string Highlight         { get; set; } // selected result, on press
-	public required string HighlightInactive { get; set; } // search results, unpressed
-	public required string HighlightFocused  { get; set; } // on hover
+	public required string Highlight     { get; set; } // selected result, on press
+	public required string HighlightLow  { get; set; } // search results, unpressed
+	public required string HighlightHigh { get; set; } // on hover
 
-	public string HoverText       => Background;       // on hover, text
-	public string HoverBackground => HighlightFocused; // on hover, background
-
-	public string PressedText       => Magenta;   // on press, text
-	public string PressedBackground => Highlight; // on press, background
-
-	public string SelectionText         => Background;
-	public string SelectionInactiveText => HighlightInactive;
-
-	public string InactiveText => Highlight;
-	public string Inactive     => HighlightInactive;
-
+	public string HoverText                   => Background;    // on hover, text
+	public string HoverBackground             => HighlightHigh; // on hover, background
+	public string PressedText                 => Magenta;       // on press, text
+	public string PressedBackground           => Highlight;     // on press, background
+	public string SelectionText               => Background;    // selection, text
+	public string SelectionBackground         => Background;    // selection, background
+	public string SelectionInactiveText       => HighlightLow;  // inactive selection, text
+	public string SelectionInactiveBackground => HighlightLow;  // inactive selection, background
+	public string InactiveText                => Highlight;     // inactive, text
+	public string InactiveBackground          => HighlightLow;  // inactive, backgroud
 
 	public string MenuBackground => Background;
 	public string TextForeground => Text;

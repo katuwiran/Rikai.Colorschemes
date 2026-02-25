@@ -21,18 +21,18 @@ public class KvantumConfig : ITheme
 		string altBase          = $"#{Scheme.BackgroundEdges}";
 		string windowBackground = $"#{Scheme.BackgroundOverlay}";
 		string buttonBg         = $"#{Scheme.Highlight}";
-		string midLight         = $"#{Scheme.HighlightFocused}";
-		string midGray          = $"#{Scheme.HighlightInactive}";
+		string midLight         = $"#{Scheme.HighlightHigh}";
+		string midGray          = $"#{Scheme.HighlightLow}";
 		string darkGray         = $"#{Scheme.TextHidden}";
 
 		// Accents
-		string highlight   = $"#{Scheme.HighlightFocused}";
+		string highlight   = $"#{Scheme.HighlightHigh}";
 		string link        = $"#{Scheme.Magenta}";
 		string linkVisited = $"#{Scheme.Plum}";
 
 		// Typography
 		string textPrimary  = $"#{Scheme.Text}";
-		string textFocus    = $"#{Scheme.HighlightInactive}";
+		string textFocus    = $"#{Scheme.HighlightLow}";
 		string textPressed  = $"#{Scheme.TextFaded}";   // Slightly darker for active states
 		string textDisabled = $"#{Scheme.TextInactive}"; // Primary with alpha
 		string textSelected = $"#{Scheme.SelectionText}"; // Primary with alpha
