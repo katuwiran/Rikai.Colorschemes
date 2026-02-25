@@ -26,76 +26,76 @@ public class Konsole : ITheme
 			 Color=#{Scheme.Overlay}
 
 			 [Color0]
-			 Color=#{Scheme.HighlightInactive}
+			 Color=#{Scheme.ConsoleBackground}
 
 			 [Color0Faint]
-			 Color=#{Scheme.HighlightInactive}
+			 Color=#{Scheme.ConsoleBackground}
 
 			 [Color0Intense]
-			 Color=#{Scheme.HighlightInactive}
+			 Color=#{Scheme.ConsoleBackground}
 
 			 [Color1]
-			 Color=#{Scheme.Red}
+			 Color=#{Scheme.ConsoleRed}
 
 			 [Color1Faint]
-			 Color=#{Scheme.Red}
+			 Color=#{Scheme.ConsoleRed}
 
 			 [Color1Intense]
-			 Color=#{Scheme.Red}
+			 Color=#{Scheme.ConsoleRed}
 
 			 [Color2]
-			 Color=#{Scheme.Plum}
+			 Color=#{Scheme.ConsoleGreen}
 
 			 [Color2Faint]
-			 Color=#{Scheme.Plum}
+			 Color=#{Scheme.ConsoleGreen}
 
 			 [Color2Intense]
-			 Color=#{Scheme.Plum}
+			 Color=#{Scheme.ConsoleGreen}
 
 			 [Color3]
-			 Color=#{Scheme.Cyan}
+			 Color=#{Scheme.ConsoleYellow}
 
 			 [Color3Faint]
-			 Color=#{Scheme.Cyan}
+			 Color=#{Scheme.ConsoleYellow}
 
 			 [Color3Intense]
-			 Color=#{Scheme.Cyan}
+			 Color=#{Scheme.ConsoleYellow}
 
 			 [Color4]
-			 Color=#{Scheme.Blue}
+			 Color=#{Scheme.ConsoleBlue}
 
 			 [Color4Faint]
-			 Color=#{Scheme.Blue}
+			 Color=#{Scheme.ConsoleBlue}
 
 			 [Color4Intense]
-			 Color=#{Scheme.Blue}
+			 Color=#{Scheme.ConsoleBlue}
 
 			 [Color5]
-			 Color=#{Scheme.Purple}
+			 Color=#{Scheme.ConsoleMagenta}
 
 			 [Color5Faint]
-			 Color=#{Scheme.Purple}
+			 Color=#{Scheme.ConsoleMagenta}
 
 			 [Color5Intense]
-			 Color=#{Scheme.Purple}
+			 Color=#{Scheme.ConsoleMagenta}
 
 			 [Color6]
-			 Color=#{Scheme.Magenta}
+			 Color=#{Scheme.ConsoleCyan}
 
 			 [Color6Faint]
-			 Color=#{Scheme.Magenta}
+			 Color=#{Scheme.ConsoleCyan}
 
 			 [Color6Intense]
-			 Color=#{Scheme.Magenta}
+			 Color=#{Scheme.ConsoleCyan}
 
 			 [Color7]
-			 Color=#{Scheme.Text}
+			 Color=#{Scheme.ConsoleForeground}
 
 			 [Color7Faint]
-			 Color=#{Scheme.Text}
+			 Color=#{Scheme.ConsoleForeground}
 
 			 [Color7Intense]
-			 Color=#{Scheme.Text}
+			 Color=#{Scheme.ConsoleForeground}
 
 			 [Foreground]
 			 Color=#{Scheme.Text}

@@ -55,24 +55,24 @@ public class Alacritty : ITheme
 			 background = "#{Scheme.Highlight}"
 
 			 [colors.normal]
-			 black = "#{Scheme.Base}"
-			 red = "#{Scheme.Red}"
-			 green = "#{Scheme.Plum}"
-			 yellow = "#{Scheme.Cyan}"
-			 blue = "#{Scheme.Blue}"
-			 magenta = "#{Scheme.Purple}"
-			 cyan = "#{Scheme.Magenta}"
-			 white = "#{Scheme.Text}"
+			 black = "#{Scheme.ConsoleBackground}"
+			 red = "#{Scheme.ConsoleRed}"
+			 green = "#{Scheme.ConsoleGreen}"
+			 yellow = "#{Scheme.ConsoleYellow}"
+			 blue = "#{Scheme.ConsoleBlue}"
+			 magenta = "#{Scheme.ConsoleMagenta}"
+			 cyan = "#{Scheme.ConsoleCyan}"
+			 white = "#{Scheme.ConsoleForeground}"
 
 			 [colors.bright]
-			 black = "#{Scheme.Base}"
-			 red = "#{Scheme.Red}"
-			 green = "#{Scheme.Plum}"
-			 yellow = "#{Scheme.Cyan}"
-			 blue = "#{Scheme.Blue}"
-			 magenta = "#{Scheme.Purple}"
-			 cyan = "#{Scheme.Magenta}"
-			 white = "#{Scheme.Text}"
+			 black = "#{Scheme.ConsoleBackgroundAlt}"
+			 red = "#{Scheme.ConsoleRedAlt}"
+			 green = "#{Scheme.ConsoleGreenAlt}"
+			 yellow = "#{Scheme.ConsoleYellowAlt}"
+			 blue = "#{Scheme.ConsoleBlueAlt}"
+			 magenta = "#{Scheme.ConsoleMagentaAlt}"
+			 cyan = "#{Scheme.ConsoleCyanAlt}"
+			 white = "#{Scheme.ConsoleForegroundAlt}"
 
 			 [[colors.indexed_colors]]
 			 index = 16
