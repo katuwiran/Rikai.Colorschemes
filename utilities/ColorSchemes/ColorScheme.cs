@@ -26,24 +26,23 @@ public partial class ColorScheme
 	public required string Red     { get; set; }
 	public required string Orange  { get; set; }
 
-	public required string Highlight     { get; set; } // selected result, on press
 	public required string HighlightLow  { get; set; } // search results, unpressed
+	public required string Highlight     { get; set; } // selected result, on press
 	public required string HighlightHigh { get; set; } // on hover
 
-	public string HoverText                   => Background;    // on hover, text
-	public string HoverBackground             => HighlightHigh; // on hover, background
-	public string PressedText                 => Magenta;       // on press, text
-	public string PressedBackground           => Highlight;     // on press, background
-	public string SelectionText               => Background;    // selection, text
-	public string SelectionBackground         => Background;    // selection, background
-	public string SelectionInactiveText       => HighlightLow;  // inactive selection, text
-	public string SelectionInactiveBackground => HighlightLow;  // inactive selection, background
-	public string InactiveText                => Highlight;     // inactive, text
-	public string InactiveBackground          => HighlightLow;  // inactive, backgroud
+	public string HoverText             => Plum;              // text on hover
+	public string PressedText           => BackgroundOverlay; // text on press
+	public string SelectionText         => Background;        // selected text
+	public string SelectionInactiveText => Text;              // selected text but unfocused
+	public string InactiveText          => TextInactive;      // inactive text on buttons
+
+	public string HoverBackground             => HighlightLow;      // on hover
+	public string PressedBackground           => HighlightHigh;     // on press
+	public string SelectionBackground         => Highlight;         // selection
+	public string SelectionInactiveBackground => BackgroundOverlay; // inactive selection
+	public string InactiveBackground          => BackgroundOverlay; // inactive button
 
 	public string MenuBackground => Background;
-	public string TextForeground => Text;
-
 
 	// linting
 	public string Error       => Red;
@@ -52,23 +51,23 @@ public partial class ColorScheme
 	public string Annotations => Text;
 
 	// Console
-	public string Caret                => Text;
-	public string ConsoleBackground    => Background; // Console 0. Background
-	public string ConsoleBackgroundAlt => Background; // Console 0. Bright
-	public string ConsoleRed           => Magenta;    // Console 1. Red
-	public string ConsoleRedAlt        => Magenta;    // Console 1. Red
-	public string ConsoleGreen         => Purple;     // Console 2. Green
-	public string ConsoleGreenAlt      => Purple;     // Console 2. Green Bright
-	public string ConsoleYellow        => Cyan;       // Console 3. Yellow
-	public string ConsoleYellowAlt     => Cyan;       // Console 3. Yellow Bright
-	public string ConsoleBlue          => Blue;       // Console 4. Blue
-	public string ConsoleBlueAlt       => Blue;       // Console 4. Blue Bright
-	public string ConsoleMagenta       => Red;        // Console 5. Magenta
-	public string ConsoleMagentaAlt    => Red;        // Console 5. Magenta Bright
-	public string ConsoleCyan          => Plum;       // Console 6. Cyan
-	public string ConsoleCyanAlt       => Plum;       // Console 6. Cyan Bright
-	public string ConsoleForeground    => Text;       // Console 7. Text 
-	public string ConsoleForegroundAlt => Text;       // Console 7. Text Bright
+	public string Caret                => Highlight;
+	public string ConsoleBackground    => Background;   // Console 0. Background
+	public string ConsoleBackgroundAlt => TextInactive; // Console 0. Bright
+	public string ConsoleRed           => Magenta;      // Console 1. Red
+	public string ConsoleRedAlt        => Magenta;      // Console 1. Red
+	public string ConsoleGreen         => Purple;       // Console 2. Green
+	public string ConsoleGreenAlt      => Purple;       // Console 2. Green Bright
+	public string ConsoleYellow        => Cyan;         // Console 3. Yellow
+	public string ConsoleYellowAlt     => Cyan;         // Console 3. Yellow Bright
+	public string ConsoleBlue          => Blue;         // Console 4. Blue
+	public string ConsoleBlueAlt       => Blue;         // Console 4. Blue Bright
+	public string ConsoleMagenta       => Red;          // Console 5. Magenta
+	public string ConsoleMagentaAlt    => Red;          // Console 5. Magenta Bright
+	public string ConsoleCyan          => Plum;         // Console 6. Cyan
+	public string ConsoleCyanAlt       => Plum;         // Console 6. Cyan Bright
+	public string ConsoleForeground    => Text;         // Console 7. Text 
+	public string ConsoleForegroundAlt => TextFaded;    // Console 7. Text Bright
 
 	// git diffs
 	public string DiffAdded    => Green;
