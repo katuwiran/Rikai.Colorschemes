@@ -19,24 +19,24 @@ public class Alacritty : ITheme
 			 [colors.primary]
 			 background = "#{Scheme.Background}"
 			 foreground = "#{Scheme.Text}"
-			 dim_foreground = "#{Scheme.TextInactive}"
+			 dim_foreground = "#{Scheme.TextFaded}"
 			 bright_foreground = "#{Scheme.Text}"
 
 			 [colors.cursor]
 			 text = "#{Scheme.Background}"
-			 cursor = "#{Scheme.Highlight}"
+			 cursor = "#{Scheme.HighlightHigh}"
 
 			 [colors.vi_mode_cursor]
 			 text = "#{Scheme.Background}"
-			 cursor = "#babbf1"
+			 cursor = "#{Scheme.HighlightHigh}"
 
 			 [colors.search.matches]
-			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.HighlightLow}"
+			 foreground = "#{Scheme.SelectionText}"
+			 background = "#{Scheme.SelectionBackground}"
 
 			 [colors.search.focused_match]
-			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.HighlightLow}"
+			 foreground = "#{Scheme.SelectionText}"
+			 background = "#{Scheme.SelectionBackground}"
 
 			 [colors.footer_bar]
 			 foreground = "#{Scheme.Background}"
@@ -51,8 +51,8 @@ public class Alacritty : ITheme
 			 background = "#{Scheme.HighlightLow}"
 
 			 [colors.selection]
-			 text = "#{Scheme.Background}"
-			 background = "#{Scheme.Highlight}"
+			 text = "#{Scheme.SelectionText}"
+			 background = "#{Scheme.HighlightHigh}"
 
 			 [colors.normal]
 			 black = "#{Scheme.ConsoleBackground}"
