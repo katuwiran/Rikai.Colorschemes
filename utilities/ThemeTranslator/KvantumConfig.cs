@@ -3,15 +3,15 @@ namespace ColorschemeUtils;
 public class KvantumConfig : ITheme
 {
 	public string      FilePath { get; set; }
-	public ColorScheme Scheme  { get; set; }
+	public ColorScheme Scheme   { get; set; }
 
 	public KvantumConfig(ColorScheme colorScheme)
 	{
 		FilePath = $"Kvantum{_sep}{colorScheme.Name}{_sep}{colorScheme.Name}.kvconfig";
-		Scheme  = colorScheme;
+		Scheme   = colorScheme;
 	}
 
-	private static string _sep    = $"{Path.DirectorySeparatorChar}";
+	private static string _sep = $"{Path.DirectorySeparatorChar}";
 
 	// for Kvantum's svg format
 	public override string ToString()
@@ -26,17 +26,20 @@ public class KvantumConfig : ITheme
 		string darkGray         = $"#{Scheme.TextHidden}";
 
 		// Accents
-		string highlight   = $"#{Scheme.HighlightHigh}";
+		string highlight   = $"#{Scheme.Highlight}";
 		string link        = $"#{Scheme.Magenta}";
 		string linkVisited = $"#{Scheme.Plum}";
 
 		// Typography
 		string textPrimary  = $"#{Scheme.Text}";
-		string textFocus    = $"#{Scheme.HighlightLow}";
-		string textPressed  = $"#{Scheme.TextFaded}";   // Slightly darker for active states
-		string textDisabled = $"#{Scheme.TextInactive}"; // Primary with alpha
-		string textSelected = $"#{Scheme.SelectionText}"; // Primary with alpha
+		string textFocus    = $"#{Scheme.HoverText}";
+		string textPressed  = $"#{Scheme.PressedText}"; // sometimes dark, sometimes light in context
+		string textDisabled = $"#{Scheme.InactiveText}";
+		string textSelected = $"#{Scheme.SelectionText}";
+		string textToggled  = $"#{Scheme.SelectionText}";
 
+		// focus frame
+		bool frame = true;
 		return
 			$"""
 			 [%General]
@@ -166,7 +169,7 @@ public class KvantumConfig : ITheme
 			 blur_only_active_window=true
 
 			 [PanelButtonCommand]
-			 frame=true
+			 frame={frame}
 			 frame.element=button
 			 frame.top=6
 			 frame.bottom=6
@@ -178,7 +181,7 @@ public class KvantumConfig : ITheme
 			 text.normal.color={textPrimary}
 			 text.focus.color={textFocus}
 			 text.press.color={textPressed}
-			 text.toggle.color={textPrimary}
+			 text.toggle.color={textToggled}
 			 highlight.text.color={textSelected}
 			 text.shadow=0
 			 text.margin=4
@@ -191,7 +194,7 @@ public class KvantumConfig : ITheme
 			 text.normal.color={textPrimary}
 			 text.focus.color={textFocus}
 			 text.press.color={textPressed}
-			 text.toggle.color={textPrimary}
+			 text.toggle.color={textToggled}
 			 text.disabled.color={textDisabled}
 			 text.bold=false
 			 indicator.element=arrow
@@ -199,7 +202,7 @@ public class KvantumConfig : ITheme
 			 frame.expansion=0
 
 			 [ToolbarButton]
-			 frame=true
+			 frame={frame}
 			 frame.element=tbutton
 			 interior.element=tbutton
 			 frame.top=14
@@ -235,7 +238,7 @@ public class KvantumConfig : ITheme
 
 			 [IndicatorSpinBox]
 			 inherits=PanelButtonCommand
-			 frame=true
+			 frame={frame}
 			 interior=true
 			 frame.top=2
 			 frame.bottom=2
@@ -273,7 +276,7 @@ public class KvantumConfig : ITheme
 
 			 [Focus]
 			 inherits=PanelButtonCommand
-			 frame=true
+			 frame={frame}
 			 frame.element=focus
 			 frame.top=2
 			 frame.bottom=2
@@ -283,7 +286,7 @@ public class KvantumConfig : ITheme
 
 			 [GenericFrame]
 			 inherits=PanelButtonCommand
-			 frame=true
+			 frame={frame}
 			 interior=false
 			 frame.element=common
 			 interior.element=common
@@ -395,7 +398,7 @@ public class KvantumConfig : ITheme
 			 [Slider]
 			 inherits=PanelButtonCommand
 			 frame.element=slider
-			 focusFrame=true
+			 focusFrame={frame}
 			 interior.element=slider
 			 frame.top=3
 			 frame.bottom=3
@@ -421,7 +424,7 @@ public class KvantumConfig : ITheme
 
 			 [ProgressbarContents]
 			 inherits=PanelButtonCommand
-			 frame=true
+			 frame={frame}
 			 frame.element=progress-pattern
 			 interior.element=progress-pattern
 
@@ -487,7 +490,7 @@ public class KvantumConfig : ITheme
 
 			 [MenuItem]
 			 inherits=PanelButtonCommand
-			 frame=true
+			 frame={frame}
 			 frame.element=menuitem
 			 interior.element=menuitem
 			 indicator.element=menuitem
@@ -611,7 +614,7 @@ public class KvantumConfig : ITheme
 			 [Window]
 			 interior=true
 			 interior.element=window
-			 frame=true
+			 frame={frame}
 			 frame.element=window
 			 frame.bottom=10
 			 frame.top=10
