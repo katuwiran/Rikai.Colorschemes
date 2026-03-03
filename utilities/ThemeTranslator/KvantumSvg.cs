@@ -32,7 +32,7 @@ public class KvantumSvg : ITheme
 
 		string inactive         = $"#{Scheme.Ui.InactiveBackground}";          // default color of buttons 
 		string selectedListItem = $"#{Scheme.Ui.SelectionBackground}";         // in the list view
-		string focusedutton     = $"#{Scheme.Ui.HoverBackground}";             // buttons on hover
+		string focusedButton     = $"#{Scheme.Ui.HoverBackground}";             // buttons on hover
 		string buttonPressed    = $"#{Scheme.Ui.PressedBackground}";           // buttons on press
 		string toggled          = $"#{Scheme.Ui.SelectionInactiveBackground}"; // selected button on a list?
 		string disabled         = $"#{Scheme.Ui.InactiveBackground}";          // todo continue this
@@ -946,48 +946,48 @@ public class KvantumSvg : ITheme
 			      y="930.26"
 			      width="8"
 			      height="4"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <rect
 			      id="itemview-focused-bottom"
 			      x="33"
 			      y="942.26"
 			      width="8"
 			      height="4"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <path
 			      id="itemview-focused"
 			      d="m33 934.26h8v8h-8z"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <rect
 			      id="itemview-focused-right"
 			      x="41"
 			      y="934.26"
 			      width="4"
 			      height="8"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <path
 			      id="itemview-focused-topright"
 			      d="m41 930.26c4 0 4 4 4 4h-4z"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <path
 			      id="itemview-focused-bottomright"
 			      d="m41 942.26h4s0 4-4 4z"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <rect
 			      id="itemview-focused-left"
 			      x="29"
 			      y="934.26"
 			      width="4"
 			      height="8"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <path
 			      id="itemview-focused-topleft"
 			      d="m 33,930.26001 v 4 h -4 c 0,0 0,-4 4,-4 z"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <path
 			      id="itemview-focused-bottomleft"
 			      d="m29 942.26h4v4c-4 0-4-4-4-4z"
-			      style="fill:{black};opacity:{opacityHidden}.08" />
+			      style="fill:{focusedButton};opacity:{opacityHidden}.08" />
 			   <path
 			      id="toolbar-handle"
 			      d="m245 107a5 5 0 0 1-10 0 5 5 0 1 1 10 0z"
@@ -995,39 +995,39 @@ public class KvantumSvg : ITheme
 			   <path
 			      id="menubaritem-focused-left"
 			      d="m116 946v-17.999h-6l3.6e-4 18z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      id="menubaritem-focused-topleft"
 			      d="m116 921c-3.2999-1e-4 -6 2.7-6 5.9999h6z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      id="menubaritem-focused"
 			      d="m117 928v18h18v-18z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      id="menubaritem-focused-right"
 			      d="m136 946v-17.999h6l-3.7e-4 18z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      id="menubaritem-focused-topright"
 			      d="m136 921c3.2999-1e-4 6 2.7 6 5.9999h-6z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      id="menubaritem-focused-top"
 			      d="m117 927h17.999v-6h-18z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      id="menubaritem-focused-bottom"
 			      d="m135 947h-17.999v6h18z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      id="menubaritem-focused-bottomleft"
 			      d="m116 953c-3.2999 0-5.9999-2.7-5.9999-5.9999l5.9999-1e-4z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      id="menubaritem-focused-bottomright"
 			      d="m136 953c3.2999 0 5.9999-2.7 5.9999-5.9999l-5.9999-1e-4z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <path
 			      d="m223.93 399.69v32h32v-32z"
 			      id="titlebar-normal"
@@ -1049,7 +1049,7 @@ public class KvantumSvg : ITheme
 			   <path
 			      id="header-focused"
 			      d="m108 104.88h-6v6h6z"
-			      style="fill:{inactive};opacity:{opacityNormal}" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}" />
 			   <g
 			      id="tarrow-right-normal"
 			      transform="translate(-163.00382,-247.99535)">
@@ -3480,7 +3480,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        d="m1-80c-3.324 0-6 2.676-6 6h6z"
 			        id="path1541"
-			        style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			        style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   </g>
 			   <g
 			      id="button-focused-top"
@@ -3491,7 +3491,7 @@ public class KvantumSvg : ITheme
 			        width="26"
 			        height="6"
 			        id="rect1544"
-			        style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			        style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   </g>
 			   <g
 			      id="button-focused"
@@ -3502,7 +3502,7 @@ public class KvantumSvg : ITheme
 			        width="26"
 			        height="26"
 			        id="rect1547"
-			        style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			        style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   </g>
 			   <use
 			      id="button-focused-topright"
@@ -3805,7 +3805,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        d="m24.342 15.875c-1.7589 0-3.175 1.416-3.175 3.175h3.175z"
 			        id="path1616"
-			        style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			        style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   </g>
 			   <g
 			      id="tbutton-pressed-top"
@@ -3816,7 +3816,7 @@ public class KvantumSvg : ITheme
 			        width="3.175"
 			        height="3.175"
 			        id="rect1619"
-			        style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			        style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   </g>
 			   <use
 			      id="tbutton-pressed-topright"
@@ -3879,7 +3879,7 @@ public class KvantumSvg : ITheme
 			        width="16"
 			        height="1"
 			        id="rect1633"
-			        style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			        style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   </g>
 			   <g
 			      id="tbutton-pressed"
@@ -3890,7 +3890,7 @@ public class KvantumSvg : ITheme
 			        width="16"
 			        height="1"
 			        id="rect1636"
-			        style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			        style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   </g>
 			   <use
 			      id="tbutton-pressed-right"
@@ -3929,39 +3929,39 @@ public class KvantumSvg : ITheme
 			   <path
 			      id="menubaritem-pressed-left"
 			      d="m188 946v-17.999h-6l3.6e-4 18z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-pressed-topleft"
 			      d="m188 921c-3.2999-8e-5 -6 2.7-6 5.9999h6z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-pressed"
 			      d="m189 928v18h18v-18z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-pressed-right"
 			      d="m208 946v-17.999h6l-3.7e-4 18z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-pressed-topright"
 			      d="m208 921c3.2999-8e-5 6 2.7 6 5.9999h-6z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-pressed-top"
 			      d="m189 927h17.999v-6h-18z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-pressed-bottom"
 			      d="m207 947h-17.999v6h18z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-pressed-bottomleft"
 			      d="m188 953c-3.2999 0-5.9999-2.7-5.9999-5.9999l5.9999-1.1e-4z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-pressed-bottomright"
 			      d="m208 953c3.2999 0 5.9999-2.7 5.9999-5.9999l-5.9999-1.1e-4z"
-			      style="fill:{focusedutton};opacity:{opacityNormal}.2" />
+			      style="fill:{focusedButton};opacity:{opacityNormal}.2" />
 			   <path
 			      id="menubaritem-toggled-left"
 			      d="m152 946v-17.999h-6l3.6e-4 18z"
@@ -4221,7 +4221,7 @@ public class KvantumSvg : ITheme
 			        height="6"
 			        x="88"
 			        y="683"
-			        style="opacity:{opacityFaint};fill:{black}" />
+			        style="opacity:{opacityFaint};fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="tab-focused-topleft"
@@ -4236,7 +4236,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        id="rect90366-3"
 			        d="m 88,677 c -3.324,0 -6,2.676 -6,6 h 6 z"
-			        style="opacity:{opacityFaint};fill:{black}" />
+			        style="opacity:{opacityFaint};fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="tab-focused-top"
@@ -4254,7 +4254,7 @@ public class KvantumSvg : ITheme
 			        height="6"
 			        x="88"
 			        y="677"
-			        style="opacity:{opacityFaint};fill:{black}" />
+			        style="opacity:{opacityFaint};fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="tab-focused-left"
@@ -4272,7 +4272,7 @@ public class KvantumSvg : ITheme
 			        height="6"
 			        x="82"
 			        y="683"
-			        style="opacity:{opacityFaint};fill:{black}" />
+			        style="opacity:{opacityFaint};fill:{focusedButton}" />
 			   </g>
 			   <use
 			      x="0"
@@ -4298,7 +4298,7 @@ public class KvantumSvg : ITheme
 			        height="6"
 			        x="88"
 			        y="677"
-			        style="opacity:{opacityFaint};fill:{black}" />
+			        style="opacity:{opacityFaint};fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="tab-focused-bottomright"
@@ -4313,7 +4313,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        id="path90823-0"
 			        d="m 88,677 c -3.324,0 -6,2.676 -6,6 h 6 z"
-			        style="opacity:{opacityFaint};fill:{black}" />
+			        style="opacity:{opacityFaint};fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="tab-focused-bottomleft"
@@ -4328,7 +4328,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        id="path90817-3"
 			        d="m 88,677 c -3.324,0 -6,2.676 -6,6 h 6 z"
-			        style="opacity:{opacityFaint};fill:{black}" />
+			        style="opacity:{opacityFaint};fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="tab-normal-topright"
@@ -4344,7 +4344,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        id="path93069"
 			        d="m 88,677 c -3.324,0 -6,2.676 -6,6 h 6 z"
-			        style="opacity:{opacityHidden}.2;fill:{black}" />
+			        style="opacity:{opacityHidden}.2;fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="tab-normal"
@@ -5018,7 +5018,7 @@ public class KvantumSvg : ITheme
 			      id="combo-focused"
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <rect
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.035319;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.035319;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="rect44143"
 			        width="3.175"
 			        height="1.5875"
@@ -5029,14 +5029,14 @@ public class KvantumSvg : ITheme
 			      id="combo-focused-left"
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <rect
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="rect44147"
 			        width="1.5875"
 			        height="1.5875"
 			        x="32.808334"
 			        y="27.78125" />
 			     <rect
-			        style="opacity:{opacityFaint}5;fill:{black};stroke:none;stroke-width:0.0144189;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke:none;stroke-width:0.0144189;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="rect44149"
 			        width="0.52916664"
 			        height="1.5875"
@@ -5047,14 +5047,14 @@ public class KvantumSvg : ITheme
 			      id="combo-focused-top"
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <rect
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.035319;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.035319;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="rect44153"
 			        width="3.175"
 			        height="1.5875"
 			        x="34.395832"
 			        y="26.19375" />
 			     <rect
-			        style="opacity:{opacityFaint}5;fill:{black};stroke:none;stroke-width:0.0203914;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke:none;stroke-width:0.0203914;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="rect44155"
 			        width="3.175"
 			        height="0.52916664"
@@ -5066,11 +5066,11 @@ public class KvantumSvg : ITheme
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <path
 			        id="use44159"
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 39.158333,27.78125 c 0,-0.879475 -0.708025,-1.5875 -1.5875,-1.5875 v 1.5875 z" />
 			     <path
 			        id="use44161"
-			        style="opacity:{opacityFaint}5;fill:{black};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 39.158333,27.78125 c 0,-0.879475 -0.708025,-1.5875 -1.5875,-1.5875 v 0.529167 c 0.586317,0 1.058334,0.472016 1.058334,1.058333 z" />
 			   </g>
 			   <g
@@ -5078,12 +5078,12 @@ public class KvantumSvg : ITheme
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <path
 			        id="path44165"
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.0943911;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.0943911;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 130,99 c -3.324,0 -6,2.676 -6,6 h 6 z"
 			        transform="scale(0.26458333)" />
 			     <path
 			        id="path44167"
-			        style="opacity:{opacityFaint}5;fill:{black};stroke:none;stroke-width:0.0943911;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke:none;stroke-width:0.0943911;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 130,99 c -3.324,0 -6,2.676 -6,6 h 2 c 0,-2.216 1.784,-4 4,-4 z"
 			        transform="scale(0.26458333)" />
 			   </g>
@@ -5092,11 +5092,11 @@ public class KvantumSvg : ITheme
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <path
 			        id="use44171"
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 37.570833,30.95625 c 0.879475,0 1.5875,-0.708025 1.5875,-1.5875 h -1.5875 z" />
 			     <path
 			        id="use44173"
-			        style="opacity:{opacityFaint}5;fill:{black};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 37.570833,30.95625 c 0.879475,0 1.5875,-0.708025 1.5875,-1.5875 h -0.529167 c 0,0.586317 -0.472016,1.058334 -1.058333,1.058334 z" />
 			   </g>
 			   <g
@@ -5104,18 +5104,18 @@ public class KvantumSvg : ITheme
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <path
 			        id="use44177"
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 32.808333,29.36875 c 0,0.879475 0.708025,1.5875 1.5875,1.5875 v -1.5875 z" />
 			     <path
 			        id="use44179"
-			        style="opacity:{opacityFaint}5;fill:{black};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 32.808333,29.36875 c 0,0.879475 0.708025,1.5875 1.5875,1.5875 v -0.529167 c -0.586317,0 -1.058334,-0.472016 -1.058334,-1.058333 z" />
 			   </g>
 			   <g
 			      id="combo-focused-right"
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <rect
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="use44183"
 			        width="1.5875"
 			        height="1.5875"
@@ -5123,7 +5123,7 @@ public class KvantumSvg : ITheme
 			        y="27.78125"
 			        transform="scale(-1,1)" />
 			     <rect
-			        style="opacity:{opacityFaint}5;fill:{black};stroke:none;stroke-width:0.0144189;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke:none;stroke-width:0.0144189;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="use44185"
 			        width="0.52916664"
 			        height="1.5875"
@@ -5135,7 +5135,7 @@ public class KvantumSvg : ITheme
 			      id="combo-focused-bottom"
 			      transform="matrix(3.7795276,0,0,3.7795276,287,-51.000001)">
 			     <rect
-			        style="opacity:{opacityFaint};fill:{black};stroke:none;stroke-width:0.035319;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint};fill:{focusedButton};stroke:none;stroke-width:0.035319;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="use44189"
 			        width="3.175"
 			        height="1.5875"
@@ -5143,7 +5143,7 @@ public class KvantumSvg : ITheme
 			        y="-30.956251"
 			        transform="scale(1,-1)" />
 			     <rect
-			        style="opacity:{opacityFaint}5;fill:{black};stroke:none;stroke-width:0.0203914;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke:none;stroke-width:0.0203914;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="use44191"
 			        width="3.175"
 			        height="0.52916664"
@@ -5172,7 +5172,7 @@ public class KvantumSvg : ITheme
 			      id="radio-focused"
 			      transform="translate(-88,95.17182)">
 			     <rect
-			        style="opacity:{opacityHidden};fill:{black};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+			        style="opacity:{opacityHidden};fill:{focusedButton};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
 			        id="rect2259"
 			        width="24"
 			        height="24"
@@ -5183,7 +5183,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        d="m 296,122 c -5.52,0 -10,4.48 -10,10 0,5.52 4.48,10 10,10 5.52,0 10,-4.48 10,-10 0,-5.52 -4.48,-10 -10,-10 z"
 			        id="path2261"
-			        style="opacity:{opacityHidden}.2;fill:{black}" />
+			        style="opacity:{opacityHidden}.2;fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="checkbox-checked-focused"
@@ -5197,7 +5197,7 @@ public class KvantumSvg : ITheme
 			        id="path2361"
 			        style="opacity:{opacityFaint}5;fill:{white};fill-opacity:1" />
 			     <rect
-			        style="opacity:{opacityHidden};fill:{black};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+			        style="opacity:{opacityHidden};fill:{focusedButton};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
 			        id="rect2333"
 			        width="24"
 			        height="24"
@@ -5210,7 +5210,7 @@ public class KvantumSvg : ITheme
 			      id="radio-checked-focused"
 			      transform="translate(225.44338,-80.82818)">
 			     <rect
-			        style="opacity:{opacityHidden};fill:{black};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+			        style="opacity:{opacityHidden};fill:{focusedButton};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
 			        id="rect2339"
 			        width="24"
 			        height="24"
@@ -5232,7 +5232,7 @@ public class KvantumSvg : ITheme
 			      id="checkbox-tristate-focused"
 			      transform="translate(326.5,-232.82818)">
 			     <rect
-			        style="opacity:{opacityHidden};fill:{black};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+			        style="opacity:{opacityHidden};fill:{focusedButton};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
 			        id="rect2659"
 			        width="24"
 			        height="24"
@@ -5322,7 +5322,7 @@ public class KvantumSvg : ITheme
 			      id="checkbox-focused"
 			      transform="translate(-88,55.17182)">
 			     <rect
-			        style="opacity:{opacityHidden};fill:{black};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+			        style="opacity:{opacityHidden};fill:{focusedButton};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
 			        id="rect3356"
 			        width="24"
 			        height="24"
@@ -5333,7 +5333,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        d="m 296,122 c -5.52,0 -10,4.48 -10,10 0,5.52 4.48,10 10,10 5.52,0 10,-4.48 10,-10 0,-5.52 -4.48,-10 -10,-10 z"
 			        id="path3358"
-			        style="opacity:{opacityHidden}.2;fill:{black}" />
+			        style="opacity:{opacityHidden}.2;fill:{white}" />
 			   </g>
 			   <path
 			      id="menu-checkbox-checked-normal"
@@ -5354,7 +5354,7 @@ public class KvantumSvg : ITheme
 			   <path
 			      d="m 315,137 c -4.416,0 -8,3.584 -8,8 0,4.416 3.584,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.416 -3.584,-8 -8,-8 z"
 			      id="menu-radio-focused"
-			      style="opacity:{opacityHidden}.2;fill:{black};stroke-width:0.8" />
+			      style="opacity:{opacityHidden}.2;fill:{focusedButton};stroke-width:0.8" />
 			   <path
 			      d="m 285,107 c -4.416,0 -8,3.584 -8,8 0,4.416 3.584,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.416 -3.584,-8 -8,-8 z"
 			      id="menu-checkbox-normal"
@@ -5362,7 +5362,7 @@ public class KvantumSvg : ITheme
 			   <path
 			      d="m 315,107 c -4.416,0 -8,3.584 -8,8 0,4.416 3.584,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.416 -3.584,-8 -8,-8 z"
 			      id="menu-checkbox-focused"
-			      style="opacity:{opacityHidden}.2;fill:{black};stroke-width:0.8" />
+			      style="opacity:{opacityHidden}.2;fill:{focusedButton};stroke-width:0.8" />
 			   <path
 			      id="menu-checkbox-checked-focused"
 			      style="fill:#5b9bf8;fill-opacity:1"
@@ -5816,7 +5816,7 @@ public class KvantumSvg : ITheme
 			        d="m 81,852 c -4.812044,0 -8,3.20014 -8,8 h 8 z"
 			        fill="#c1c1c1"
 			        id="path915"
-			        style="opacity:{opacityFaint}5;fill:{black};stroke-width:0.888889" />
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke-width:0.888889" />
 			   </g>
 			   <g
 			      id="scrollbarslider-focused-left">
@@ -5831,7 +5831,7 @@ public class KvantumSvg : ITheme
 			        d="m 73,860 v 23 h 8 v -23 z"
 			        fill="#c1c1c1"
 			        id="path920"
-			        style="opacity:{opacityFaint}5;fill:{black}" />
+			        style="opacity:{opacityFaint}5;fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="scrollbarslider-normal-topright"
@@ -5899,7 +5899,7 @@ public class KvantumSvg : ITheme
 			        d="m 81,852 c -4.812044,0 -8,3.20014 -8,8 h 8 z"
 			        fill="#c1c1c1"
 			        id="path1943"
-			        style="opacity:{opacityFaint}5;fill:{black};stroke-width:0.888889" />
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke-width:0.888889" />
 			   </g>
 			   <g
 			      id="scrollbarslider-focused-bottomleft"
@@ -5915,7 +5915,7 @@ public class KvantumSvg : ITheme
 			        d="m 81,852 c -4.812044,0 -8,3.20014 -8,8 h 8 z"
 			        fill="#c1c1c1"
 			        id="path1949"
-			        style="opacity:{opacityFaint}5;fill:{black};stroke-width:0.888889" />
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke-width:0.888889" />
 			   </g>
 			   <g
 			      id="scrollbarslider-focused-bottomright"
@@ -5931,7 +5931,7 @@ public class KvantumSvg : ITheme
 			        d="m 81,852 c -4.812044,0 -8,3.20014 -8,8 h 8 z"
 			        fill="#c1c1c1"
 			        id="path1955"
-			        style="opacity:{opacityFaint}5;fill:{black};stroke-width:0.888889" />
+			        style="opacity:{opacityFaint}5;fill:{focusedButton};stroke-width:0.888889" />
 			   </g>
 			   <g
 			      id="scrollbarslider-focused-right"
@@ -5947,7 +5947,7 @@ public class KvantumSvg : ITheme
 			        d="m 73,860 v 23 h 8 v -23 z"
 			        fill="#c1c1c1"
 			        id="path2071"
-			        style="opacity:{opacityFaint}5;fill:{black}" />
+			        style="opacity:{opacityFaint}5;fill:{focusedButton}" />
 			   </g>
 			   <g
 			      id="scrollbarslider-pressed-topleft"
@@ -6091,7 +6091,7 @@ public class KvantumSvg : ITheme
 			        cy="697.35999"
 			        r="11"
 			        id="circle890"
-			        style="opacity:{opacityHidden}.08;fill:{black}" />
+			        style="opacity:{opacityHidden}.08;fill:{focusedButton}" />
 			     <path
 			        id="path2486"
 			        d="m 289.87134,692.97131 c -0.12781,0 -0.25558,0.0485 -0.35352,0.14649 -0.19587,0.19587 -0.19587,0.51116 0,0.70703 l 3.53516,3.53516 -3.53516,3.53515 c -0.19587,0.19587 -0.19587,0.51117 0,0.70703 0.19587,0.19587 0.51117,0.19587 0.70703,0 l 3.53516,-3.53515 3.53516,3.53515 c 0.19586,0.19587 0.51116,0.19587 0.70703,0 0.19587,-0.19586 0.19587,-0.51116 0,-0.70703 l -3.53516,-3.53515 3.53516,-3.53516 c 0.19587,-0.19587 0.19587,-0.51116 0,-0.70703 -0.19587,-0.19587 -0.51117,-0.19587 -0.70703,0 l -3.53516,3.53516 -3.53516,-3.53516 c -0.0979,-0.0979 -0.2257,-0.14649 -0.35351,-0.14649 z"
