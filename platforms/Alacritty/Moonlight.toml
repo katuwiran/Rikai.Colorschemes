@@ -13,11 +13,11 @@ text = "#2a2840"
 cursor = "#e981c6"
 
 [colors.search.matches]
-foreground = "#2a2840"
+foreground = "#3d375f"
 background = "#89537f"
 
 [colors.search.focused_match]
-foreground = "#2a2840"
+foreground = "#3d375f"
 background = "#89537f"
 
 [colors.footer_bar]
@@ -33,8 +33,8 @@ foreground = "#2a2840"
 background = "#6c3b62"
 
 [colors.selection]
-text = "#2a2840"
-background = "#e981c6"
+text = "#3d375f"
+background = "#89537f"
 
 [colors.normal]
 black = "#2a2840"
@@ -47,14 +47,14 @@ cyan = "#ec93c1"
 white = "#c0c0ff"
 
 [colors.bright]
-black = "#666684"
+black = "#3d375f"
 red = "#ef5abf"
 green = "#c188ef"
 yellow = "#80b5f7"
 blue = "#848bf4"
 magenta = "#eb517c"
 cyan = "#ec93c1"
-white = "#908caa"
+white = "#696383"
 
 [[colors.indexed_colors]]
 index = 16

@@ -81,12 +81,12 @@
     <option name="SELECTION_BACKGROUND" value="acc2df" />
     <option name="SELECTION_FOREGROUND" value="525b8f" />
     <option name="SEPARATOR_BELOW_COLOR" value=""/>
-    <option name="ScrollBar.thumbColor" value="9ca4d1" />
-    <option name="ScrollBar.thumbBorderColor" value="e2ebf2"/>
-    <option name="ScrollBar.hoverThumbColor" value="9ca4d1" />
+    <option name="ScrollBar.thumbColor" value="d2e1f2" />
+    <option name="ScrollBar.thumbBorderColor" value="d2e1f2"/>
+    <option name="ScrollBar.hoverThumbColor" value="e3e9ed" />
     <option name="ScrollBar.hoverThumbBorderColor" value="e3e9ed"/>
-    <option name="ScrollBar.Mac.thumbColor" value="e2ebf2"/>
-    <option name="ScrollBar.Mac.thumbBorderColor" value="e2ebf2"/>
+    <option name="ScrollBar.Mac.thumbColor" value="d2e1f2"/>
+    <option name="ScrollBar.Mac.thumbBorderColor" value="d2e1f2"/>
     <option name="ScrollBar.Mac.hoverThumbColor" value="e3e9ed"/>
     <option name="ScrollBar.Mac.hoverThumbBorderColor" value="e3e9ed"/>
     <option name="VCS_ANNOTATIONS_COLOR_1" value="525b8f"/>
@@ -355,25 +355,25 @@
     <!-- ANSI Color 00 -->
     <option name="CONSOLE_BLACK_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="e2ebf2"/>
+        <option name="FOREGROUND" value="eaeef1"/>
       </value>
     </option>
     <!-- ANSI Color 01 -->
     <option name="CONSOLE_RED_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="f04f4e"/>
+        <option name="FOREGROUND" value="e153b3"/>
       </value>
     </option>
     <!-- ANSI Color 02 -->
     <option name="CONSOLE_GREEN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="70b20c"/>
+        <option name="FOREGROUND" value="9e55dd"/>
       </value>
     </option>
     <!-- ANSI Color 03 -->
     <option name="CONSOLE_YELLOW_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="f28a70"/>
+        <option name="FOREGROUND" value="4897e8"/>
       </value>
     </option>
     <!-- ANSI Color 04 -->
@@ -385,25 +385,25 @@
     <!-- ANSI Color 05 -->
     <option name="CONSOLE_MAGENTA_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="e153b3"/>
+        <option name="FOREGROUND" value="f04f4e"/>
       </value>
     </option>
     <!-- ANSI Color 06 -->
     <option name="CONSOLE_CYAN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="70b20c"/>
+        <option name="FOREGROUND" value="dd6e96"/>
       </value>
     </option>
     <!-- ANSI Color 07 -->
     <option name="CONSOLE_GRAY_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="818ec9"/>
+        <option name="FOREGROUND" value="525b8f"/>
       </value>
     </option>
     <!-- ANSI Color 08 -->
     <option name="CONSOLE_DARKGRAY_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="525b8f"/>
+        <option name="FOREGROUND" value="d2e1f2"/>
       </value>
     </option>
     <!-- ANSI Color 09 -->
@@ -427,22 +427,22 @@
     <!-- other terminal colors -->
     <option name="CONSOLE_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="f04f4e"/>
+        <option name="FOREGROUND" value="e153b3"/>
       </value>
     </option>
     <option name="CONSOLE_RANGE_TO_EXECUTE">
       <value>
-        <option name="EFFECT_COLOR" value="9e55dd"/>
+        <option name="EFFECT_COLOR" value="4d5de5"/>
       </value>
     </option>
     <option name="CONSOLE_SYSTEM_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="f04f4e"/>
+        <option name="FOREGROUND" value="e153b3"/>
       </value>
     </option>
     <option name="CONSOLE_USER_INPUT">
       <value>
-        <option name="FOREGROUND" value="70b20c"/>
+        <option name="FOREGROUND" value="9e55dd"/>
       </value>
     </option>
     <option name="CONSOLE_WHITE_OUTPUT">
@@ -1502,13 +1502,13 @@
     <option name="TAB_SELECTED">
       <value>
         <option name="FOREGROUND" value="9e55dd"/>
-        <option name="BACKGROUND" value="acc2df"/>
+        <option name="BACKGROUND" value="e3e9ed"/>
       </value>
     </option>
     <option name="TAB_SELECTED_INACTIVE">
       <value>
         <option name="FOREGROUND" value="9e55dd"/>
-        <option name="BACKGROUND" value="e3e9ed"/>
+        <option name="BACKGROUND" value="d2e1f2"/>
       </value>
     </option>
     <option name="TAG_ATTR_KEY">

@@ -9,15 +9,15 @@
 
     "Badge": "#ec93c1",
     "BadgeFG": "#2a2840",
-    "Conflict": "#ec93c1",
+    "Conflict": "#848bf4",
     "Conflict.Foreground": "#2a2840",
 
     "Border0": "#332e51",
-    "Border1": "#6c3b62",
-    "Border2": "#3d375f",
+    "Border1": "#3d375f",
+    "Border2": "#696383",
 
     "FlatButton.Background": "#332e51",
-    "FlatButton.BackgroundHovered": "#6c3b62",
+    "FlatButton.BackgroundHovered": "#e981c6",
 
     "FG1": "#c0c0ff",
     "FG2": "#908caa",
