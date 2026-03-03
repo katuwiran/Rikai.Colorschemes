@@ -1,43 +1,41 @@
-namespace ColorschemeUtils;
+namespace Rikai.Colorschemes;
 
 public class KvantumSvg : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public KvantumSvg(ColorScheme colorScheme)
+	public KvantumSvg(ColorScheme scheme)
 	{
-		FilePath = $"Kvantum{_sep}{colorScheme.Name}{_sep}{colorScheme.Name}.svg";
-		Scheme   = colorScheme;
+		FilePath = Path.Combine("Kvantum", $"{scheme.Name}.svg");
+		Scheme   = scheme;
 	}
-
-	private static string _sep = $"{Path.DirectorySeparatorChar}";
-
+	
 	// for Kvantum's svg format
 	public override string ToString()
 	{
 		// Brand Colors
-		string primary       = $"#{Scheme.Keyword}";
-		string primaryActive = $"#{Scheme.Method}";
-		string alert         = $"#{Scheme.Class}";
+		string primary       = $"#{Scheme.Colors.Keyword}";
+		string primaryActive = $"#{Scheme.Colors.Method}";
+		string alert         = $"#{Scheme.Colors.Class}";
 
-		string titleBar              = $"#{Scheme.BackgroundEdges}";
-		string gray                  = $"#{Scheme.TextInactive}";
-		string interactiveBackground = $"#{Scheme.Highlight}";
+		string titleBar              = $"#{Scheme.Colors.BackgroundEdges}";
+		string gray                  = $"#{Scheme.Colors.TextInactive}";
+		string interactiveBackground = $"#{Scheme.Colors.Highlight}";
 
 		// UI Neutrals
-		string white    = $"#{Scheme.Background}";
-		string black    = $"#{Scheme.Text}";
-		string iconGray = $"#{Scheme.HighlightLow}";
-		string border   = $"#{Scheme.BackgroundOverlay}";
-		string desk     = $"#{Scheme.TextInactive}";
+		string white    = $"#{Scheme.Colors.Background}";
+		string black    = $"#{Scheme.Colors.Text}";
+		string iconGray = $"#{Scheme.Colors.HighlightLow}";
+		string border   = $"#{Scheme.Colors.BackgroundOverlay}";
+		string desk     = $"#{Scheme.Colors.TextInactive}";
 
-		string inactive         = $"#{Scheme.InactiveBackground}";          // default color of buttons 
-		string selectedListItem = $"#{Scheme.SelectionBackground}";         // in the list view
-		string focusedutton     = $"#{Scheme.HoverBackground}";             // buttons on hover
-		string buttonPressed    = $"#{Scheme.PressedBackground}";           // buttons on press
-		string toggled          = $"#{Scheme.SelectionInactiveBackground}"; // selected button on a list?
-		string disabled         = $"#{Scheme.InactiveBackground}";          // todo continue this
+		string inactive         = $"#{Scheme.Ui.InactiveBackground}";          // default color of buttons 
+		string selectedListItem = $"#{Scheme.Ui.SelectionBackground}";         // in the list view
+		string focusedutton     = $"#{Scheme.Ui.HoverBackground}";             // buttons on hover
+		string buttonPressed    = $"#{Scheme.Ui.PressedBackground}";           // buttons on press
+		string toggled          = $"#{Scheme.Ui.SelectionInactiveBackground}"; // selected button on a list?
+		string disabled         = $"#{Scheme.Ui.InactiveBackground}";          // todo continue this
 
 		// Opacity Levels
 		const string opacityHidden   = "0";

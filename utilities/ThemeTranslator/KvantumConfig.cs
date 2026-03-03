@@ -1,42 +1,40 @@
-namespace ColorschemeUtils;
+namespace Rikai.Colorschemes;
 
 public class KvantumConfig : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public KvantumConfig(ColorScheme colorScheme)
+	public KvantumConfig(ColorScheme scheme)
 	{
-		FilePath = $"Kvantum{_sep}{colorScheme.Name}{_sep}{colorScheme.Name}.kvconfig";
-		Scheme   = colorScheme;
+		FilePath = Path.Combine("Kvantum", $"{scheme.Name}.kvconfig");
+		Scheme   = scheme;
 	}
-
-	private static string _sep = $"{Path.DirectorySeparatorChar}";
-
+	
 	// for Kvantum's svg format
 	public override string ToString()
 	{
 		// Backgrounds & Surfaces
-		string baseWhite        = $"#{Scheme.Background}";
-		string altBase          = $"#{Scheme.BackgroundEdges}";
-		string windowBackground = $"#{Scheme.BackgroundOverlay}";
-		string buttonBg         = $"#{Scheme.Highlight}";
-		string midLight         = $"#{Scheme.HighlightHigh}";
-		string midGray          = $"#{Scheme.HighlightLow}";
-		string darkGray         = $"#{Scheme.TextHidden}";
+		string baseWhite        = $"#{Scheme.Colors.Background}";
+		string altBase          = $"#{Scheme.Colors.BackgroundEdges}";
+		string windowBackground = $"#{Scheme.Colors.BackgroundOverlay}";
+		string buttonBg         = $"#{Scheme.Colors.Highlight}";
+		string midLight         = $"#{Scheme.Colors.HighlightHigh}";
+		string midGray          = $"#{Scheme.Colors.HighlightLow}";
+		string darkGray         = $"#{Scheme.Colors.TextHidden}";
 
 		// Accents
-		string highlight   = $"#{Scheme.Highlight}";
-		string link        = $"#{Scheme.Class}";
-		string linkVisited = $"#{Scheme.Keyword}";
+		string highlight   = $"#{Scheme.Colors.Highlight}";
+		string link        = $"#{Scheme.Colors.Class}";
+		string linkVisited = $"#{Scheme.Colors.Keyword}";
 
 		// Typography
-		string textPrimary  = $"#{Scheme.Text}";
-		string textFocus    = $"#{Scheme.HoverText}";
-		string textPressed  = $"#{Scheme.PressedText}";
-		string textDisabled = $"#{Scheme.InactiveText}";
-		string textSelected = $"#{Scheme.SelectionText}";
-		string textToggled  = $"#{Scheme.SelectionText}";
+		string textPrimary  = $"#{Scheme.Colors.Text}";
+		string textFocus    = $"#{Scheme.Ui.HoverText}";
+		string textPressed  = $"#{Scheme.Ui.PressedText}";
+		string textDisabled = $"#{Scheme.Ui.InactiveText}";
+		string textSelected = $"#{Scheme.Ui.SelectionText}";
+		string textToggled  = $"#{Scheme.Ui.SelectionText}";
 
 		// focus frame
 		bool frame = true;

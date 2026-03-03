@@ -1,26 +1,14 @@
-namespace ColorschemeUtils;
+namespace Rikai.Colorschemes;
 
 public class Noctalia : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
-	public ColorScheme Dark     { get; set; }
-	public ColorScheme Light    { get; set; }
-
-	public Noctalia(ColorScheme darkScheme)
+	
+	public Noctalia(ColorScheme scheme)
 	{
-		Dark     = darkScheme;
-		Light    = ColorScheme.Skylight;
-		FilePath = $"Noctalia{Path.DirectorySeparatorChar}{Dark.Name}{Light.Name}.json";
-		Scheme   = Dark;
-	}
-
-	public Noctalia(ColorScheme darkScheme, ColorScheme lightScheme)
-	{
-		Dark     = darkScheme;
-		Light    = lightScheme;
-		FilePath = $"Noctalia{Path.DirectorySeparatorChar}{Dark.Name}{Light.Name}.json";
-		Scheme   = Dark;
+		FilePath = Path.Combine("Noctalia", $"{scheme.Name}.json");
+		Scheme   = scheme;
 	}
 
 	public override string ToString()
@@ -29,94 +17,94 @@ public class Noctalia : ITheme
 			$$"""
 			  {
 			      "dark": {
-			          "mPrimary": "#{{Dark.Class}}",
-			          "mOnPrimary": "#{{Dark.AccentText}}",
-			          "mSecondary": "#{{Dark.Keyword}}",
-			          "mOnSecondary": "#{{Dark.AccentText}}",
-			          "mTertiary": "#{{Dark.Method}}",
-			          "mOnTertiary": "#{{Dark.AccentText}}",
-			          "mError": "#{{Dark.Error}}",
-			          "mOnError": "#{{Dark.AccentText}}",
-			          "mSurface": "#{{Dark.Background}}",
-			          "mOnSurface": "#{{Dark.Text}}",
-			          "mHover": "#{{Dark.HoverBackground}}",
-			          "mOnHover": "#{{Dark.HoverText}}",
-			          "mSurfaceVariant": "#{{Dark.BackgroundOverlay}}",
-			          "mOnSurfaceVariant": "#{{Dark.Text}}",
-			          "mOutline": "#{{Dark.BackgroundEdges}}",
+			          "mPrimary": "#{{Scheme.Colors.Class}}",
+			          "mOnPrimary": "#{{Scheme.Ui.AccentText}}",
+			          "mSecondary": "#{{Scheme.Colors.Keyword}}",
+			          "mOnSecondary": "#{{Scheme.Ui.AccentText}}",
+			          "mTertiary": "#{{Scheme.Colors.Method}}",
+			          "mOnTertiary": "#{{Scheme.Ui.AccentText}}",
+			          "mError": "#{{Scheme.Colors.Error}}",
+			          "mOnError": "#{{Scheme.Ui.AccentText}}",
+			          "mSurface": "#{{Scheme.Colors.Background}}",
+			          "mOnSurface": "#{{Scheme.Colors.Text}}",
+			          "mHover": "#{{Scheme.Ui.HoverBackground}}",
+			          "mOnHover": "#{{Scheme.Ui.HoverText}}",
+			          "mSurfaceVariant": "#{{Scheme.Colors.BackgroundOverlay}}",
+			          "mOnSurfaceVariant": "#{{Scheme.Colors.Text}}",
+			          "mOutline": "#{{Scheme.Colors.BackgroundEdges}}",
 			          "mShadow": "#272822",
 			          "terminal": {
-			              "background": "#{{Dark.Background}}",
-			              "foreground": "#{{Dark.Text}}",
-			              "cursor": "#{{Dark.Caret}}",
-			              "cursorText": "#{{Dark.CaretText}}",
-			              "selectionBackground": "#{{Dark.SelectionBackground}}",
-			              "selectionForeground": "#{{Dark.SelectionText}}",
+			              "background": "#{{Scheme.Colors.Background}}",
+			              "foreground": "#{{Scheme.Colors.Text}}",
+			              "cursor": "#{{Scheme.Colors.Caret}}",
+			              "cursorText": "#{{Scheme.Colors.CaretText}}",
+			              "selectionBackground": "#{{Scheme.Ui.SelectionBackground}}",
+			              "selectionForeground": "#{{Scheme.Ui.SelectionText}}",
 			              "normal": {
-			                  "black": "#{{Dark.ConsoleBackground}}",
-			                  "red": "#{{Dark.ConsoleRed}}",
-			                  "green": "#{{Dark.ConsoleGreen}}",
-			                  "yellow": "#{{Dark.ConsoleYellow}}",
-			                  "blue": "#{{Dark.ConsoleBlue}}",
-			                  "magenta": "#{{Dark.ConsoleMagenta}}",
-			                  "cyan": "#{{Dark.ConsoleCyan}}",
-			                  "white": "#{{Dark.ConsoleForeground}}"
+			                  "black": "#{{Scheme.Console.Black}}",
+			                  "red": "#{{Scheme.Console.Red}}",
+			                  "green": "#{{Scheme.Console.Green}}",
+			                  "yellow": "#{{Scheme.Console.Yellow}}",
+			                  "blue": "#{{Scheme.Console.Blue}}",
+			                  "magenta": "#{{Scheme.Console.Magenta}}",
+			                  "cyan": "#{{Scheme.Console.Cyan}}",
+			                  "white": "#{{Scheme.Console.White}}"
 			              },
 			              "bright": {
-			                  "black": "#{{Dark.ConsoleBackgroundAlt}}",
-			                  "red": "#{{Dark.ConsoleRedAlt}}",
-			                  "green": "#{{Dark.ConsoleGreenAlt}}",
-			                  "yellow": "#{{Dark.ConsoleYellowAlt}}",
-			                  "blue": "#{{Dark.ConsoleBlueAlt}}",
-			                  "magenta": "#{{Dark.ConsoleMagentaAlt}}",
-			                  "cyan": "#{{Dark.ConsoleCyanAlt}}",
-			                  "white": "#{{Dark.ConsoleForegroundAlt}}"
+			                  "black": "#{{Scheme.Console.BlackAlt}}",
+			                  "red": "#{{Scheme.Console.RedAlt}}",
+			                  "green": "#{{Scheme.Console.GreenAlt}}",
+			                  "yellow": "#{{Scheme.Console.YellowAlt}}",
+			                  "blue": "#{{Scheme.Console.BlueAlt}}",
+			                  "magenta": "#{{Scheme.Console.MagentaAlt}}",
+			                  "cyan": "#{{Scheme.Console.CyanAlt}}",
+			                  "white": "#{{Scheme.Console.WhiteAlt}}"
 			              }
 			          }
 			      },
 			      "light": {
-			          "mPrimary": "#{{Light.Accent}}",
-			          "mOnPrimary": "#{{Light.AccentText}}",
-			          "mSecondary": "#{{Light.Highlight}}",
-			          "mOnSecondary": "#{{Light.AccentText}}",
-			          "mTertiary": "#{{Light.HighlightLow}}",
-			          "mOnTertiary": "#{{Light.Text}}",
-			          "mError": "#{{Light.Error}}",
-			          "mOnError": "#{{Light.AccentText}}",
-			          "mSurface": "#{{Light.Background}}",
-			          "mOnSurface": "#{{Light.Text}}",
-			          "mHover": "#{{Light.HoverBackground}}",
-			          "mOnHover": "#{{Light.HoverText}}",
-			          "mSurfaceVariant": "#{{Light.BackgroundOverlay}}",
-			          "mOnSurfaceVariant": "#{{Light.Text}}",
-			          "mOutline": "#{{Light.BackgroundEdges}}",
+			          "mPrimary": "#{{Scheme.Ui.Accent}}",
+			          "mOnPrimary": "#{{Scheme.Ui.AccentText}}",
+			          "mSecondary": "#{{Scheme.Colors.Highlight}}",
+			          "mOnSecondary": "#{{Scheme.Ui.AccentText}}",
+			          "mTertiary": "#{{Scheme.Colors.HighlightLow}}",
+			          "mOnTertiary": "#{{Scheme.Colors.Text}}",
+			          "mError": "#{{Scheme.Colors.Error}}",
+			          "mOnError": "#{{Scheme.Ui.AccentText}}",
+			          "mSurface": "#{{Scheme.Colors.Background}}",
+			          "mOnSurface": "#{{Scheme.Colors.Text}}",
+			          "mHover": "#{{Scheme.Ui.HoverBackground}}",
+			          "mOnHover": "#{{Scheme.Ui.HoverText}}",
+			          "mSurfaceVariant": "#{{Scheme.Colors.BackgroundOverlay}}",
+			          "mOnSurfaceVariant": "#{{Scheme.Colors.Text}}",
+			          "mOutline": "#{{Scheme.Colors.BackgroundEdges}}",
 			          "mShadow": "#272822",
 			          "terminal": {
-			              "background": "#{{Light.Background}}",
-			              "foreground": "#{{Light.Text}}",
-			              "cursor": "#{{Light.Caret}}",
-			              "cursorText": "#{{Light.CaretText}}",
-			              "selectionBackground": "#{{Light.SelectionBackground}}",
-			              "selectionForeground": "#{{Light.SelectionText}}",
+			              "background": "#{{Scheme.Colors.Background}}",
+			              "foreground": "#{{Scheme.Colors.Text}}",
+			              "cursor": "#{{Scheme.Colors.Caret}}",
+			              "cursorText": "#{{Scheme.Colors.CaretText}}",
+			              "selectionBackground": "#{{Scheme.Ui.SelectionBackground}}",
+			              "selectionForeground": "#{{Scheme.Ui.SelectionText}}",
 			              "normal": {
-			                  "black": "#{{Light.ConsoleBackground}}",
-			                  "red": "#{{Light.ConsoleRed}}",
-			                  "green": "#{{Light.ConsoleGreen}}",
-			                  "yellow": "#{{Light.ConsoleYellow}}",
-			                  "blue": "#{{Light.ConsoleBlue}}",
-			                  "magenta": "#{{Light.ConsoleMagenta}}",
-			                  "cyan": "#{{Light.ConsoleCyan}}",
-			                  "white": "#{{Light.ConsoleForeground}}"
+			                  "black": "#{{Scheme.Console.Black}}",
+			                  "red": "#{{Scheme.Console.Red}}",
+			                  "green": "#{{Scheme.Console.Green}}",
+			                  "yellow": "#{{Scheme.Console.Yellow}}",
+			                  "blue": "#{{Scheme.Console.Blue}}",
+			                  "magenta": "#{{Scheme.Console.Magenta}}",
+			                  "cyan": "#{{Scheme.Console.Cyan}}",
+			                  "white": "#{{Scheme.Console.White}}"
 			              },
 			              "bright": {
-			                  "black": "#{{Light.ConsoleBackgroundAlt}}",
-			                  "red": "#{{Light.ConsoleRedAlt}}",
-			                  "green": "#{{Light.ConsoleGreenAlt}}",
-			                  "yellow": "#{{Light.ConsoleYellowAlt}}",
-			                  "blue": "#{{Light.ConsoleBlueAlt}}",
-			                  "magenta": "#{{Light.ConsoleMagentaAlt}}",
-			                  "cyan": "#{{Light.ConsoleCyanAlt}}",
-			                  "white": "#{{Light.ConsoleForegroundAlt}}"
+			                  "black": "#{{Scheme.Console.BlackAlt}}",
+			                  "red": "#{{Scheme.Console.RedAlt}}",
+			                  "green": "#{{Scheme.Console.GreenAlt}}",
+			                  "yellow": "#{{Scheme.Console.YellowAlt}}",
+			                  "blue": "#{{Scheme.Console.BlueAlt}}",
+			                  "magenta": "#{{Scheme.Console.MagentaAlt}}",
+			                  "cyan": "#{{Scheme.Console.CyanAlt}}",
+			                  "white": "#{{Scheme.Console.WhiteAlt}}"
 			              }
 			          }
 			      }

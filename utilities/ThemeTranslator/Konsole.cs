@@ -1,14 +1,14 @@
-namespace ColorschemeUtils;
+namespace Rikai.Colorschemes;
 
 public class Konsole : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public Konsole(ColorScheme colorScheme)
+	public Konsole(ColorScheme scheme)
 	{
-		FilePath = $"Konsole{Path.DirectorySeparatorChar}{colorScheme.Name}.colorscheme";
-		Scheme   = colorScheme;
+		FilePath = Path.Combine("Konsole", $"{scheme.Name}.colorscheme");
+		Scheme   = scheme;
 	}
 
 	// for Kvantum's svg format
@@ -17,94 +17,94 @@ public class Konsole : ITheme
 		return
 			$"""
 			 [Background]
-			 Color=#{Scheme.Background}
+			 Color=#{Scheme.Colors.Background}
 
 			 [BackgroundFaint]
-			 Color=#{Scheme.BackgroundEdges}
+			 Color=#{Scheme.Colors.BackgroundEdges}
 
 			 [BackgroundIntense]
-			 Color=#{Scheme.BackgroundOverlay}
+			 Color=#{Scheme.Colors.BackgroundOverlay}
 
 			 [Color0]
-			 Color=#{Scheme.ConsoleBackground}
+			 Color=#{Scheme.Console.Black}
 
 			 [Color0Faint]
-			 Color=#{Scheme.ConsoleBackground}
+			 Color=#{Scheme.Console.Black}
 
 			 [Color0Intense]
-			 Color=#{Scheme.ConsoleBackground}
+			 Color=#{Scheme.Console.Black}
 
 			 [Color1]
-			 Color=#{Scheme.ConsoleRed}
+			 Color=#{Scheme.Console.Red}
 
 			 [Color1Faint]
-			 Color=#{Scheme.ConsoleRed}
+			 Color=#{Scheme.Console.Red}
 
 			 [Color1Intense]
-			 Color=#{Scheme.ConsoleRed}
+			 Color=#{Scheme.Console.Red}
 
 			 [Color2]
-			 Color=#{Scheme.ConsoleGreen}
+			 Color=#{Scheme.Console.Green}
 
 			 [Color2Faint]
-			 Color=#{Scheme.ConsoleGreen}
+			 Color=#{Scheme.Console.Green}
 
 			 [Color2Intense]
-			 Color=#{Scheme.ConsoleGreen}
+			 Color=#{Scheme.Console.Green}
 
 			 [Color3]
-			 Color=#{Scheme.ConsoleYellow}
+			 Color=#{Scheme.Console.Yellow}
 
 			 [Color3Faint]
-			 Color=#{Scheme.ConsoleYellow}
+			 Color=#{Scheme.Console.Yellow}
 
 			 [Color3Intense]
-			 Color=#{Scheme.ConsoleYellow}
+			 Color=#{Scheme.Console.Yellow}
 
 			 [Color4]
-			 Color=#{Scheme.ConsoleBlue}
+			 Color=#{Scheme.Console.Blue}
 
 			 [Color4Faint]
-			 Color=#{Scheme.ConsoleBlue}
+			 Color=#{Scheme.Console.Blue}
 
 			 [Color4Intense]
-			 Color=#{Scheme.ConsoleBlue}
+			 Color=#{Scheme.Console.Blue}
 
 			 [Color5]
-			 Color=#{Scheme.ConsoleMagenta}
+			 Color=#{Scheme.Console.Magenta}
 
 			 [Color5Faint]
-			 Color=#{Scheme.ConsoleMagenta}
+			 Color=#{Scheme.Console.Magenta}
 
 			 [Color5Intense]
-			 Color=#{Scheme.ConsoleMagenta}
+			 Color=#{Scheme.Console.Magenta}
 
 			 [Color6]
-			 Color=#{Scheme.ConsoleCyan}
+			 Color=#{Scheme.Console.Cyan}
 
 			 [Color6Faint]
-			 Color=#{Scheme.ConsoleCyan}
+			 Color=#{Scheme.Console.Cyan}
 
 			 [Color6Intense]
-			 Color=#{Scheme.ConsoleCyan}
+			 Color=#{Scheme.Console.Cyan}
 
 			 [Color7]
-			 Color=#{Scheme.ConsoleForeground}
+			 Color=#{Scheme.Console.White}
 
 			 [Color7Faint]
-			 Color=#{Scheme.ConsoleForeground}
+			 Color=#{Scheme.Console.White}
 
 			 [Color7Intense]
-			 Color=#{Scheme.ConsoleForeground}
+			 Color=#{Scheme.Console.White}
 
 			 [Foreground]
-			 Color=#{Scheme.Text}
+			 Color=#{Scheme.Colors.Text}
 
 			 [ForegroundFaint]
-			 Color=#{Scheme.Text}
+			 Color=#{Scheme.Colors.Text}
 
 			 [ForegroundIntense]
-			 Color=#{Scheme.Text}
+			 Color=#{Scheme.Colors.Text}
 
 			 [General]
 			 Blur=false

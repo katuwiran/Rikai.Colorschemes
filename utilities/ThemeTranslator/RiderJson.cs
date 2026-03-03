@@ -1,20 +1,16 @@
-namespace ColorschemeUtils;
+namespace Rikai.Colorschemes;
 
 public class RiderJson : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public RiderJson(ColorScheme colorScheme)
+	public RiderJson(ColorScheme scheme)
 	{
-		FilePath = $"{_prefix}{colorScheme.Name}.theme.json";
-		Scheme   = colorScheme;
+		FilePath = Path.Combine("Jetbrains", $"{scheme.Name}.theme.json");
+		Scheme   = scheme;
 	}
-
-	private string _prefix => $"Jetbrains{_sep}resources{_sep}theme{_sep}";
-	private string _sep    => $"{Path.DirectorySeparatorChar}";
-
-	// for Kvantum's svg format
+	
 	public override string ToString()
 	{
 		return
@@ -25,49 +21,49 @@ public class RiderJson : ITheme
 			  	"author": "Rikai. built on top of catppuccin's template",
 			  	"editorScheme": "/{{Scheme.Name}}.xml",
 			  	"colors": {
-			  		"bg": "#{{Scheme.Background}}",
-			  		"borderLow": "#{{Scheme.BackgroundEdges}}",
-			  		"border": "#{{Scheme.BackgroundOverlay}}",
-			  		"bgOverlay": "#{{Scheme.BackgroundOverlay}}",
-			  		"faded": "#{{Scheme.TextFaded}}",
-			  		"inactive": "#{{Scheme.TextInactive}}",
-			  		"hidden": "#{{Scheme.TextHidden}}",
-			  		"class": "#{{Scheme.Class}}",
-			  		"keyword": "#{{Scheme.Keyword}}",
-			  		"field": "#{{Scheme.Field}}",
-			  		"method": "#{{Scheme.Method}}",
-			  		"string": "#{{Scheme.String}}",
-			  		"numeral": "#{{Scheme.Numeral}}",
-			  		"info": "#{{Scheme.Info}}",
-			  		"warning": "#{{Scheme.Warning}}",
-			  		"error": "#{{Scheme.Error}}",
-			  		"text": "#{{Scheme.Text}}",
-			  		"hiLow": "#{{Scheme.HighlightLow}}",
-			  		"highlight": "#{{Scheme.Highlight}}",
-			  		"hiHigh": "#{{Scheme.HighlightHigh}}",
-			  		"black": "#{{Scheme.Black}}",
-			  		"red": "#{{Scheme.Red}}",
-			  		"green": "#{{Scheme.Green}}",
-			  		"yellow": "#{{Scheme.Yellow}}",
-			  		"blue": "#{{Scheme.Blue}}",
-			  		"magenta": "#{{Scheme.Magenta}}",
-			  		"cyan": "#{{Scheme.Cyan}}",
-			  		"white": "#{{Scheme.White}}",
-			  		"accentColor": "#{{Scheme.Keyword}}",
-			  		"secondaryAccentColor": "#{{Scheme.Method}}",
-			  		"buttonForeground": "#{{Scheme.Text}}",
-			  		"inactiveBackground": "#{{Scheme.TextHidden}}",
-			  		"inactiveForeground": "#{{Scheme.TextHidden}}",
-			  		"hoverBackground": "#{{Scheme.HoverBackground}}",
-			  		"hoverForeground": "#{{Scheme.HoverText}}",
-			  		"pressedBackground": "#{{Scheme.PressedBackground}}",
-			  		"selectionBackground": "#{{Scheme.SelectionBackground}}",
-			  		"selectionForeground": "#{{Scheme.SelectionText}}",
-			  		"selectionInactiveBackground": "#{{Scheme.SelectionInactiveBackground}}",
-			  		"selectionInactiveForeground": "#{{Scheme.SelectionInactiveText}}",
-			  		"searchMatchBackground": "#{{Scheme.HighlightLow}}",
-			  		"gitLogBackground": "#{{Scheme.Background}}",
-			  		"dragAndDropBackground": "#{{Scheme.Background}}"
+			  		"bg": "#{{Scheme.Colors.Background}}",
+			  		"borderLow": "#{{Scheme.Colors.BackgroundEdges}}",
+			  		"border": "#{{Scheme.Colors.BackgroundOverlay}}",
+			  		"bgOverlay": "#{{Scheme.Colors.BackgroundOverlay}}",
+			  		"faded": "#{{Scheme.Colors.TextFaded}}",
+			  		"inactive": "#{{Scheme.Colors.TextInactive}}",
+			  		"hidden": "#{{Scheme.Colors.TextHidden}}",
+			  		"class": "#{{Scheme.Colors.Class}}",
+			  		"keyword": "#{{Scheme.Colors.Keyword}}",
+			  		"field": "#{{Scheme.Colors.Field}}",
+			  		"method": "#{{Scheme.Colors.Method}}",
+			  		"string": "#{{Scheme.Colors.String}}",
+			  		"numeral": "#{{Scheme.Colors.Numeral}}",
+			  		"info": "#{{Scheme.Colors.Info}}",
+			  		"warning": "#{{Scheme.Colors.Warning}}",
+			  		"error": "#{{Scheme.Colors.Error}}",
+			  		"text": "#{{Scheme.Colors.Text}}",
+			  		"hiLow": "#{{Scheme.Colors.HighlightLow}}",
+			  		"highlight": "#{{Scheme.Colors.Highlight}}",
+			  		"hiHigh": "#{{Scheme.Colors.HighlightHigh}}",
+			  		"black": "#{{Scheme.Base8.Black}}",
+			  		"red": "#{{Scheme.Base8.Red}}",
+			  		"green": "#{{Scheme.Base8.Green}}",
+			  		"yellow": "#{{Scheme.Base8.Yellow}}",
+			  		"blue": "#{{Scheme.Base8.Blue}}",
+			  		"magenta": "#{{Scheme.Base8.Magenta}}",
+			  		"cyan": "#{{Scheme.Base8.Cyan}}",
+			  		"white": "#{{Scheme.Base8.White}}",
+			  		"accentColor": "#{{Scheme.Colors.Keyword}}",
+			  		"secondaryAccentColor": "#{{Scheme.Colors.Method}}",
+			  		"buttonForeground": "#{{Scheme.Colors.Text}}",
+			  		"inactiveBackground": "#{{Scheme.Colors.TextHidden}}",
+			  		"inactiveForeground": "#{{Scheme.Colors.TextHidden}}",
+			  		"hoverBackground": "#{{Scheme.Ui.HoverBackground}}",
+			  		"hoverForeground": "#{{Scheme.Ui.HoverText}}",
+			  		"pressedBackground": "#{{Scheme.Ui.PressedBackground}}",
+			  		"selectionBackground": "#{{Scheme.Colors.HighlightLow}}",
+			  		"selectionForeground": "#{{Scheme.Colors.Text}}",
+			  		"selectionInactiveBackground": "#{{Scheme.Ui.SelectionInactiveBackground}}",
+			  		"selectionInactiveForeground": "#{{Scheme.Ui.SelectionInactiveText}}",
+			  		"searchMatchBackground": "#{{Scheme.Colors.HighlightLow}}",
+			  		"gitLogBackground": "#{{Scheme.Colors.Background}}",
+			  		"dragAndDropBackground": "#{{Scheme.Colors.Background}}"
 			  	},
 			  	"ui": {
 			  		"*": {
@@ -220,12 +216,12 @@ public class RiderJson : ITheme
 			  			"unselectedBlend": 0.9
 			  		},
 			  		"FileColor": {
-			  			"Blue": "{{Scheme.Field}}",
-			  			"Green": "#{{Scheme.Numeral}}",
-			  			"Orange": "#{{Scheme.Warning}}",
-			  			"Rose": "#{{Scheme.Error}}",
-			  			"Violet": "#{{Scheme.Method}}",
-			  			"Yellow": "#{{Scheme.Info}}"
+			  			"Blue": "{{Scheme.Colors.Field}}",
+			  			"Green": "#{{Scheme.Colors.Numeral}}",
+			  			"Orange": "#{{Scheme.Colors.Warning}}",
+			  			"Rose": "#{{Scheme.Colors.Error}}",
+			  			"Violet": "#{{Scheme.Colors.Method}}",
+			  			"Yellow": "#{{Scheme.Colors.Info}}"
 			  		},
 			  		"Label": {
 			  			"background": "bg",
@@ -269,7 +265,7 @@ public class RiderJson : ITheme
 			  			"Tab": {
 			  				"background": "bg",
 			  				"borderColor": "border",
-			  				"selectedBackground": "selectionBackground",
+			  				"selectedBackground": "pressedBackground",
 			  				"selectedForeground": "selectionForeground",
 			  				"hoverBackground": "hoverBackground",
 			  				"selectedInactiveBackground": "selectionInactiveBackground",
@@ -277,6 +273,10 @@ public class RiderJson : ITheme
 			  			}
 			  		},
 			  		"MemoryIndicator": {
+			  			"allocatedBackground": "bg",
+			  			"usedBackground": "selectionBackground"
+			  		},
+			  		"Menu": {
 			  			"allocatedBackground": "bg",
 			  			"usedBackground": "selectionBackground"
 			  		},
@@ -391,7 +391,7 @@ public class RiderJson : ITheme
 			  		},
 			  		"SearchEverywhere": {
 			  			"SearchField": {
-			  				"background": "bgOverlay"
+			  				"background": "highlight"
 			  			},
 			  			"Tab": {
 			  				"selectedBackground": "bgOverlay",
@@ -443,11 +443,11 @@ public class RiderJson : ITheme
 			  			"background": "bg"
 			  		},
 			  		"TextField": {
-			  			"background": "#{{Scheme.Background}}",
+			  			"background": "#{{Scheme.Colors.Background}}",
 			  			"caretForeground": "bgOverlay",
-			  			"foreground": "#{{Scheme.Text}}",
-			  			"selectionForeground": "#{{Scheme.Text}}",
-			  			"selectionBackground": "#{{Scheme.Highlight}}"
+			  			"foreground": "#{{Scheme.Colors.Text}}",
+			  			"selectionForeground": "#{{Scheme.Colors.Text}}",
+			  			"selectionBackground": "#{{Scheme.Colors.Highlight}}"
 			  		},
 			  		"ToggleButton": {
 			  			"buttonColor": "secondaryAccentColor",
@@ -541,37 +541,37 @@ public class RiderJson : ITheme
 			  	},
 			  	"icons": {
 			  		"ColorPalette": {
-			  			"Actions.Blue": "#{{Scheme.Field}}",
-			  			"Actions.Green": "#{{Scheme.Numeral}}",
-			  			"Actions.Grey": "#{{Scheme.TextHidden}}",
-			  			"Actions.GreyInline": "#{{Scheme.Field}}",
-			  			"Actions.GreyInline.Dark": "#{{Scheme.Field}}",
-			  			"Actions.Red": "#{{Scheme.Error}}",
-			  			"Actions.Yellow": "#{{Scheme.Info}}",
-			  			"Objects.BlackText": "#{{Scheme.BackgroundEdges}}",
-			  			"Objects.Blue": "#{{Scheme.Field}}",
-			  			"Objects.Green": "#{{Scheme.Numeral}}",
-			  			"Objects.Grey": "#{{Scheme.TextHidden}}",
-			  			"Objects.Pink": "#{{Scheme.Keyword}}",
-			  			"Objects.Purple": "#{{Scheme.Method}}",
-			  			"Objects.Red": "#{{Scheme.Error}}",
-			  			"Objects.RedStatus": "#{{Scheme.Error}}",
-			  			"Objects.Yellow": "#{{Scheme.Info}}",
-			  			"Objects.YellowDark": "#{{Scheme.Warning}}",
-			  			"Checkbox.Background.Default": "#{{Scheme.Background}}",
-			  			"Checkbox.Background.Default.Dark": "#{{Scheme.BackgroundEdges}}",
-			  			"Checkbox.Background.Disabled": "#{{Scheme.Background}}",
-			  			"Checkbox.Background.Disabled.Dark": "#{{Scheme.BackgroundEdges}}",
-			  			"Checkbox.Background.Selected": "#{{Scheme.HighlightHigh}}",
-			  			"Checkbox.Background.Selected.Dark": "#{{Scheme.HighlightLow}}",
-			  			"Checkbox.Border.Default": "#{{Scheme.BackgroundEdges}}",
-			  			"Checkbox.Border.Disabled": "#{{Scheme.BackgroundEdges}}",
-			  			"Checkbox.Border.Selected": "#{{Scheme.BackgroundEdges}}",
-			  			"Checkbox.Foreground.Disabled": "#{{Scheme.TextHidden}}",
-			  			"Checkbox.Foreground.Disabled.Dark": "#{{Scheme.TextHidden}}",
-			  			"Checkbox.Foreground.Selected": "#{{Scheme.Class}}",
-			  			"Checkbox.Foreground.Selected.Dark": "#{{Scheme.Class}}",
-			  			"Tree.iconColor": "#{{Scheme.Text}}"
+			  			"Actions.Blue": "#{{Scheme.Colors.Field}}",
+			  			"Actions.Green": "#{{Scheme.Colors.Numeral}}",
+			  			"Actions.Grey": "#{{Scheme.Colors.TextHidden}}",
+			  			"Actions.GreyInline": "#{{Scheme.Colors.Field}}",
+			  			"Actions.GreyInline.Dark": "#{{Scheme.Colors.Field}}",
+			  			"Actions.Red": "#{{Scheme.Colors.Error}}",
+			  			"Actions.Yellow": "#{{Scheme.Colors.Info}}",
+			  			"Objects.BlackText": "#{{Scheme.Colors.BackgroundEdges}}",
+			  			"Objects.Blue": "#{{Scheme.Colors.Field}}",
+			  			"Objects.Green": "#{{Scheme.Colors.Numeral}}",
+			  			"Objects.Grey": "#{{Scheme.Colors.TextHidden}}",
+			  			"Objects.Pink": "#{{Scheme.Colors.Keyword}}",
+			  			"Objects.Purple": "#{{Scheme.Colors.Method}}",
+			  			"Objects.Red": "#{{Scheme.Colors.Error}}",
+			  			"Objects.RedStatus": "#{{Scheme.Colors.Error}}",
+			  			"Objects.Yellow": "#{{Scheme.Colors.Info}}",
+			  			"Objects.YellowDark": "#{{Scheme.Colors.Warning}}",
+			  			"Checkbox.Background.Default": "#{{Scheme.Colors.Background}}",
+			  			"Checkbox.Background.Default.Dark": "#{{Scheme.Colors.BackgroundEdges}}",
+			  			"Checkbox.Background.Disabled": "#{{Scheme.Colors.Background}}",
+			  			"Checkbox.Background.Disabled.Dark": "#{{Scheme.Colors.BackgroundEdges}}",
+			  			"Checkbox.Background.Selected": "#{{Scheme.Colors.HighlightHigh}}",
+			  			"Checkbox.Background.Selected.Dark": "#{{Scheme.Colors.HighlightLow}}",
+			  			"Checkbox.Border.Default": "#{{Scheme.Colors.BackgroundEdges}}",
+			  			"Checkbox.Border.Disabled": "#{{Scheme.Colors.BackgroundEdges}}",
+			  			"Checkbox.Border.Selected": "#{{Scheme.Colors.BackgroundEdges}}",
+			  			"Checkbox.Foreground.Disabled": "#{{Scheme.Colors.TextHidden}}",
+			  			"Checkbox.Foreground.Disabled.Dark": "#{{Scheme.Colors.TextHidden}}",
+			  			"Checkbox.Foreground.Selected": "#{{Scheme.Colors.Class}}",
+			  			"Checkbox.Foreground.Selected.Dark": "#{{Scheme.Colors.Class}}",
+			  			"Tree.iconColor": "#{{Scheme.Colors.Text}}"
 			  		}
 			  	}
 			  }

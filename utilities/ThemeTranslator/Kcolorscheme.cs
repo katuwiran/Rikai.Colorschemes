@@ -1,14 +1,14 @@
-namespace ColorschemeUtils;
+namespace Rikai.Colorschemes;
 
 public class Kcolorscheme : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public Kcolorscheme(ColorScheme colorScheme)
+	public Kcolorscheme(ColorScheme scheme)
 	{
-		FilePath = $"Kcolorscheme{Path.DirectorySeparatorChar}{colorScheme.Name.ToLower()}.colors";
-		Scheme   = colorScheme;
+		FilePath = Path.Combine("Kcolorscheme", scheme.Name.ToLower(), "colors");
+		Scheme   = scheme;
 	}
 
 	// for Kvantum's svg format
