@@ -30,7 +30,7 @@ theme[proc_misc]="#eb517c"
 
 # CPU, Memory, Network, Proc box outline colors
 theme[cpu_box]="#c188ef" #Mauve
-theme[mem_box]="#6a3654" #Green
+theme[mem_box]="#c8e899" #Green
 theme[net_box]="#ef5abf" #Maroon
 theme[proc_box]="#848bf4" #Blue
 
@@ -38,12 +38,12 @@ theme[proc_box]="#848bf4" #Blue
 theme[div_line]="#666684"
 
 # Temperature graph color (Green -> Yellow -> Red)
-theme[temp_start]="#6a3654"
+theme[temp_start]="#c8e899"
 theme[temp_mid]="#fcb986"
-theme[temp_end]="#6a3654"
+theme[temp_end]="#c8e899"
 
 # CPU graph colors (Teal -> Plum)
-theme[cpu_start]="#6a3654"
+theme[cpu_start]="#c8e899"
 theme[cpu_mid]="#80b5f7"
 theme[cpu_end]="#c188ef"
 
@@ -63,7 +63,7 @@ theme[available_mid]="#ef5abf"
 theme[available_end]="#eb517c"
 
 # Mem/Disk used meter (Green -> Sky)
-theme[used_start]="#6a3654"
+theme[used_start]="#c8e899"
 theme[used_mid]="#80b5f7"
 theme[used_end]="#848bf4"
 
@@ -73,7 +73,7 @@ theme[download_mid]="#ef5abf"
 theme[download_end]="#eb517c"
 
 # Upload graph colors (Green -> Sky)
-theme[upload_start]="#6a3654"
+theme[upload_start]="#c8e899"
 theme[upload_mid]="#80b5f7"
 theme[upload_end]="#848bf4"
 

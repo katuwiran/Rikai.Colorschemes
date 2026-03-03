@@ -34,5 +34,6 @@
   <extensions defaultExtensionNs="com.intellij">
     <themeProvider id="Moonlight" path="/theme/Moonlight.theme.json"/>
     <themeProvider id="Skylight" path="/theme/Skylight.theme.json"/>
+    <themeProvider id="Chaos" path="/theme/Chaos.theme.json"/>
   </extensions>
 </idea-plugin>
