@@ -16,21 +16,31 @@ public partial class ColorScheme
 		TextFaded         = "818ec9",
 		Text              = "525b8f",
 
-		Magenta = "e153b3",
-		Plum    = "dd6e96",
-		Blue    = "4d5de5",
-		Purple  = "9e55dd",
-		Cyan    = "4897e8",
-		Green   = "70b20c", // todo should be closer to cyan than orange
-		Yellow  = "d19700",
-		Red     = "f04f4e",
-		Orange  = "f28a70",
+		Class   = "e153b3",
+		Keyword = "dd6e96",
+		Method  = "9e55dd",
+		Field   = "4d5de5",
+		String  = "4897e8",
+		Numeral = "70b20c", // todo should be closer to cyan than orange
+		Info    = "d19700",
+		Warning = "f28a70",
+		Error   = "f04f4e",
+
+		ClassName   = "magenta",
+		KeywordName = "plum",
+		MethodName  = "blue",
+		FieldName   = "purple",
+		StringName  = "cyan",
+		NumeralName = "green",
+		InfoName    = "yellow",
+		WarningName = "orange",
+		ErrorName   = "red",
 
 		// todo follow changes in moonlight's highlighting
 		HighlightLow  = "e3e9ed",
 		Highlight     = "acc2df",
 		HighlightHigh = "85bbff",
-		
+
 		// todo adapt this to light mode
 		DiffAddedHighlight    = "444d56",
 		DiffAddedBackground   = "556565",
