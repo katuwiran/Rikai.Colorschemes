@@ -128,6 +128,8 @@ public class UiColors
 	public required string HoverText                   { get; set; } // text on hover
 	public required string InactiveBackground          { get; set; } // inactive button
 	public required string InactiveText                { get; set; } // inactive text on buttons
+	public required string MatchBackground             { get; set; }
+	public required string MatchText                   { get; set; }
 	public required string SelectionBackground         { get; set; } // selection
 	public required string SelectionText               { get; set; } // selected text
 	public required string SelectionInactiveText       { get; set; } // selected text but unfocused
