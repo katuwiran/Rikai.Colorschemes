@@ -13,8 +13,8 @@ public class RiderXml : ITheme
 
 	public override string ToString()
 	{
-		const string FontBold   = "1";
-		const string FontItalic = "2";
+		const string fontBold   = "1";
+		const string fontItalic = "2";
 		return
 			$"""
 			 <scheme name="{Scheme.Name}" version="142" parent_scheme="Darcula">
@@ -153,7 +153,7 @@ public class RiderXml : ITheme
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.Error}" />
 			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Colors.Error}" />
-			         <option name="EFFECT_TYPE" value="{FontItalic}" />
+			         <option name="EFFECT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="BASH.CONDITIONAL">
@@ -179,7 +179,7 @@ public class RiderXml : ITheme
 			     <option name="BLOCK_TERMINAL_COMMAND">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.Field}"/>
-			         <option name="FONT_TYPE" value="{FontBold}"/>
+			         <option name="FONT_TYPE" value="{fontBold}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_CURRENT_SEARCH_ENTRY">
@@ -374,55 +374,55 @@ public class RiderXml : ITheme
 			     <!-- ANSI Color 00 -->
 			     <option name="CONSOLE_BLACK_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.BackgroundEdges}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Black}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 01 -->
 			     <option name="CONSOLE_RED_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Error}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Red}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 02 -->
 			     <option name="CONSOLE_GREEN_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Numeral}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Green}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 03 -->
 			     <option name="CONSOLE_YELLOW_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Warning}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Yellow}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 04 -->
 			     <option name="CONSOLE_BLUE_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Field}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Blue}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 05 -->
 			     <option name="CONSOLE_MAGENTA_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Class}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Magenta}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 06 -->
 			     <option name="CONSOLE_CYAN_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Numeral}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Cyan}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 07 -->
 			     <option name="CONSOLE_GRAY_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.TextFaded}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.White}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 08 -->
 			     <option name="CONSOLE_DARKGRAY_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Text}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.BlackAlt}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 09 -->
@@ -440,33 +440,33 @@ public class RiderXml : ITheme
 			     <!-- ANSI Color 15 -->
 			     <option name="CONSOLE_NORMAL_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Text}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.White}"/>
 			       </value>
 			     </option>
 			     <!-- other terminal colors -->
 			     <option name="CONSOLE_ERROR_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Error}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Red}"/>
 			       </value>
 			     </option>
 			     <option name="CONSOLE_RANGE_TO_EXECUTE">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Colors.Method}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Console.Blue}"/>
 			       </value>
 			     </option>
 			     <option name="CONSOLE_SYSTEM_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Error}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Red}"/>
 			       </value>
 			     </option>
 			     <option name="CONSOLE_USER_INPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Numeral}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.Green}"/>
 			       </value>
 			     </option>
 			     <option name="CONSOLE_WHITE_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Text}"/>
+			         <option name="FOREGROUND" value="{Scheme.Console.White}"/>
 			       </value>
 			     </option>
 			     <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
@@ -726,7 +726,7 @@ public class RiderXml : ITheme
 			     <option name="DEFAULT_BLOCK_COMMENT">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.TextFaded}" />
-			         <option name="FONT_TYPE" value="{FontItalic}" />
+			         <option name="FONT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_BRACES">
@@ -762,7 +762,7 @@ public class RiderXml : ITheme
 			     <option name="DEFAULT_DOC_COMMENT">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.TextFaded}" />
-			         <option name="FONT_TYPE" value="{FontItalic}" />
+			         <option name="FONT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_DOC_COMMENT_TAG">
@@ -830,7 +830,7 @@ public class RiderXml : ITheme
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.Error}" />
 			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Colors.Error}" />
-			         <option name="EFFECT_TYPE" value="{FontItalic}" />
+			         <option name="EFFECT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_KEYWORD">
@@ -847,7 +847,7 @@ public class RiderXml : ITheme
 			     <option name="DEFAULT_LINE_COMMENT">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.TextFaded}" />
-			         <option name="FONT_TYPE" value="{FontItalic}" />
+			         <option name="FONT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_LOCAL_VARIABLE">
@@ -978,7 +978,7 @@ public class RiderXml : ITheme
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.Error}" />
 			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Colors.Error}" />
-			         <option name="EFFECT_TYPE" value="{FontItalic}" />
+			         <option name="EFFECT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="EXECUTIONPOINT_ATTRIBUTES">
@@ -1020,7 +1020,7 @@ public class RiderXml : ITheme
 			     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
 			       <value>
 			         <option name="BACKGROUND" value="{Scheme.Colors.BackgroundOverlay}" />
-			         <option name="FONT_TYPE" value="{FontBold}" />
+			         <option name="FONT_TYPE" value="{fontBold}" />
 			         <option name="EFFECT_TYPE" value="1" />
 			       </value>
 			     </option>
@@ -1064,7 +1064,7 @@ public class RiderXml : ITheme
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.Info}" />
 			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Colors.Info}" />
-			         <option name="EFFECT_TYPE" value="{FontItalic}" />
+			         <option name="EFFECT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="INLAY_DEFAULT">
@@ -1196,13 +1196,13 @@ public class RiderXml : ITheme
 			     <option name="MARKDOWN_BOLD">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.Error}"/>
-			         <option name="FONT_TYPE" value="{FontBold}"/>
+			         <option name="FONT_TYPE" value="{fontBold}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_BOLD_MARKER">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.BackgroundOverlay}"/>
-			         <option name="FONT_TYPE" value="{FontBold}"/>
+			         <option name="FONT_TYPE" value="{fontBold}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_CODE_FENCE">
@@ -1268,7 +1268,7 @@ public class RiderXml : ITheme
 			     <option name="MARKDOWN_ITALIC_MARKER">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.BackgroundOverlay}"/>
-			         <option name="FONT_TYPE" value="{FontBold}"/>
+			         <option name="FONT_TYPE" value="{fontBold}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_LINK_DESTINATION">
@@ -1326,7 +1326,7 @@ public class RiderXml : ITheme
 			     <option name="MATCHED_BRACE_ATTRIBUTES">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.Field}" />
-			         <option name="FONT_TYPE" value="{FontBold}" />
+			         <option name="FONT_TYPE" value="{fontBold}" />
 			         <option name="EFFECT_COLOR" value="{Scheme.Colors.Field}" />
 			         <option name="EFFECT_TYPE" value="4" />
 			       </value>
@@ -1515,7 +1515,7 @@ public class RiderXml : ITheme
 			     <option name="SUGGESTION">
 			       <value>
 			         <option name="EFFECT_COLOR" value="{Scheme.Colors.Info}" />
-			         <option name="EFFECT_TYPE" value="{FontItalic}" />
+			         <option name="EFFECT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="TAB_SELECTED">
@@ -1562,7 +1562,7 @@ public class RiderXml : ITheme
 			     <option name="TODO_DEFAULT_ATTRIBUTES">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Colors.Numeral}" />
-			         <option name="FONT_TYPE" value="{FontItalic}" />
+			         <option name="FONT_TYPE" value="{fontItalic}" />
 			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Colors.Numeral}" />
 			       </value>
 			     </option>
@@ -1579,19 +1579,19 @@ public class RiderXml : ITheme
 			     <option name="TYPO">
 			       <value>
 			         <option name="EFFECT_COLOR" value="{Scheme.Colors.Warning}" />
-			         <option name="EFFECT_TYPE" value="{FontItalic}" />
+			         <option name="EFFECT_TYPE" value="{fontItalic}" />
 			       </value>
 			     </option>
 			     <option name="UNMATCHED_BRACE_ATTRIBUTES">
 			       <value>
 			         <option name="BACKGROUND" value="{Scheme.Colors.Error}"/>
-			         <option name="FONT_TYPE" value="{FontBold}"/>
+			         <option name="FONT_TYPE" value="{fontBold}"/>
 			       </value>
 			     </option>
 			     <option name="Unresolved reference access">
 			       <value>
 			         <option name="EFFECT_COLOR" value="{Scheme.Colors.Error}"/>
-			         <option name="EFFECT_TYPE" value="{FontItalic}"/>
+			         <option name="EFFECT_TYPE" value="{fontItalic}"/>
 			       </value>
 			     </option>
 			     <option name="UNMATCHED_BRACE_ATTRIBUTES">
@@ -1625,7 +1625,7 @@ public class RiderXml : ITheme
 			       <value>
 			         <option name="EFFECT_COLOR" value="{Scheme.Colors.Error}"/>
 			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Colors.Error}"/>
-			         <option name="EFFECT_TYPE" value="{FontItalic}"/>
+			         <option name="EFFECT_TYPE" value="{fontItalic}"/>
 			       </value>
 			     </option>
 			     <option name="XML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE"/>
