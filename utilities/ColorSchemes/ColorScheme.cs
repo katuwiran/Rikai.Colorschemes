@@ -1,26 +1,12 @@
-namespace Rikai.Colorschemes;
+namespace ColorschemeUtils;
 
-public class ColorScheme
+public partial class ColorScheme
 {
 	// Scheme Descriptions
 	public required string Name        { get; set; }
 	public required string Description { get; set; }
 	public required bool   IsDark      { get; set; }
 
-	public required BasicColors   Colors  { get; set; }
-	public required Base8Colors   Base8   { get; set; }
-	public required ConsoleColors Console { get; set; }
-	public required DiffColors    Diff    { get; set; }
-	public required UiColors      Ui      { get; set; }
-
-	public override string ToString()
-	{
-		return $"{Name}";
-	}
-}
-
-public class BasicColors
-{
 	public required string Background        { get; set; } // background
 	public required string BackgroundEdges   { get; set; } // borders, dividers, etc.
 	public required string BackgroundOverlay { get; set; } // scrollbars, unpressed buttons
@@ -40,100 +26,107 @@ public class BasicColors
 	public required string Error   { get; set; } // 
 	public required string Warning { get; set; } // 
 
+	// Color Names
 	public required string ClassName   { get; set; } // "heavy" keywords
 	public required string KeywordName { get; set; } // "light" keywords
 	public required string FieldName   { get; set; } // method Names
 	public required string MethodName  { get; set; } // variable names
 	public required string StringName  { get; set; } // strings
 	public required string NumeralName { get; set; } // numerals
-	public required string InfoName    { get; set; } // usually yellow
-	public required string WarningName { get; set; } // usually yellow / orange
-	public required string ErrorName   { get; set; } // usually red
+	public required string InfoName    { get; set; } // 
+	public required string ErrorName   { get; set; } // 
+	public required string WarningName { get; set; } // 
 
 	public required string HighlightLow  { get; set; } // search results, unpressed
 	public required string Highlight     { get; set; } // selected result, on press
 	public required string HighlightHigh { get; set; } // on hover
 
-	public string Caret     => Highlight;
-	public string CaretText => Background;
-}
+	public string Accent     => HighlightHigh; // primary color
+	public string AccentText => Background;    // primary color
 
-public class Base8Colors
-{
-	public required string Black   { get; set; }
-	public required string Red     { get; set; }
-	public required string Green   { get; set; }
-	public required string Yellow  { get; set; }
-	public required string Blue    { get; set; }
-	public required string Magenta { get; set; }
-	public required string Cyan    { get; set; }
-	public required string White   { get; set; }
-}
+	public string HoverText             => Keyword;    // text on hover
+	public string PressedText           => Keyword;    // text on press
+	public string SelectionText         => Background; // selected text
+	public string SelectionInactiveText => Text;       // selected text but unfocused
+	public string InactiveText          => Text;       // inactive text on buttons
 
-public class ConsoleColors
-{
-	public required string Black   { get; set; }
-	public required string Red     { get; set; }
-	public required string Green   { get; set; }
-	public required string Yellow  { get; set; }
-	public required string Blue    { get; set; }
-	public required string Magenta { get; set; }
-	public required string Cyan    { get; set; }
-	public required string White   { get; set; }
+	public string HoverBackground             => HighlightLow;      // on hover
+	public string PressedBackground           => HighlightHigh;     // on press
+	public string SelectionBackground         => Highlight;         // selection
+	public string SelectionInactiveBackground => BackgroundOverlay; // inactive selection
+	public string InactiveBackground          => BackgroundOverlay; // inactive button
 
-	public required string BlackAlt   { get; set; }
-	public required string RedAlt     { get; set; }
-	public required string GreenAlt   { get; set; }
-	public required string YellowAlt  { get; set; }
-	public required string BlueAlt    { get; set; }
-	public required string MagentaAlt { get; set; }
-	public required string CyanAlt    { get; set; }
-	public required string WhiteAlt   { get; set; }
-}
+	public string MenuBackground => Background;
 
-public class DiffColors
-{
+	// linting
+	public string Annotations => Text;
+
+	// Console
+	public string Caret                => Highlight;
+	public string CaretText            => Background;
+	public string ConsoleBackground    => Background;   // Console 0. Background
+	public string ConsoleBackgroundAlt => TextInactive; // Console 0. Bright
+	public string ConsoleRed           => Class;        // Console 1. Red
+	public string ConsoleRedAlt        => Class;        // Console 1. Red
+	public string ConsoleGreen         => Method;       // Console 2. Green
+	public string ConsoleGreenAlt      => Method;       // Console 2. Green Bright
+	public string ConsoleYellow        => String;       // Console 3. Yellow
+	public string ConsoleYellowAlt     => String;       // Console 3. Yellow Bright
+	public string ConsoleBlue          => Field;        // Console 4. Blue
+	public string ConsoleBlueAlt       => Field;        // Console 4. Blue Bright
+	public string ConsoleMagenta       => Error;        // Console 5. Magenta
+	public string ConsoleMagentaAlt    => Error;        // Console 5. Magenta Bright
+	public string ConsoleCyan          => Keyword;      // Console 6. Cyan
+	public string ConsoleCyanAlt       => Keyword;      // Console 6. Cyan Bright
+	public string ConsoleForeground    => Text;         // Console 7. Text 
+	public string ConsoleForegroundAlt => TextFaded;    // Console 7. Text Bright
+
 	// git diff marks
-	public required string Added    { get; set; }
-	public required string Deleted  { get; set; }
-	public required string Modified { get; set; }
-	public required string Ignored  { get; set; }
-	public required string Conflict { get; set; }
+	public string DiffAdded    => Numeral;
+	public string DiffDeleted  => Error;
+	public string DiffModified => Method;
+	public string DiffIgnored  => TextFaded;
+	public string DiffConflict => Keyword;
 
 	// git diff text highlights, for source git
-	public required string AddedHighlight    { get; set; }
-	public required string AddedBackground   { get; set; }
-	public required string DeletedHighlight  { get; set; }
-	public required string DeletedBackground { get; set; }
+	public required string DiffAddedHighlight    { get; set; }
+	public required string DiffAddedBackground   { get; set; }
+	public required string DiffDeletedHighlight  { get; set; }
+	public required string DiffDeletedBackground { get; set; }
 
-	public DiffColors()
+	public static string ToRgb(string hex)
 	{
+		string r = $"{HexadecimalToDecimal(hex.Substring(0, 2))}";
+		string g = $"{HexadecimalToDecimal(hex.Substring(2, 2))}";
+		string b = $"{HexadecimalToDecimal(hex.Substring(4, 2))}";
+
+		return $"{r},{g},{b}";
 	}
 
-	public DiffColors(BasicColors colors)
+	private static int HexadecimalToDecimal(string hex)
 	{
-		Added   = colors.Numeral;
-		Deleted = colors.Error;
-	}
-}
+		hex = hex.ToUpper();
 
-public class UiColors
-{
-	public required string Accent                      { get; set; }
-	public required string AccentText                  { get; set; }
-	public required string SecondaryAccent             { get; set; }
-	public required string SecondaryAccentText         { get; set; }
-	public required string MenuBackground              { get; set; }
-	public required string HoverBackground             { get; set; } // on hover
-	public required string HoverText                   { get; set; } // text on hover
-	public required string InactiveBackground          { get; set; } // inactive button
-	public required string InactiveText                { get; set; } // inactive text on buttons
-	public required string MatchBackground             { get; set; }
-	public required string MatchText                   { get; set; }
-	public required string SelectionBackground         { get; set; } // selection
-	public required string SelectionText               { get; set; } // selected text
-	public required string SelectionInactiveText       { get; set; } // selected text but unfocused
-	public required string SelectionInactiveBackground { get; set; } // inactive selection
-	public required string PressedBackground           { get; set; } // on press
-	public required string PressedText                 { get; set; } // text on press
+		int    hexLength = hex.Length;
+		double dec       = 0;
+
+		for (int i = 0; i < hexLength; ++i)
+		{
+			byte b = (byte)hex[i];
+
+			if (b >= 48 && b <= 57)
+				b -= 48;
+			else if (b >= 65 && b <= 70)
+				b -= 55;
+
+			dec += b * Math.Pow(16, ((hexLength - i) - 1));
+		}
+
+		return (int)dec;
+	}
+
+	public override string ToString()
+	{
+		return $"{Name}";
+	}
 }

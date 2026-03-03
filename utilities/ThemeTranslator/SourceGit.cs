@@ -1,14 +1,14 @@
-namespace Rikai.Colorschemes;
+namespace ColorschemeUtils;
 
 public class SourceGit : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public SourceGit(ColorScheme scheme)
+	public SourceGit(ColorScheme colorScheme)
 	{
-		FilePath = Path.Combine("SourceGit", $"{scheme.Name}.json");
-		Scheme   = scheme;
+		FilePath = $"SourceGit{Path.DirectorySeparatorChar}{colorScheme.Name}.json";
+		Scheme   = colorScheme;
 	}
 
 	public override string ToString()
@@ -17,50 +17,50 @@ public class SourceGit : ITheme
 			$$"""
 			  {
 			    "BasicColors": {
-			      "Window": "#{{Scheme.Colors.Background}}",
-			      "WindowBorder": "#{{Scheme.Colors.BackgroundEdges}}",
-			      "TitleBar": "#{{Scheme.Colors.Background}}",
-			      "ToolBar": "#{{Scheme.Colors.Background}}",
-			      "Popup": "#{{Scheme.Colors.Background}}",
-			      "Contents": "#{{Scheme.Colors.Background}}",
+			      "Window": "#{{Scheme.Background}}",
+			      "WindowBorder": "#{{Scheme.BackgroundEdges}}",
+			      "TitleBar": "#{{Scheme.Background}}",
+			      "ToolBar": "#{{Scheme.Background}}",
+			      "Popup": "#{{Scheme.Background}}",
+			      "Contents": "#{{Scheme.Background}}",
 
-			      "Badge": "#{{Scheme.Colors.Keyword}}",
-			      "BadgeFG": "#{{Scheme.Colors.Background}}",
-			      "Conflict": "#{{Scheme.Diff.Conflict}}",
-			      "Conflict.Foreground": "#{{Scheme.Colors.Background}}",
+			      "Badge": "#{{Scheme.Keyword}}",
+			      "BadgeFG": "#{{Scheme.Background}}",
+			      "Conflict": "#{{Scheme.DiffConflict}}",
+			      "Conflict.Foreground": "#{{Scheme.Background}}",
 
-			      "Border0": "#{{Scheme.Colors.BackgroundEdges}}",
-			      "Border1": "#{{Scheme.Colors.BackgroundOverlay}}",
-			      "Border2": "#{{Scheme.Colors.TextHidden}}",
+			      "Border0": "#{{Scheme.BackgroundEdges}}",
+			      "Border1": "#{{Scheme.HoverBackground}}",
+			      "Border2": "#{{Scheme.BackgroundOverlay}}",
 
-			      "FlatButton.Background": "#{{Scheme.Colors.BackgroundEdges}}",
-			      "FlatButton.BackgroundHovered": "#{{Scheme.Ui.HoverBackground}}",
+			      "FlatButton.Background": "#{{Scheme.BackgroundEdges}}",
+			      "FlatButton.BackgroundHovered": "#{{Scheme.HoverBackground}}",
 
-			      "FG1": "#{{Scheme.Colors.Text}}",
-			      "FG2": "#{{Scheme.Colors.TextFaded}}",
+			      "FG1": "#{{Scheme.Text}}",
+			      "FG2": "#{{Scheme.TextFaded}}",
 
-			      "Diff.EmptyBG": "#{{Scheme.Colors.Background}}",
+			      "Diff.EmptyBG": "#{{Scheme.Background}}",
 
-			      "Diff.AddedBG": "#{{Scheme.Diff.AddedBackground}}",
-			      "Diff.AddedHighlight": "#{{Scheme.Diff.AddedHighlight}}",
+			      "Diff.AddedBG": "#{{Scheme.DiffAddedBackground}}",
+			      "Diff.AddedHighlight": "#{{Scheme.DiffAddedHighlight}}",
 
-			      "Diff.DeletedBG": "#{{Scheme.Diff.DeletedBackground}}",
-			      "Diff.DeletedHighlight": "#{{Scheme.Diff.DeletedHighlight}}",
+			      "Diff.DeletedBG": "#{{Scheme.DiffDeletedBackground}}",
+			      "Diff.DeletedHighlight": "#{{Scheme.DiffDeletedHighlight}}",
 
-			      "SystemAccentColor": "#{{Scheme.Colors.Keyword}}",
-			      "Link": "#{{Scheme.Colors.Field}}"
+			      "SystemAccentColor": "#{{Scheme.Keyword}}",
+			      "Link": "#{{Scheme.Field}}"
 			    },
 
 			    "GraphPenThickness": 2,
 			    "OpacityForNotMergedCommits": 0.5,
 
 			    "GraphColors": [
-			      "#{{Scheme.Colors.Class}}",
-			      "#{{Scheme.Colors.Method}}",
-			      "#{{Scheme.Colors.Keyword}}",
-			      "#{{Scheme.Colors.Field}}",
-			      "#{{Scheme.Colors.String}}",
-			      "#{{Scheme.Colors.Warning}}"
+			      "#{{Scheme.Class}}",
+			      "#{{Scheme.Method}}",
+			      "#{{Scheme.Keyword}}",
+			      "#{{Scheme.Field}}",
+			      "#{{Scheme.String}}",
+			      "#{{Scheme.Warning}}"
 			    ]
 			  }
 			  """;

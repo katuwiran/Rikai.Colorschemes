@@ -1,122 +1,50 @@
-namespace Rikai.Colorschemes;
+namespace ColorschemeUtils;
 
-public static partial class ColorSchemeFactory
+public partial class ColorScheme
 {
-	public static ColorScheme Skylight()
+	public static ColorScheme Skylight => new()
 	{
-		BasicColors colors = new()
-		{
-			Background        = "eaeef1",
-			BackgroundEdges   = "e2ebf2",
-			BackgroundOverlay = "d2e1f2",
-			TextHidden        = "9ca4d1",
-			TextInactive      = "6f78aa",
-			TextFaded         = "818ec9",
-			Text              = "525b8f",
+		Name        = "Skylight",
+		Description = "Rikai's light color scheme, light version of Moonlight",
+		IsDark      = false,
 
-			Class   = "e153b3",
-			Keyword = "dd6e96",
-			Method  = "9e55dd",
-			Field   = "4d5de5",
-			String  = "4897e8",
-			Numeral = "70b20c", // todo should be closer to cyan than orange
-			Info    = "d19700",
-			Warning = "f28a70",
-			Error   = "f04f4e",
+		Background        = "eaeef1",
+		BackgroundEdges   = "e2ebf2",
+		BackgroundOverlay = "d2e1f2",
+		TextHidden        = "9ca4d1",
+		TextInactive      = "6f78aa",
+		TextFaded         = "818ec9",
+		Text              = "525b8f",
 
-			ClassName   = "magenta",
-			KeywordName = "plum",
-			MethodName  = "blue",
-			FieldName   = "purple",
-			StringName  = "cyan",
-			NumeralName = "green",
-			InfoName    = "yellow",
-			WarningName = "orange",
-			ErrorName   = "red",
+		Class   = "e153b3",
+		Keyword = "dd6e96",
+		Method  = "9e55dd",
+		Field   = "4d5de5",
+		String  = "4897e8",
+		Numeral = "70b20c", // todo should be closer to cyan than orange
+		Info    = "d19700",
+		Warning = "f28a70",
+		Error   = "f04f4e",
 
-			// todo follow changes in moonlight's highlighting
-			HighlightLow  = "e3e9ed",
-			Highlight     = "acc2df",
-			HighlightHigh = "85bbff",
-		};
+		ClassName   = "magenta",
+		KeywordName = "plum",
+		MethodName  = "blue",
+		FieldName   = "purple",
+		StringName  = "cyan",
+		NumeralName = "green",
+		InfoName    = "yellow",
+		WarningName = "orange",
+		ErrorName   = "red",
 
-		Base8Colors base8 = new()
-		{
-			Black   = colors.Background,
-			Red     = colors.Error,
-			Green   = colors.Numeral,
-			Yellow  = colors.Info,
-			Blue    = colors.Method,
-			Magenta = colors.Class,
-			Cyan    = colors.String,
-			White   = colors.Text,
-		};
+		// todo follow changes in moonlight's highlighting
+		HighlightLow  = "e3e9ed",
+		Highlight     = "acc2df",
+		HighlightHigh = "85bbff",
 
 		// todo adapt this to light mode
-		DiffColors diff = new()
-		{
-			Added             = base8.Green,
-			Deleted           = base8.Red,
-			Modified          = colors.Keyword,
-			Ignored           = colors.TextFaded,
-			Conflict          = colors.Field,
-			AddedHighlight    = "61766f",
-			AddedBackground   = "36394a",
-			DeletedHighlight  = "9a4063",
-			DeletedBackground = "51304c",
-		};
-
-		ConsoleColors console = new()
-		{
-			Black      = colors.Background,
-			Red        = colors.Class,
-			Green      = colors.Method,
-			Yellow     = colors.String,
-			Blue       = colors.Field,
-			Magenta    = colors.Error,
-			Cyan       = colors.Keyword,
-			White      = colors.Text,
-			BlackAlt   = colors.BackgroundOverlay,
-			RedAlt     = colors.Class,
-			GreenAlt   = colors.Method,
-			YellowAlt  = colors.String,
-			BlueAlt    = colors.Field,
-			MagentaAlt = colors.Error,
-			CyanAlt    = colors.Keyword,
-			WhiteAlt   = colors.TextHidden
-		};
-
-		UiColors ui = new()
-		{
-			Accent                      = colors.Highlight,
-			AccentText                  = colors.BackgroundOverlay,
-			SecondaryAccent             = colors.HighlightLow,
-			SecondaryAccentText         = colors.Text,
-			MenuBackground              = colors.Background,
-			HoverBackground             = colors.HighlightHigh,
-			HoverText                   = colors.BackgroundOverlay,
-			InactiveBackground          = colors.BackgroundOverlay,
-			InactiveText                = colors.Text,
-			MatchText                   = colors.TextFaded,
-			MatchBackground             = colors.BackgroundOverlay,
-			SelectionBackground         = colors.Highlight,
-			SelectionText               = colors.BackgroundOverlay,
-			SelectionInactiveText       = colors.Text,
-			SelectionInactiveBackground = colors.HighlightLow,
-			PressedBackground           = colors.Highlight,
-			PressedText                 = colors.BackgroundOverlay,
-		};
-
-		return new()
-		{
-			Name        = "Skylight",
-			Description = "Rikai's opinionated light color scheme, fully my own",
-			IsDark      = true,
-			Colors      = colors,
-			Base8       = base8,
-			Diff        = diff,
-			Console     = console,
-			Ui          = ui
-		};
-	}
+		DiffAddedHighlight    = "444d56",
+		DiffAddedBackground   = "556565",
+		DiffDeletedHighlight  = "6a3654",
+		DiffDeletedBackground = "51304c",
+	};
 }

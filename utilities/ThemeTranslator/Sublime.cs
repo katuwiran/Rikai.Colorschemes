@@ -1,14 +1,14 @@
-namespace Rikai.Colorschemes;
+namespace ColorschemeUtils;
 
 public class Sublime : ITheme
 {
-	public string      FilePath { get; set; }
-	public ColorScheme Scheme   { get; set; }
+	public string      FilePath    { get; set; }
+	public ColorScheme Scheme { get; set; }
 
-	public Sublime(ColorScheme scheme)
+	public Sublime(ColorScheme colorScheme)
 	{
-		FilePath = Path.Combine("Sublime Text", $"{scheme.Name}.sublime-color-scheme");
-		Scheme   = scheme;
+		FilePath    = $"Sublime Text{Path.DirectorySeparatorChar}{colorScheme.Name}.sublime-color-scheme";
+		Scheme = colorScheme;
 	}
 
 	// for Sublimes's .sublime-color-scheme format
@@ -23,24 +23,24 @@ public class Sublime : ITheme
 		             // "project": "",
 		             "author": "Rikaisuru",
 		             "variables": {
-		                 "background":     "#{{Scheme.Colors.Background}}",
-		                 "edges":          "#{{Scheme.Colors.BackgroundEdges}}",
-		                 "overlay":        "#{{Scheme.Colors.BackgroundOverlay}}",
-		                 "faded":          "#{{Scheme.Colors.TextFaded}}",
-		                 "hidden":         "#{{Scheme.Colors.TextHidden}}",
-		                 "magenta":        "#{{Scheme.Colors.Class}}",
-		                 "plum":           "#{{Scheme.Colors.Keyword}}",
-		                 "blue":           "#{{Scheme.Colors.Field}}",
-		                 "purple":         "#{{Scheme.Colors.Method}}",
-		                 "cyan":           "#{{Scheme.Colors.String}}",
-		                 "text":           "#{{Scheme.Colors.Text}}",
-		                 "green":          "#{{Scheme.Colors.Numeral}}",
-		                 "yellow":         "#{{Scheme.Colors.Info}}",
-		                 "red":            "#{{Scheme.Colors.Error}}",
-		                 "orange":         "#{{Scheme.Colors.Warning}}",
-		                 "high-inactive":  "#{{Scheme.Colors.HighlightLow}}",
-		                 "highlight":      "#{{Scheme.Colors.Highlight}}",
-		                 "high-focused":   "#{{Scheme.Colors.HighlightHigh}}",
+		                 "background":     "#{{Scheme.Background}}",
+		                 "edges":          "#{{Scheme.BackgroundEdges}}",
+		                 "overlay":        "#{{Scheme.BackgroundOverlay}}",
+		                 "faded":          "#{{Scheme.TextFaded}}",
+		                 "hidden":         "#{{Scheme.TextHidden}}",
+		                 "magenta":        "#{{Scheme.Class}}",
+		                 "plum":           "#{{Scheme.Keyword}}",
+		                 "blue":           "#{{Scheme.Field}}",
+		                 "purple":         "#{{Scheme.Method}}",
+		                 "cyan":           "#{{Scheme.String}}",
+		                 "text":           "#{{Scheme.Text}}",
+		                 "green":          "#{{Scheme.Numeral}}",
+		                 "yellow":         "#{{Scheme.Info}}",
+		                 "red":            "#{{Scheme.Error}}",
+		                 "orange":         "#{{Scheme.Warning}}",
+		                 "high-inactive":  "#{{Scheme.HighlightLow}}",
+		                 "highlight":      "#{{Scheme.Highlight}}",
+		                 "high-focused":   "#{{Scheme.HighlightHigh}}",
 
 		                 "comments":    "var(faded)",
 		                 "variables":   "var(text)",
