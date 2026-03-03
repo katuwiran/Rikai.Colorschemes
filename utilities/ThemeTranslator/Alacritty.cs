@@ -1,14 +1,14 @@
-namespace ColorschemeUtils;
+namespace Rikai.Colorschemes;
 
 public class Alacritty : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public Alacritty(ColorScheme colorScheme)
+	public Alacritty(ColorScheme scheme)
 	{
-		FilePath = $"Alacritty{Path.DirectorySeparatorChar}{colorScheme.Name}.toml";
-		Scheme   = colorScheme;
+		FilePath = Path.Combine("Alacritty", $"{scheme.Name}.toml");
+		Scheme   = scheme;
 	}
 
 	// for Kvantum's svg format
@@ -17,70 +17,70 @@ public class Alacritty : ITheme
 		return
 			$"""
 			 [colors.primary]
-			 background = "#{Scheme.Background}"
-			 foreground = "#{Scheme.Text}"
-			 dim_foreground = "#{Scheme.TextFaded}"
-			 bright_foreground = "#{Scheme.Text}"
+			 background = "#{Scheme.Colors.Background}"
+			 foreground = "#{Scheme.Colors.Text}"
+			 dim_foreground = "#{Scheme.Colors.TextFaded}"
+			 bright_foreground = "#{Scheme.Colors.Text}"
 
 			 [colors.cursor]
-			 text = "#{Scheme.Background}"
-			 cursor = "#{Scheme.HighlightHigh}"
+			 text = "#{Scheme.Colors.Background}"
+			 cursor = "#{Scheme.Colors.HighlightHigh}"
 
 			 [colors.vi_mode_cursor]
-			 text = "#{Scheme.Background}"
-			 cursor = "#{Scheme.HighlightHigh}"
+			 text = "#{Scheme.Colors.Background}"
+			 cursor = "#{Scheme.Colors.HighlightHigh}"
 
 			 [colors.search.matches]
-			 foreground = "#{Scheme.SelectionText}"
-			 background = "#{Scheme.SelectionBackground}"
+			 foreground = "#{Scheme.Ui.SelectionText}"
+			 background = "#{Scheme.Ui.SelectionBackground}"
 
 			 [colors.search.focused_match]
-			 foreground = "#{Scheme.SelectionText}"
-			 background = "#{Scheme.SelectionBackground}"
+			 foreground = "#{Scheme.Ui.SelectionText}"
+			 background = "#{Scheme.Ui.SelectionBackground}"
 
 			 [colors.footer_bar]
-			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.HighlightLow}"
+			 foreground = "#{Scheme.Colors.Background}"
+			 background = "#{Scheme.Colors.HighlightLow}"
 
 			 [colors.hints.start]
-			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.Info}"
+			 foreground = "#{Scheme.Colors.Background}"
+			 background = "#{Scheme.Colors.Info}"
 
 			 [colors.hints.end]
-			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.HighlightLow}"
+			 foreground = "#{Scheme.Colors.Background}"
+			 background = "#{Scheme.Colors.HighlightLow}"
 
 			 [colors.selection]
-			 text = "#{Scheme.SelectionText}"
-			 background = "#{Scheme.HighlightHigh}"
+			 text = "#{Scheme.Ui.SelectionText}"
+			 background = "#{Scheme.Ui.SelectionBackground}"
 
 			 [colors.normal]
-			 black = "#{Scheme.ConsoleBackground}"
-			 red = "#{Scheme.ConsoleRed}"
-			 green = "#{Scheme.ConsoleGreen}"
-			 yellow = "#{Scheme.ConsoleYellow}"
-			 blue = "#{Scheme.ConsoleBlue}"
-			 magenta = "#{Scheme.ConsoleMagenta}"
-			 cyan = "#{Scheme.ConsoleCyan}"
-			 white = "#{Scheme.ConsoleForeground}"
+			 black = "#{Scheme.Console.Black}"
+			 red = "#{Scheme.Console.Red}"
+			 green = "#{Scheme.Console.Green}"
+			 yellow = "#{Scheme.Console.Yellow}"
+			 blue = "#{Scheme.Console.Blue}"
+			 magenta = "#{Scheme.Console.Magenta}"
+			 cyan = "#{Scheme.Console.Cyan}"
+			 white = "#{Scheme.Console.White}"
 
 			 [colors.bright]
-			 black = "#{Scheme.ConsoleBackgroundAlt}"
-			 red = "#{Scheme.ConsoleRedAlt}"
-			 green = "#{Scheme.ConsoleGreenAlt}"
-			 yellow = "#{Scheme.ConsoleYellowAlt}"
-			 blue = "#{Scheme.ConsoleBlueAlt}"
-			 magenta = "#{Scheme.ConsoleMagentaAlt}"
-			 cyan = "#{Scheme.ConsoleCyanAlt}"
-			 white = "#{Scheme.ConsoleForegroundAlt}"
+			 black = "#{Scheme.Console.BlackAlt}"
+			 red = "#{Scheme.Console.RedAlt}"
+			 green = "#{Scheme.Console.GreenAlt}"
+			 yellow = "#{Scheme.Console.YellowAlt}"
+			 blue = "#{Scheme.Console.BlueAlt}"
+			 magenta = "#{Scheme.Console.MagentaAlt}"
+			 cyan = "#{Scheme.Console.CyanAlt}"
+			 white = "#{Scheme.Console.WhiteAlt}"
 
 			 [[colors.indexed_colors]]
 			 index = 16
-			 color = "#{Scheme.Info}"
+			 color = "#{Scheme.Colors.Info}"
 
 			 [[colors.indexed_colors]]
 			 index = 17
-			 color = "#{Scheme.Highlight}"
+			 color = "#{Scheme.Colors.Highlight}"
 			 """;
 	}
 }
