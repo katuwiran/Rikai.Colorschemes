@@ -7,7 +7,7 @@ public class KvantumConfig : ITheme
 
 	public KvantumConfig(ColorScheme scheme)
 	{
-		FilePath = Path.Combine("Kvantum", $"{scheme.Name}.kvconfig");
+		FilePath = Path.Combine("Kvantum", scheme.Name, $"{scheme.Name}.kvconfig");
 		Scheme   = scheme;
 	}
 	
