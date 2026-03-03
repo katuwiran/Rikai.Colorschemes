@@ -28,59 +28,59 @@ public class RiderXml : ITheme
 			     <property name="originalScheme">{Scheme.Name}</property>
 			   </metaInfo>
 			   <colors>
-			     <option name="ADDED_LINES_COLOR" value="{Scheme.Green}"/>
+			     <option name="ADDED_LINES_COLOR" value="{Scheme.Numeral}"/>
 			     <option name="ANNOTATIONS_COLOR" value="{Scheme.Text}"/>
 			     <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="{Scheme.Background}"/>
 			     <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="{Scheme.Background}"/>
 			     <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="{Scheme.Background}"/>
 			     <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="{Scheme.Text}"/>
-			     <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="{Scheme.Red}"/>
+			     <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="{Scheme.Error}"/>
 			     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="{Scheme.HighlightLow}"/>
 			     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="{Scheme.BackgroundOverlay}"/>
 			     <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="{Scheme.HighlightLow}"/>
 			     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="{Scheme.BackgroundEdges}"/>
-			     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="{Scheme.Blue}"/>
+			     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="{Scheme.Field}"/>
 			     <option name="CARET_COLOR" value="{Scheme.Text}"/>
 			     <option name="CARET_ROW_COLOR" value="{Scheme.Text}"/>
 			     <option name="CONSOLE_BACKGROUND_KEY" value="{Scheme.Background}"/>
-			     <option name="DELETED_LINES_COLOR" value="{Scheme.Magenta}"/>
+			     <option name="DELETED_LINES_COLOR" value="{Scheme.Class}"/>
 			     <option name="DIFF_SEPARATORS_BACKGROUND" value="{Scheme.BackgroundOverlay}"/>
 			     <option name="DOCUMENTATION_COLOR" value="{Scheme.Background}"/>
-			     <option name="DOC_COMMENT_LINK" value="{Scheme.Blue}"/>
-			     <option name="ERROR_HINT" value="{Scheme.Red}"/>
+			     <option name="DOC_COMMENT_LINK" value="{Scheme.Field}"/>
+			     <option name="ERROR_HINT" value="{Scheme.Error}"/>
 			     <option name="CARET_ROW_COLOR" value="{Scheme.BackgroundOverlay}" />
 			     <option name="DOCUMENTATION_COLOR" value="" />
-			     <option name="DOC_COMMENT_LINK" value="{Scheme.Plum}" />
+			     <option name="DOC_COMMENT_LINK" value="{Scheme.Keyword}" />
 			     <option name="EDITOR_GUTTER_BACKGROUND" value="" />
-			     <option name="FILESTATUS_ADDED" value="{Scheme.Green}"/>
-			     <option name="FILESTATUS_COPIED" value="{Scheme.Green}"/>
-			     <option name="FILESTATUS_DELETED" value="{Scheme.Magenta}"/>
-			     <option name="FILESTATUS_HIJACKED" value="{Scheme.Orange}"/>
-			     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{Scheme.Magenta}"/>
+			     <option name="FILESTATUS_ADDED" value="{Scheme.Numeral}"/>
+			     <option name="FILESTATUS_COPIED" value="{Scheme.Numeral}"/>
+			     <option name="FILESTATUS_DELETED" value="{Scheme.Class}"/>
+			     <option name="FILESTATUS_HIJACKED" value="{Scheme.Warning}"/>
+			     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{Scheme.Class}"/>
 			     <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="{Scheme.TextFaded}"/>
-			     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{Scheme.Plum}"/>
-			     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="{Scheme.Plum}"/>
-			     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="{Scheme.Plum}"/>
-			     <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="{Scheme.Green}"/>
+			     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{Scheme.Keyword}"/>
+			     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="{Scheme.Keyword}"/>
+			     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="{Scheme.Keyword}"/>
+			     <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="{Scheme.Numeral}"/>
 			     <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="{Scheme.TextFaded}"/>
-			     <option name="FILESTATUS_MERGED" value="{Scheme.Purple}"/>
-			     <option name="FILESTATUS_MODIFIED" value="{Scheme.Purple}"/>
-			     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="{Scheme.Blue}"/>
-			     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="{Scheme.Blue}"/>
+			     <option name="FILESTATUS_MERGED" value="{Scheme.Method}"/>
+			     <option name="FILESTATUS_MODIFIED" value="{Scheme.Method}"/>
+			     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="{Scheme.Field}"/>
+			     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="{Scheme.Field}"/>
 			     <option name="FILESTATUS_SUPPRESSED" value="{Scheme.TextFaded}"/>
-			     <option name="FILESTATUS_SWITCHED" value="{Scheme.Plum}"/>
+			     <option name="FILESTATUS_SWITCHED" value="{Scheme.Keyword}"/>
 			     <option name="FILESTATUS_UNKNOWN" value="{Scheme.TextFaded}"/>
-			     <option name="FILESTATUS_addedOutside" value="{Scheme.Green}"/>
-			     <option name="FILESTATUS_changelistConflict" value="{Scheme.Plum}"/>
-			     <option name="FILESTATUS_modifiedOutside" value="{Scheme.Purple}"/>
+			     <option name="FILESTATUS_addedOutside" value="{Scheme.Numeral}"/>
+			     <option name="FILESTATUS_changelistConflict" value="{Scheme.Keyword}"/>
+			     <option name="FILESTATUS_modifiedOutside" value="{Scheme.Method}"/>
 			     <option name="FOLDED_TEXT_BORDER_COLOR" value="" />
 			     <option name="GUTTER_BACKGROUND" value="{Scheme.Background}"/>
-			     <option name="HTML_TAG_TREE_LEVEL0" value="{Scheme.Magenta}"/>
-			     <option name="HTML_TAG_TREE_LEVEL1" value="{Scheme.Plum}"/>
-			     <option name="HTML_TAG_TREE_LEVEL2" value="{Scheme.Cyan}"/>
-			     <option name="HTML_TAG_TREE_LEVEL3" value="{Scheme.Blue}"/>
-			     <option name="HTML_TAG_TREE_LEVEL4" value="{Scheme.Purple}"/>
-			     <option name="HTML_TAG_TREE_LEVEL5" value="{Scheme.Yellow}"/>
+			     <option name="HTML_TAG_TREE_LEVEL0" value="{Scheme.Class}"/>
+			     <option name="HTML_TAG_TREE_LEVEL1" value="{Scheme.Keyword}"/>
+			     <option name="HTML_TAG_TREE_LEVEL2" value="{Scheme.String}"/>
+			     <option name="HTML_TAG_TREE_LEVEL3" value="{Scheme.Field}"/>
+			     <option name="HTML_TAG_TREE_LEVEL4" value="{Scheme.Method}"/>
+			     <option name="HTML_TAG_TREE_LEVEL5" value="{Scheme.Info}"/>
 			     <option name="INDENT_GUIDE" value="{Scheme.BackgroundEdges}" />
 			     <option name="INFORMATION_HINT" value="{Scheme.BackgroundEdges}"/>
 			     <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="{Scheme.TextFaded}" />
@@ -91,8 +91,8 @@ public class RiderXml : ITheme
 			     <option name="LOOKUP_COLOR" value="{Scheme.BackgroundEdges}"/>
 			     <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="{Scheme.TextHidden}" />
 			     <option name="METHOD_SEPARATORS_COLOR" value="" />
-			     <option name="MODIFIED_LINES_COLOR" value="{Scheme.Plum}"/>
-			     <option name="MODIFIED_TAB_ICON" value="{Scheme.Blue}"/>
+			     <option name="MODIFIED_LINES_COLOR" value="{Scheme.Keyword}"/>
+			     <option name="MODIFIED_TAB_ICON" value="{Scheme.Field}"/>
 			     <option name="NOTIFICATION_BACKGROUND" value="{Scheme.TextHidden}" />
 			     <option name="PREVIEW_BACKGROUND" value="{Scheme.Background}" />
 			     <option name="PROMOTION_PANE" value="{Scheme.BackgroundEdges}"/>
@@ -125,50 +125,50 @@ public class RiderXml : ITheme
 			   <attributes>
 			     <option name="ABSTRACT_METHOD_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="ANGLE_BRACKETS_RAINBOW_COLOR0">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="ANGLE_BRACKETS_RAINBOW_COLOR1">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="ANGLE_BRACKETS_RAINBOW_COLOR2">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="ANGLE_BRACKETS_RAINBOW_COLOR3">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="ANGLE_BRACKETS_RAINBOW_COLOR4">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="BAD_CHARACTER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Red}" />
+			         <option name="FOREGROUND" value="{Scheme.Error}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Error}" />
 			         <option name="EFFECT_TYPE" value="{FontItalic}" />
 			       </value>
 			     </option>
 			     <option name="BASH.CONDITIONAL">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="BASH.EXTERNAL_COMMAND" baseAttributes="DEFAULT_IDENTIFIER"/>
 			     <option name="BASH.FUNCTION_CALL">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="BASH.HERE_DOC_END" baseAttributes="DEFAULT_KEYWORD"/>
@@ -176,13 +176,13 @@ public class RiderXml : ITheme
 			     <option name="BASH.SHEBANG" baseAttributes="BASH.LINE_COMMENT"/>
 			     <option name="BLADE_DIRECTIVE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="TERMINAL_BACKGROUND" value="{Scheme.Background}"/>
 			     <option name="BLOCK_TERMINAL_COMMAND">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			         <option name="FONT_TYPE" value="{FontBold}"/>
 			       </value>
 			     </option>
@@ -206,32 +206,32 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="BLOCK_TERMINAL_BLUE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
-			         <option name="BACKGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
+			         <option name="BACKGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_CYAN">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
-			         <option name="BACKGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
+			         <option name="BACKGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_GREEN">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
-			         <option name="BACKGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
+			         <option name="BACKGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_MAGENTA">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
-			         <option name="BACKGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
+			         <option name="BACKGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_RED">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
-			         <option name="BACKGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
+			         <option name="BACKGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_WHITE">
@@ -242,8 +242,8 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="BLOCK_TERMINAL_YELLOW">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
-			         <option name="BACKGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
+			         <option name="BACKGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_BLACK_BRIGHT">
@@ -254,32 +254,32 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="BLOCK_TERMINAL_BLUE_BRIGHT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
-			         <option name="BACKGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
+			         <option name="BACKGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_CYAN_BRIGHT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
-			         <option name="BACKGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
+			         <option name="BACKGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_GREEN_BRIGHT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
-			         <option name="BACKGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
+			         <option name="BACKGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_MAGENTA_BRIGHT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
-			         <option name="BACKGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
+			         <option name="BACKGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_RED_BRIGHT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
-			         <option name="BACKGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
+			         <option name="BACKGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="BLOCK_TERMINAL_WHITE_BRIGHT">
@@ -290,8 +290,8 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="BLOCK_TERMINAL_YELLOW_BRIGHT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
-			         <option name="BACKGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
+			         <option name="BACKGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="BOOKMARKS_ATTRIBUTES">
@@ -324,7 +324,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="BUILDOUT.KEY">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="BUILDOUT.KEY_VALUE_SEPARATOR">
@@ -335,23 +335,23 @@ public class RiderXml : ITheme
 			     <option name="BUILDOUT.LINE_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT"/>
 			     <option name="BUILDOUT.SECTION_NAME">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="BUILDOUT.VALUE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CLASS_REFERENCE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="CODE_LENS_BORDER_COLOR">
 			       <value>
 			         <option name="BACKGROUND" value="{Scheme.BackgroundEdges}"/>
-			         <option name="EFFECT_COLOR" value="{Scheme.Plum}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="CODE_VISION_DEFAULT">
@@ -361,12 +361,12 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="CODE_VISION_HOVERED">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}" />
+			         <option name="FOREGROUND" value="{Scheme.Field}" />
 			       </value>
 			     </option>
 			     <option name="COFFEESCRIPT.CLASS_NAME">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="CONDITIONALLY_NOT_COMPILED">
@@ -384,37 +384,37 @@ public class RiderXml : ITheme
 			     <!-- ANSI Color 01 -->
 			     <option name="CONSOLE_RED_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 02 -->
 			     <option name="CONSOLE_GREEN_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 03 -->
 			     <option name="CONSOLE_YELLOW_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 04 -->
 			     <option name="CONSOLE_BLUE_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 05 -->
 			     <option name="CONSOLE_MAGENTA_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 06 -->
 			     <option name="CONSOLE_CYAN_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <!-- ANSI Color 07 -->
@@ -450,22 +450,22 @@ public class RiderXml : ITheme
 			     <!-- other terminal colors -->
 			     <option name="CONSOLE_ERROR_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="CONSOLE_RANGE_TO_EXECUTE">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Purple}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="CONSOLE_SYSTEM_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="CONSOLE_USER_INPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CONSOLE_WHITE_OUTPUT">
@@ -475,43 +475,43 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.BRACKETS">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.CLASS_NAME">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.COLOR" baseAttributes="CSS.IDENT"/>
 			     <option name="CSS.FUNCTION">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.HASH">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.IMPORTANT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.KEYWORD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.OPERATORS">
@@ -521,103 +521,103 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="CSS.PROPERTY_NAME">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.PROPERTY_VALUE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.PSEUDO">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.TAG_NAME">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="CSS.URL">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_1">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_2">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_3">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_4">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_5">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_6">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_7">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_8">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_9">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="CTRL_CLICKABLE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
-			         <option name="EFFECT_COLOR" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Field}"/>
 			         <option name="EFFECT_TYPE" value="1"/>
 			       </value>
 			     </option>
 
 			     <option name="CTRL_CLICKABLE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}" />
-			         <option name="EFFECT_COLOR" value="{Scheme.Purple}" />
+			         <option name="FOREGROUND" value="{Scheme.Method}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Method}" />
 			         <option name="EFFECT_TYPE" value="1" />
 			       </value>
 			     </option>
 			     <option name="CUSTOM_KEYWORD1_ATTRIBUTES" baseAttributes="DEFAULT_KEYWORD"/>
 			     <option name="CUSTOM_KEYWORD2_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="CUSTOM_KEYWORD3_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="DEFAULT_STRING"/>
@@ -625,12 +625,12 @@ public class RiderXml : ITheme
 			     <option name="Class" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
 			     <option name="Clojure Atom">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="Clojure Character">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="Clojure Keyword">
@@ -646,72 +646,72 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="Clojure Numbers">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="Clojure Strings">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_1_MARKER">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Red}"/>
+			         <option name="BACKGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_1_SELECTION">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Red}"/>
+			         <option name="BACKGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_2_MARKER">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Plum}"/>
+			         <option name="BACKGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_2_SELECTION">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Orange}"/>
+			         <option name="BACKGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_3_MARKER">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Orange}"/>
+			         <option name="BACKGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_3_SELECTION">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Yellow}"/>
+			         <option name="BACKGROUND" value="{Scheme.Info}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_4_MARKER">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Green}"/>
+			         <option name="BACKGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_4_SELECTION">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Green}"/>
+			         <option name="BACKGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_5_MARKER">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Blue}"/>
+			         <option name="BACKGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_5_SELECTION">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Blue}"/>
+			         <option name="BACKGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_6_MARKER">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Purple}"/>
+			         <option name="BACKGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="CodeWithMe.USER_6_SELECTION">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Purple}"/>
+			         <option name="BACKGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="ComposableCallTextAttributes" baseAttributes="DEFAULT_FUNCTION_CALL"/>
@@ -735,32 +735,32 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_BRACES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}" />
+			         <option name="FOREGROUND" value="{Scheme.Method}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_BRACKETS">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}" />
+			         <option name="FOREGROUND" value="{Scheme.Method}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_CLASS_NAME">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}" />
+			         <option name="FOREGROUND" value="{Scheme.Class}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_CLASS_REFERENCE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}" />
+			         <option name="FOREGROUND" value="{Scheme.Numeral}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_COMMA">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_CONSTANT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_DOC_COMMENT">
@@ -771,7 +771,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_DOC_COMMENT_TAG">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}" />
+			         <option name="FOREGROUND" value="{Scheme.Numeral}" />
 			         <option name="EFFECT_TYPE" value="1" />
 			       </value>
 			     </option>
@@ -782,12 +782,12 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_DOC_MARKUP">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_DOT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_ENTITY">
@@ -797,12 +797,12 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_FUNCTION_CALL">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}" />
+			         <option name="FOREGROUND" value="{Scheme.Method}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_FUNCTION_DECLARATION">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}" />
+			         <option name="FOREGROUND" value="{Scheme.Method}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_GLOBAL_VARIABLE">
@@ -812,7 +812,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}" />
+			         <option name="FOREGROUND" value="{Scheme.Numeral}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_IDENTIFIER">
@@ -822,24 +822,24 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_INSTANCE_FIELD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}" />
+			         <option name="FOREGROUND" value="{Scheme.Field}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_INTERFACE_NAME">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}" />
+			         <option name="FOREGROUND" value="{Scheme.Class}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_INVALID_STRING_ESCAPE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Red}" />
+			         <option name="FOREGROUND" value="{Scheme.Error}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Error}" />
 			         <option name="EFFECT_TYPE" value="{FontItalic}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_KEYWORD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			         <option name="BACKGROUND" value="{Scheme.Background}" />
 			       </value>
 			     </option>
@@ -861,17 +861,17 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_METADATA">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Yellow}" />
+			         <option name="FOREGROUND" value="{Scheme.Info}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_NUMBER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Yellow}" />
+			         <option name="FOREGROUND" value="{Scheme.Info}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_OPERATION_SIGN">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}" />
+			         <option name="FOREGROUND" value="{Scheme.Field}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_PARAMETER">
@@ -881,7 +881,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_PARENTHS">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}" />
+			         <option name="FOREGROUND" value="{Scheme.Field}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_PREDEFINED_SYMBOL">
@@ -905,22 +905,22 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DEFAULT_SEMICOLON">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}" />
+			         <option name="FOREGROUND" value="{Scheme.Method}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_STATIC_FIELD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}" />
+			         <option name="FOREGROUND" value="{Scheme.Field}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_STATIC_METHOD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}" />
+			         <option name="FOREGROUND" value="{Scheme.Method}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_STRING">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}" />
+			         <option name="FOREGROUND" value="{Scheme.String}" />
 			       </value>
 			     </option>
 			     <option name="DEFAULT_TAG">
@@ -932,7 +932,7 @@ public class RiderXml : ITheme
 			     <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR" baseAttributes="TEXT" />
 			     <option name="DEFAULT_VALID_STRING_ESCAPE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			       </value>
 			     </option>
 			     <option name="DELETED_TEXT_ATTRIBUTES">
@@ -950,38 +950,38 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="DIFF_CONFLICT">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Plum}"/>
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Plum}"/>
+			         <option name="BACKGROUND" value="{Scheme.Keyword}"/>
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="DIFF_DELETED">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Magenta}"/>
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Magenta}"/>
+			         <option name="BACKGROUND" value="{Scheme.Class}"/>
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="DIFF_INSERTED">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Green}"/>
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Green}"/>
+			         <option name="BACKGROUND" value="{Scheme.Numeral}"/>
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="DIFF_MODIFIED">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Purple}"/>
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Purple}"/>
+			         <option name="BACKGROUND" value="{Scheme.Method}"/>
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="DUPLICATE_FROM_SERVER">
 			       <value>
 			         <option name="FOREGROUND" value="{Scheme.Background}" />
-			         <option name="BACKGROUND" value="{Scheme.Orange}" />
+			         <option name="BACKGROUND" value="{Scheme.Warning}" />
 			       </value>
 			     </option>
 			     <option name="ERRORS_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Red}" />
+			         <option name="FOREGROUND" value="{Scheme.Error}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Error}" />
 			         <option name="EFFECT_TYPE" value="{FontItalic}" />
 			       </value>
 			     </option>
@@ -995,29 +995,29 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}" />
-			         <option name="EFFECT_COLOR" value="{Scheme.Purple}" />
+			         <option name="FOREGROUND" value="{Scheme.Method}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Method}" />
 			         <option name="EFFECT_TYPE" value="1" />
 			       </value>
 			     </option>
 			     <option name="GENERIC_SERVER_ERROR_OR_WARNING">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Red}" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Red}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Error}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Error}" />
 			         <option name="EFFECT_TYPE" value="1" />
 			       </value>
 			     </option>
 			     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
-			         <option name="EFFECT_COLOR" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Keyword}"/>
 			         <option name="EFFECT_TYPE" value="1"/>
 			       </value>
 			     </option>
 			     <option name="HYPERLINK_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
-			         <option name="EFFECT_COLOR" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Keyword}" />
 			         <option name="EFFECT_TYPE" value="1" />
 			       </value>
 			     </option>
@@ -1030,7 +1030,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="INACTIVE_HYPERLINK_ATTRIBUTES">
@@ -1041,33 +1041,33 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="INDENT_GUIDES_RAINBOW_COLOR0">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="INDENT_GUIDES_RAINBOW_COLOR1">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="INDENT_GUIDES_RAINBOW_COLOR2">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="INDENT_GUIDES_RAINBOW_COLOR3">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="INDENT_GUIDES_RAINBOW_COLOR4">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="INFO_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Yellow}" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Yellow}" />
+			         <option name="FOREGROUND" value="{Scheme.Info}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Info}" />
 			         <option name="EFFECT_TYPE" value="{FontItalic}" />
 			       </value>
 			     </option>
@@ -1101,24 +1101,24 @@ public class RiderXml : ITheme
 			     <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
 			     <option name="io.github.intellij.dlanguage.sdlang.TAG_IDENTIFIER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="LOGCAT_ASSERT_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
-			         <option name="EFFECT_COLOR" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Error}"/>
 			         <option name="EFFECT_TYPE" value="1"/>
 			       </value>
 			     </option>
 			     <option name="LOGCAT_DEBUG_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="LOGCAT_FILTER_KEY">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="LOGCAT_FILTER_KVALUE">
@@ -1128,37 +1128,37 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="LOGCAT_FILTER_REGEX_KVALUE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="LOGCAT_FILTER_STRING_KVALUE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="LOGCAT_INFO_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Yellow}"/>
+			         <option name="FOREGROUND" value="{Scheme.Info}"/>
 			       </value>
 			     </option>
 			     <option name="LOGCAT_VERBOSE_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="LOGCAT_WARNING_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="LOG_DEBUG_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Yellow}"/>
+			         <option name="FOREGROUND" value="{Scheme.Info}"/>
 			       </value>
 			     </option>
 			     <option name="LOG_ERROR_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="LOG_EXPIRED_ENTRY">
@@ -1168,38 +1168,38 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="LOG_INFO_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="LOG_VERBOSE_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="LOG_WARNING_OUTPUT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="LUA_REGION_DESC">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Red}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Error}" />
 			         <option name="EFFECT_TYPE" value="3" />
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_BLOCK_QUOTE_MARKER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_BOLD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			         <option name="FONT_TYPE" value="{FontBold}"/>
 			       </value>
 			     </option>
@@ -1216,47 +1216,47 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="MARKDOWN_CODE_SPAN">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_CODE_SPAN_MARKER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_HEADER_LEVEL_1">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_HEADER_LEVEL_2">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_HEADER_LEVEL_3">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_HEADER_LEVEL_4">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_HEADER_LEVEL_5">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_HEADER_LEVEL_6">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_HRULE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_HTML_BLOCK">
@@ -1266,7 +1266,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="MARKDOWN_ITALIC">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_ITALIC_MARKER">
@@ -1277,23 +1277,23 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="MARKDOWN_LINK_DESTINATION">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_LINK_LABEL">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_LINK_TEXT">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			         <option name="EFFECT_TYPE" value="1"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_LINK_TITLE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_LIST_ITEM">
@@ -1303,7 +1303,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="MARKDOWN_LIST_MARKER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}"/>
+			         <option name="FOREGROUND" value="{Scheme.Numeral}"/>
 			       </value>
 			     </option>
 			     <option name="MARKDOWN_ORDERED_LIST">
@@ -1323,15 +1323,15 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Red}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Error}"/>
 			         <option name="EFFECT_TYPE" value="3"/>
 			       </value>
 			     </option>
 			     <option name="MATCHED_BRACE_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}" />
+			         <option name="FOREGROUND" value="{Scheme.Field}" />
 			         <option name="FONT_TYPE" value="{FontBold}" />
-			         <option name="EFFECT_COLOR" value="{Scheme.Blue}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Field}" />
 			         <option name="EFFECT_TYPE" value="4" />
 			       </value>
 			     </option>
@@ -1343,7 +1343,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="ReSharper.ASP_NET_RUN_AT_ATTRIBUTE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="ReSharper.BRACE_OUTLINE">
@@ -1353,22 +1353,22 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="ReSharper.BUILTIN_TYPE_KEYWORD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			       </value>
 			     </option>
 			     <option name="ReSharper.CONTROL_FLOW_KEYWORD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			       </value>
 			     </option>
 			     <option name="ReSharper.CONTROL_TRANSFER_KEYWORD">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}" />
+			         <option name="FOREGROUND" value="{Scheme.Keyword}" />
 			       </value>
 			     </option>
 			     <option name="ReSharper.CSHARP_TYPE_PARAMETER_IDENTIFIER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}" />
+			         <option name="FOREGROUND" value="{Scheme.Numeral}" />
 			       </value>
 			     </option>
 			     <option name="ReSharper.FORMAT_STRING_ITEM">
@@ -1400,12 +1400,12 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="ReSharper.OPERATOR_IDENTIFIER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}" />
+			         <option name="FOREGROUND" value="{Scheme.Field}" />
 			       </value>
 			     </option>
 			     <option name="ReSharper.PROPERTY_IDENTIFIER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}" />
+			         <option name="FOREGROUND" value="{Scheme.Field}" />
 			       </value>
 			     </option>
 			     <option name="ReSharper.STRING_ESCAPE_CHARACTER_2" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
@@ -1414,12 +1414,12 @@ public class RiderXml : ITheme
 			         <option name="FOREGROUND" value="{Scheme.Text}" />
 			         <option name="BACKGROUND" value="{Scheme.Highlight}" />
 			         <option name="EFFECT_COLOR" value="" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Green}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Numeral}" />
 			       </value>
 			     </option>
 			     <option name="ReSharper.IL_INSTRUCTION">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}"/>
+			         <option name="FOREGROUND" value="{Scheme.Error}"/>
 			       </value>
 			     </option>
 			     <option name="ReSharper.IL_TARGET_CODE_LABEL">
@@ -1431,7 +1431,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="ReSharper.MATCHED_FORMAT_STRING_ITEM">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="ReSharper.OUTLINED_ENTITY">
@@ -1441,102 +1441,102 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="ReSharper.STRING_ESCAPE_CHARACTER_2">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="ReSharper.XAML_CLASS">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="ReSharper.XAML_NAMESPACE_ALIAS">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="ReSharper.XAML_PROPERTY_IDENTIFIER">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="RUNTIME_ERROR">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Red}" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Red}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Error}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Error}" />
 			         <option name="EFFECT_TYPE" value="5" />
 			       </value>
 			     </option>
 			     <option name="SQUARE_BRACKETS_RAINBOW_COLOR0">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="SQUARE_BRACKETS_RAINBOW_COLOR1">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="SQUARE_BRACKETS_RAINBOW_COLOR2">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR0">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR1">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR2">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="SUGGESTION">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Yellow}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Info}" />
 			         <option name="EFFECT_TYPE" value="{FontItalic}" />
 			       </value>
 			     </option>
 			     <option name="TAB_SELECTED">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			         <option name="BACKGROUND" value="{Scheme.Highlight}"/>
 			       </value>
 			     </option>
 			     <option name="TAB_SELECTED_INACTIVE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			         <option name="BACKGROUND" value="{Scheme.HighlightLow}"/>
 			       </value>
 			     </option>
 			     <option name="TAG_ATTR_KEY">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
@@ -1560,48 +1560,48 @@ public class RiderXml : ITheme
 			         <option name="FOREGROUND" value="{Scheme.Text}" />
 			         <option name="BACKGROUND" value="{Scheme.Highlight}" />
 			         <option name="EFFECT_COLOR" value="" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Green}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Numeral}" />
 			       </value>
 			     </option>
 			     <option name="TODO_DEFAULT_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Green}" />
+			         <option name="FOREGROUND" value="{Scheme.Numeral}" />
 			         <option name="FONT_TYPE" value="{FontItalic}" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Green}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Numeral}" />
 			       </value>
 			     </option>
 			     <option name="TYPEDEF">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Orange}"/>
+			         <option name="FOREGROUND" value="{Scheme.Warning}"/>
 			       </value>
 			     </option>
 			     <option name="TYPO">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Orange}" />
+			         <option name="EFFECT_COLOR" value="{Scheme.Warning}" />
 			         <option name="EFFECT_TYPE" value="{FontItalic}" />
 			       </value>
 			     </option>
 			     <option name="UNMATCHED_BRACE_ATTRIBUTES">
 			       <value>
-			         <option name="BACKGROUND" value="{Scheme.Red}"/>
+			         <option name="BACKGROUND" value="{Scheme.Error}"/>
 			         <option name="FONT_TYPE" value="{FontBold}"/>
 			       </value>
 			     </option>
 			     <option name="Unresolved reference access">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Red}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Error}"/>
 			         <option name="EFFECT_TYPE" value="{FontItalic}"/>
 			       </value>
 			     </option>
 			     <option name="UNMATCHED_BRACE_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Red}" />
+			         <option name="FOREGROUND" value="{Scheme.Error}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Error}" />
 			       </value>
 			     </option>
 			     <option name="WARNING_ATTRIBUTES">
@@ -1613,7 +1613,7 @@ public class RiderXml : ITheme
 			     </option>
 			     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Red}" />
+			         <option name="FOREGROUND" value="{Scheme.Error}" />
 			         <option name="EFFECT_TYPE" value="1" />
 			       </value>
 			     </option>
@@ -1622,13 +1622,13 @@ public class RiderXml : ITheme
 			         <option name="FOREGROUND" value="{Scheme.Text}" />
 			         <option name="BACKGROUND" value="{Scheme.Highlight}" />
 			         <option name="EFFECT_COLOR" value="" />
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Green}" />
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Numeral}" />
 			       </value>
 			     </option>
 			     <option name="WRONG_REFERENCES_ATTRIBUTES">
 			       <value>
-			         <option name="EFFECT_COLOR" value="{Scheme.Red}"/>
-			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Red}"/>
+			         <option name="EFFECT_COLOR" value="{Scheme.Error}"/>
+			         <option name="ERROR_STRIPE_COLOR" value="{Scheme.Error}"/>
 			         <option name="EFFECT_TYPE" value="{FontItalic}"/>
 			       </value>
 			     </option>
@@ -1637,40 +1637,40 @@ public class RiderXml : ITheme
 			     <option name="XML_ENTITY_REFERENCE" baseAttributes="DEFAULT_ENTITY"/>
 			     <option name="XML_NS_PREFIX">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="XML_TAG" baseAttributes="DEFAULT_TAG"/>
 			     <option name="XML_TAG_DATA" baseAttributes="TEXT"/>
 			     <option name="XML_TAG_NAME">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <!-- Semantic Highlights -->
 			     <option name="RAINBOW_COLOR0">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Magenta}"/>
+			         <option name="FOREGROUND" value="{Scheme.Class}"/>
 			       </value>
 			     </option>
 			     <option name="RAINBOW_COLOR1">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Plum}"/>
+			         <option name="FOREGROUND" value="{Scheme.Keyword}"/>
 			       </value>
 			     </option>
 			     <option name="RAINBOW_COLOR2">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Cyan}"/>
+			         <option name="FOREGROUND" value="{Scheme.String}"/>
 			       </value>
 			     </option>
 			     <option name="RAINBOW_COLOR3">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Blue}"/>
+			         <option name="FOREGROUND" value="{Scheme.Field}"/>
 			       </value>
 			     </option>
 			     <option name="RAINBOW_COLOR4">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Purple}"/>
+			         <option name="FOREGROUND" value="{Scheme.Method}"/>
 			       </value>
 			     </option>
 			   </attributes>

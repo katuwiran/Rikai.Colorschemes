@@ -24,7 +24,7 @@ public class SourceGit : ITheme
 			      "Popup": "#{{Scheme.Background}}",
 			      "Contents": "#{{Scheme.Background}}",
 
-			      "Badge": "#{{Scheme.Plum}}",
+			      "Badge": "#{{Scheme.Keyword}}",
 			      "BadgeFG": "#{{Scheme.Background}}",
 			      "Conflict": "#{{Scheme.DiffConflict}}",
 			      "Conflict.Foreground": "#{{Scheme.Background}}",
@@ -47,20 +47,20 @@ public class SourceGit : ITheme
 			      "Diff.DeletedBG": "#{{Scheme.DiffDeletedBackground}}",
 			      "Diff.DeletedHighlight": "#{{Scheme.DiffDeletedHighlight}}",
 
-			      "SystemAccentColor": "#{{Scheme.Plum}}",
-			      "Link": "#{{Scheme.Blue}}"
+			      "SystemAccentColor": "#{{Scheme.Keyword}}",
+			      "Link": "#{{Scheme.Field}}"
 			    },
 
 			    "GraphPenThickness": 2,
 			    "OpacityForNotMergedCommits": 0.5,
 
 			    "GraphColors": [
-			      "#{{Scheme.Magenta}}",
-			      "#{{Scheme.Purple}}",
-			      "#{{Scheme.Plum}}",
-			      "#{{Scheme.Blue}}",
-			      "#{{Scheme.Cyan}}",
-			      "#{{Scheme.Orange}}"
+			      "#{{Scheme.Class}}",
+			      "#{{Scheme.Method}}",
+			      "#{{Scheme.Keyword}}",
+			      "#{{Scheme.Field}}",
+			      "#{{Scheme.String}}",
+			      "#{{Scheme.Warning}}"
 			    ]
 			  }
 			  """;

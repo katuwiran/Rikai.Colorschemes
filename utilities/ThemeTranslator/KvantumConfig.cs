@@ -27,8 +27,8 @@ public class KvantumConfig : ITheme
 
 		// Accents
 		string highlight   = $"#{Scheme.Highlight}";
-		string link        = $"#{Scheme.Magenta}";
-		string linkVisited = $"#{Scheme.Plum}";
+		string link        = $"#{Scheme.Class}";
+		string linkVisited = $"#{Scheme.Keyword}";
 
 		// Typography
 		string textPrimary  = $"#{Scheme.Text}";

@@ -16,15 +16,26 @@ public partial class ColorScheme
 	public required string TextInactive { get; set; } // disabled, unfocused
 	public required string TextHidden   { get; set; } // toggled off, whitespace
 
-	public required string Magenta { get; set; }
-	public required string Plum    { get; set; }
-	public required string Blue    { get; set; }
-	public required string Purple  { get; set; }
-	public required string Cyan    { get; set; }
-	public required string Green   { get; set; }
-	public required string Yellow  { get; set; }
-	public required string Red     { get; set; }
-	public required string Orange  { get; set; }
+	public required string Class   { get; set; } // "heavy" keywords
+	public required string Keyword { get; set; } // "light" keywords
+	public required string Field   { get; set; } // method Names
+	public required string Method  { get; set; } // variable names
+	public required string String  { get; set; } // strings
+	public required string Numeral { get; set; } // numerals
+	public required string Info    { get; set; } // 
+	public required string Error   { get; set; } // 
+	public required string Warning { get; set; } // 
+
+	// Color Names
+	public required string ClassName   { get; set; } // "heavy" keywords
+	public required string KeywordName { get; set; } // "light" keywords
+	public required string FieldName   { get; set; } // method Names
+	public required string MethodName  { get; set; } // variable names
+	public required string StringName  { get; set; } // strings
+	public required string NumeralName { get; set; } // numerals
+	public required string InfoName    { get; set; } // 
+	public required string ErrorName   { get; set; } // 
+	public required string WarningName { get; set; } // 
 
 	public required string HighlightLow  { get; set; } // search results, unpressed
 	public required string Highlight     { get; set; } // selected result, on press
@@ -33,8 +44,8 @@ public partial class ColorScheme
 	public string Accent     => HighlightHigh; // primary color
 	public string AccentText => Background;    // primary color
 
-	public string HoverText             => Plum;       // text on hover
-	public string PressedText           => Plum;       // text on press
+	public string HoverText             => Keyword;    // text on hover
+	public string PressedText           => Keyword;    // text on press
 	public string SelectionText         => Background; // selected text
 	public string SelectionInactiveText => Text;       // selected text but unfocused
 	public string InactiveText          => Text;       // inactive text on buttons
@@ -48,9 +59,6 @@ public partial class ColorScheme
 	public string MenuBackground => Background;
 
 	// linting
-	public string Error       => Red;
-	public string Warning     => Orange;
-	public string Info        => Yellow;
 	public string Annotations => Text;
 
 	// Console
@@ -58,27 +66,27 @@ public partial class ColorScheme
 	public string CaretText            => Background;
 	public string ConsoleBackground    => Background;   // Console 0. Background
 	public string ConsoleBackgroundAlt => TextInactive; // Console 0. Bright
-	public string ConsoleRed           => Magenta;      // Console 1. Red
-	public string ConsoleRedAlt        => Magenta;      // Console 1. Red
-	public string ConsoleGreen         => Purple;       // Console 2. Green
-	public string ConsoleGreenAlt      => Purple;       // Console 2. Green Bright
-	public string ConsoleYellow        => Cyan;         // Console 3. Yellow
-	public string ConsoleYellowAlt     => Cyan;         // Console 3. Yellow Bright
-	public string ConsoleBlue          => Blue;         // Console 4. Blue
-	public string ConsoleBlueAlt       => Blue;         // Console 4. Blue Bright
-	public string ConsoleMagenta       => Red;          // Console 5. Magenta
-	public string ConsoleMagentaAlt    => Red;          // Console 5. Magenta Bright
-	public string ConsoleCyan          => Plum;         // Console 6. Cyan
-	public string ConsoleCyanAlt       => Plum;         // Console 6. Cyan Bright
+	public string ConsoleRed           => Class;        // Console 1. Red
+	public string ConsoleRedAlt        => Class;        // Console 1. Red
+	public string ConsoleGreen         => Method;       // Console 2. Green
+	public string ConsoleGreenAlt      => Method;       // Console 2. Green Bright
+	public string ConsoleYellow        => String;       // Console 3. Yellow
+	public string ConsoleYellowAlt     => String;       // Console 3. Yellow Bright
+	public string ConsoleBlue          => Field;        // Console 4. Blue
+	public string ConsoleBlueAlt       => Field;        // Console 4. Blue Bright
+	public string ConsoleMagenta       => Error;        // Console 5. Magenta
+	public string ConsoleMagentaAlt    => Error;        // Console 5. Magenta Bright
+	public string ConsoleCyan          => Keyword;      // Console 6. Cyan
+	public string ConsoleCyanAlt       => Keyword;      // Console 6. Cyan Bright
 	public string ConsoleForeground    => Text;         // Console 7. Text 
 	public string ConsoleForegroundAlt => TextFaded;    // Console 7. Text Bright
 
 	// git diff marks
-	public string DiffAdded    => Green;
-	public string DiffDeleted  => Red;
-	public string DiffModified => Purple;
+	public string DiffAdded    => Numeral;
+	public string DiffDeleted  => Error;
+	public string DiffModified => Method;
 	public string DiffIgnored  => TextFaded;
-	public string DiffConflict => Plum;
+	public string DiffConflict => Keyword;
 
 	// git diff text highlights, for source git
 	public required string DiffAddedHighlight    { get; set; }

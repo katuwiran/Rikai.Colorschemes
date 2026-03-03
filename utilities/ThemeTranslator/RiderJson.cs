@@ -30,20 +30,20 @@ public class RiderJson : ITheme
 			  		"overlay": "#{{Scheme.BackgroundOverlay}}",
 			  		"subtle": "#{{Scheme.TextFaded}}",
 			  		"muted": "#{{Scheme.TextHidden}}",
-			  		"magenta": "#{{Scheme.Magenta}}",
-			  		"lavender": "#{{Scheme.Plum}}",
-			  		"blue": "#{{Scheme.Blue}}",
-			  		"purple": "#{{Scheme.Purple}}",
-			  		"cyan": "#{{Scheme.Cyan}}",
-			  		"green": "#{{Scheme.Green}}",
-			  		"yellow": "#{{Scheme.Yellow}}",
-			  		"red": "#{{Scheme.Red}}",
-			  		"orange": "#{{Scheme.Orange}}",
-			  		"pink": "#{{Scheme.Plum}}",
+			  		"magenta": "#{{Scheme.Class}}",
+			  		"lavender": "#{{Scheme.Keyword}}",
+			  		"blue": "#{{Scheme.Field}}",
+			  		"purple": "#{{Scheme.Method}}",
+			  		"cyan": "#{{Scheme.String}}",
+			  		"green": "#{{Scheme.Numeral}}",
+			  		"yellow": "#{{Scheme.Info}}",
+			  		"red": "#{{Scheme.Error}}",
+			  		"orange": "#{{Scheme.Warning}}",
+			  		"pink": "#{{Scheme.Keyword}}",
 			  		"surface0": "#{{Scheme.BackgroundEdges}}",
 			  		"text": "#{{Scheme.Text}}",
-			  		"accentColor": "#{{Scheme.Magenta}}",
-			  		"secondaryAccentColor": "#{{Scheme.Magenta}}",
+			  		"accentColor": "#{{Scheme.Class}}",
+			  		"secondaryAccentColor": "#{{Scheme.Class}}",
 			  		"buttonForeground": "#{{Scheme.Text}}",
 			  		"primaryForeground": "#{{Scheme.Text}}",
 			  		"primaryBackground": "#{{Scheme.Background}}",
@@ -85,10 +85,10 @@ public class RiderJson : ITheme
 			  			"pressedBorderColor": "selectionBackground"
 			  		},
 			  		"Banner": {
-			  			"errorBackground": "#{{Scheme.Red}}",
-			  			"errorBorderColor": "#{{Scheme.Red}}",
-			  			"warningBackground": "#{{Scheme.Yellow}}",
-			  			"warningBorderColor": "#{{Scheme.Yellow}}"
+			  			"errorBackground": "#{{Scheme.Error}}",
+			  			"errorBorderColor": "#{{Scheme.Error}}",
+			  			"warningBackground": "#{{Scheme.Info}}",
+			  			"warningBorderColor": "#{{Scheme.Info}}"
 			  		},
 			  		"Bookmark": {
 			  			"Mnemonic": {
@@ -189,7 +189,7 @@ public class RiderJson : ITheme
 			  		},
 			  		"EditorTabs": {
 			  			"background": "primaryBackground",
-			  			"inactiveUnderlineColor": "#{{Scheme.Purple}}",
+			  			"inactiveUnderlineColor": "#{{Scheme.Method}}",
 			  			"hoverBackground": "hoverBackground",
 			  			"underlineColor": "accentColor",
 			  			"underlineHeight": 1,
@@ -197,12 +197,12 @@ public class RiderJson : ITheme
 			  			"unselectedBlend": 0.9
 			  		},
 			  		"FileColor": {
-			  			"Blue": "#{{Scheme.Blue}}",
-			  			"Green": "#{{Scheme.Green}}",
-			  			"Orange": "#{{Scheme.Orange}}",
-			  			"Rose": "#{{Scheme.Red}}",
-			  			"Violet": "#{{Scheme.Purple}}",
-			  			"Yellow": "#{{Scheme.Yellow}}"
+			  			"Blue": "#{{Scheme.Field}}",
+			  			"Green": "#{{Scheme.Numeral}}",
+			  			"Orange": "#{{Scheme.Warning}}",
+			  			"Rose": "#{{Scheme.Error}}",
+			  			"Violet": "#{{Scheme.Method}}",
+			  			"Yellow": "#{{Scheme.Info}}"
 			  		},
 			  		"Label": {
 			  			"background": "panelBackground",
@@ -210,9 +210,9 @@ public class RiderJson : ITheme
 			  		},
 			  		"GotItTooltip": {
 			  			"background": "panelBackground",
-			  			"codeBackground": "#{{Scheme.Red}}",
-			  			"codeBorderColor": "#{{Scheme.Blue}}",
-			  			"shortcutForeground": "{{Scheme.Magenta}}"
+			  			"codeBackground": "#{{Scheme.Error}}",
+			  			"codeBorderColor": "#{{Scheme.Field}}",
+			  			"shortcutForeground": "{{Scheme.Class}}"
 			  		},
 			  		"Link": {
 			  			"activeForeground": "accentColor",
@@ -512,23 +512,23 @@ public class RiderJson : ITheme
 			  	},
 			  	"icons": {
 			  		"ColorPalette": {
-			  			"Actions.Blue": "#{{Scheme.Blue}}",
-			  			"Actions.Green": "#{{Scheme.Green}}",
+			  			"Actions.Blue": "#{{Scheme.Field}}",
+			  			"Actions.Green": "#{{Scheme.Numeral}}",
 			  			"Actions.Grey": "#{{Scheme.TextHidden}}",
-			  			"Actions.GreyInline": "#{{Scheme.Blue}}",
-			  			"Actions.GreyInline.Dark": "#{{Scheme.Blue}}",
-			  			"Actions.Red": "#{{Scheme.Red}}",
-			  			"Actions.Yellow": "#{{Scheme.Yellow}}",
+			  			"Actions.GreyInline": "#{{Scheme.Field}}",
+			  			"Actions.GreyInline.Dark": "#{{Scheme.Field}}",
+			  			"Actions.Red": "#{{Scheme.Error}}",
+			  			"Actions.Yellow": "#{{Scheme.Info}}",
 			  			"Objects.BlackText": "#{{Scheme.BackgroundEdges}}",
-			  			"Objects.Blue": "#{{Scheme.Blue}}",
-			  			"Objects.Green": "#{{Scheme.Green}}",
+			  			"Objects.Blue": "#{{Scheme.Field}}",
+			  			"Objects.Green": "#{{Scheme.Numeral}}",
 			  			"Objects.Grey": "#{{Scheme.TextHidden}}",
-			  			"Objects.Pink": "#{{Scheme.Plum}}",
-			  			"Objects.Purple": "#{{Scheme.Purple}}",
-			  			"Objects.Red": "#{{Scheme.Red}}",
-			  			"Objects.RedStatus": "#{{Scheme.Red}}",
-			  			"Objects.Yellow": "#{{Scheme.Yellow}}",
-			  			"Objects.YellowDark": "#{{Scheme.Orange}}",
+			  			"Objects.Pink": "#{{Scheme.Keyword}}",
+			  			"Objects.Purple": "#{{Scheme.Method}}",
+			  			"Objects.Red": "#{{Scheme.Error}}",
+			  			"Objects.RedStatus": "#{{Scheme.Error}}",
+			  			"Objects.Yellow": "#{{Scheme.Info}}",
+			  			"Objects.YellowDark": "#{{Scheme.Warning}}",
 			  			"Checkbox.Background.Default": "#{{Scheme.Background}}",
 			  			"Checkbox.Background.Default.Dark": "#{{Scheme.BackgroundEdges}}",
 			  			"Checkbox.Background.Disabled": "#{{Scheme.Background}}",
@@ -540,8 +540,8 @@ public class RiderJson : ITheme
 			  			"Checkbox.Border.Selected": "#{{Scheme.BackgroundEdges}}",
 			  			"Checkbox.Foreground.Disabled": "#{{Scheme.TextHidden}}",
 			  			"Checkbox.Foreground.Disabled.Dark": "#{{Scheme.TextHidden}}",
-			  			"Checkbox.Foreground.Selected": "#{{Scheme.Magenta}}",
-			  			"Checkbox.Foreground.Selected.Dark": "#{{Scheme.Magenta}}",
+			  			"Checkbox.Foreground.Selected": "#{{Scheme.Class}}",
+			  			"Checkbox.Foreground.Selected.Dark": "#{{Scheme.Class}}",
 			  			"Tree.iconColor": "#{{Scheme.Text}}"
 			  		}
 			  	}

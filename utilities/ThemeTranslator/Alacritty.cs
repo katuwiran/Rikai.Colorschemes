@@ -44,7 +44,7 @@ public class Alacritty : ITheme
 
 			 [colors.hints.start]
 			 foreground = "#{Scheme.Background}"
-			 background = "#{Scheme.Yellow}"
+			 background = "#{Scheme.Info}"
 
 			 [colors.hints.end]
 			 foreground = "#{Scheme.Background}"
@@ -76,7 +76,7 @@ public class Alacritty : ITheme
 
 			 [[colors.indexed_colors]]
 			 index = 16
-			 color = "#{Scheme.Yellow}"
+			 color = "#{Scheme.Info}"
 
 			 [[colors.indexed_colors]]
 			 index = 17
