@@ -1,8 +1,8 @@
     {
 	// "inspired" by https://github.com/rose-pine/sublime-text/
     "name": "Skylight",
-    "description": "Rikai's light color scheme, light version of Moonlight",
-    "type": "False",
+    "description": "Rikai's opinionated light color scheme, fully my own",
+    "type": "True",
     // "project": "",
     "author": "Rikaisuru",
     "variables": {
