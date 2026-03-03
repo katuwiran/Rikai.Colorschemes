@@ -9,26 +9,26 @@
 
     "Badge": "#dd6e96",
     "BadgeFG": "#eaeef1",
-    "Conflict": "#dd6e96",
+    "Conflict": "#4d5de5",
     "Conflict.Foreground": "#eaeef1",
 
     "Border0": "#e2ebf2",
-    "Border1": "#e3e9ed",
-    "Border2": "#d2e1f2",
+    "Border1": "#d2e1f2",
+    "Border2": "#9ca4d1",
 
     "FlatButton.Background": "#e2ebf2",
-    "FlatButton.BackgroundHovered": "#e3e9ed",
+    "FlatButton.BackgroundHovered": "#85bbff",
 
     "FG1": "#525b8f",
     "FG2": "#818ec9",
 
     "Diff.EmptyBG": "#eaeef1",
 
-    "Diff.AddedBG": "#556565",
-    "Diff.AddedHighlight": "#444d56",
+    "Diff.AddedBG": "#36394a",
+    "Diff.AddedHighlight": "#61766f",
 
     "Diff.DeletedBG": "#51304c",
-    "Diff.DeletedHighlight": "#6a3654",
+    "Diff.DeletedHighlight": "#9a4063",
 
     "SystemAccentColor": "#dd6e96",
     "Link": "#4d5de5"
