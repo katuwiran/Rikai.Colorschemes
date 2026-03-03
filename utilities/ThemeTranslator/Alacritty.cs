@@ -31,8 +31,8 @@ public class Alacritty : ITheme
 			 cursor = "#{Scheme.Colors.HighlightHigh}"
 
 			 [colors.search.matches]
-			 foreground = "#{Scheme.Ui.SelectionText}"
-			 background = "#{Scheme.Ui.SelectionBackground}"
+			 foreground = "#{Scheme.Ui.MatchText}"
+			 background = "#{Scheme.Ui.MatchBackground}"
 
 			 [colors.search.focused_match]
 			 foreground = "#{Scheme.Ui.SelectionText}"
