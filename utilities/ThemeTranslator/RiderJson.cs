@@ -28,12 +28,12 @@ public class RiderJson : ITheme
 			  		"base": "#{{Scheme.Background}}",
 			  		"surface": "#{{Scheme.BackgroundEdges}}",
 			  		"overlay": "#{{Scheme.BackgroundOverlay}}",
-			  		"subtle": "#{{Scheme.TextFaded}}",
-			  		"muted": "#{{Scheme.TextHidden}}",
-			  		"magenta": "#{{Scheme.Class}}",
-			  		"lavender": "#{{Scheme.Keyword}}",
-			  		"blue": "#{{Scheme.Field}}",
-			  		"purple": "#{{Scheme.Method}}",
+			  		"faded": "#{{Scheme.TextFaded}}",
+			  		"hidden": "#{{Scheme.TextHidden}}",
+			  		"class": "#{{Scheme.Class}}",
+			  		"keyword": "#{{Scheme.Keyword}}",
+			  		"field": "#{{Scheme.Field}}",
+			  		"method": "#{{Scheme.Method}}",
 			  		"cyan": "#{{Scheme.String}}",
 			  		"green": "#{{Scheme.Numeral}}",
 			  		"yellow": "#{{Scheme.Info}}",
@@ -47,7 +47,7 @@ public class RiderJson : ITheme
 			  		"buttonForeground": "#{{Scheme.Text}}",
 			  		"primaryForeground": "#{{Scheme.Text}}",
 			  		"primaryBackground": "#{{Scheme.Background}}",
-			  		"secondaryBackground": "#{{Scheme.BackgroundEdges}}",
+			  		"secondaryBackground": "#{{Scheme.Background}}",
 			  		"inactiveBackground": "#{{Scheme.TextHidden}}",
 			  		"panelForeground": "#{{Scheme.Text}}",
 			  		"panelBackground": "#{{Scheme.Background}}",
@@ -68,7 +68,10 @@ public class RiderJson : ITheme
 			  			"arc": "7",
 			  			"foreground": "primaryForeground",
 			  			"background": "primaryBackground",
+			  			"disabledForeground": "primaryBackground",
 			  			"disabledBackground": "primaryBackground",
+			  			"disabledText": "primaryBackground",
+			  			"disabledBorderColor": "primaryBackground",
 			  			"inactiveBackground": "primaryBackground",
 			  			"selectionBackground": "selectionBackground",
 			  			"selectionForeground": "selectionForeground",
@@ -77,9 +80,12 @@ public class RiderJson : ITheme
 			  			"separatorColor": "separatorColor",
 			  			"borderColor": "borderColor",
 			  			"focusColor": "accentColor",
-			  			"infoForeground": "subtle"
+			  			"infoForeground": "faded"
 			  		},
 			  		"ActionButton": {
+			  			"focusedBorderColor": "hoverBackground",
+			  			"hoverBackground": "hoverBackground",
+			  			"hoverBorderColor": "hoverBackground",
 			  			"hoverBackground": "hoverBackground",
 			  			"pressedBackground": "pressedBackground",
 			  			"pressedBorderColor": "selectionBackground"
@@ -159,7 +165,7 @@ public class RiderJson : ITheme
 			  			"inactiveErrorFocusColor": "red",
 			  			"inactiveWarningFocusColor": "yellow",
 			  			"warningFocusColor": "yellow",
-			  			"infoForeground": "subtle"
+			  			"infoForeground": "faded"
 			  		},
 			  		"Counter": {
 			  			"background": "accentColor",
