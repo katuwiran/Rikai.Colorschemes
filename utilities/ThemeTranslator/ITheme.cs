@@ -1,4 +1,4 @@
-namespace ColorschemeUtils;
+namespace Rikai.Colorschemes;
 
 public interface ITheme
 {

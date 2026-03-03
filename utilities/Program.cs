@@ -1,4 +1,6 @@
-﻿namespace ColorschemeUtils;
+﻿using Rikai.Colorschemes;
+
+namespace ColorschemeUtils;
 
 public class Program
 {
@@ -31,8 +33,8 @@ public class Program
 		// iterates over the constructors list, creating one for each color scheme below
 		foreach (var constructor in constructors)
 		{
-			themes.Add(constructor(ColorScheme.Moonlight));
-			themes.Add(constructor(ColorScheme.Skylight));
+			themes.Add(constructor(ColorSchemeFactory.Moonlight()));
+			themes.Add(constructor(ColorSchemeFactory.Skylight()));
 		}
 
 		Console.WriteLine("Generating themes...");
