@@ -25,185 +25,202 @@ public class RiderJson : ITheme
 			  	"author": "Rikai. built on top of catppuccin's template",
 			  	"editorScheme": "/{{Scheme.Name}}.xml",
 			  	"colors": {
-			  		"base": "#{{Scheme.Background}}",
-			  		"surface": "#{{Scheme.BackgroundEdges}}",
-			  		"overlay": "#{{Scheme.BackgroundOverlay}}",
+			  		"bg": "#{{Scheme.Background}}",
+			  		"borderLow": "#{{Scheme.BackgroundEdges}}",
+			  		"border": "#{{Scheme.BackgroundOverlay}}",
+			  		"bgOverlay": "#{{Scheme.BackgroundOverlay}}",
 			  		"faded": "#{{Scheme.TextFaded}}",
+			  		"inactive": "#{{Scheme.TextInactive}}",
 			  		"hidden": "#{{Scheme.TextHidden}}",
 			  		"class": "#{{Scheme.Class}}",
 			  		"keyword": "#{{Scheme.Keyword}}",
 			  		"field": "#{{Scheme.Field}}",
 			  		"method": "#{{Scheme.Method}}",
-			  		"cyan": "#{{Scheme.String}}",
-			  		"green": "#{{Scheme.Numeral}}",
-			  		"yellow": "#{{Scheme.Info}}",
-			  		"red": "#{{Scheme.Error}}",
-			  		"orange": "#{{Scheme.Warning}}",
-			  		"pink": "#{{Scheme.Keyword}}",
-			  		"surface0": "#{{Scheme.BackgroundEdges}}",
+			  		"string": "#{{Scheme.String}}",
+			  		"numeral": "#{{Scheme.Numeral}}",
+			  		"info": "#{{Scheme.Info}}",
+			  		"warning": "#{{Scheme.Warning}}",
+			  		"error": "#{{Scheme.Error}}",
 			  		"text": "#{{Scheme.Text}}",
-			  		"accentColor": "#{{Scheme.Class}}",
-			  		"secondaryAccentColor": "#{{Scheme.Class}}",
+			  		"hiLow": "#{{Scheme.HighlightLow}}",
+			  		"highlight": "#{{Scheme.Highlight}}",
+			  		"hiHigh": "#{{Scheme.HighlightHigh}}",
+			  		"black": "#{{Scheme.Black}}",
+			  		"red": "#{{Scheme.Red}}",
+			  		"green": "#{{Scheme.Green}}",
+			  		"yellow": "#{{Scheme.Yellow}}",
+			  		"blue": "#{{Scheme.Blue}}",
+			  		"magenta": "#{{Scheme.Magenta}}",
+			  		"cyan": "#{{Scheme.Cyan}}",
+			  		"white": "#{{Scheme.White}}",
+			  		"accentColor": "#{{Scheme.Keyword}}",
+			  		"secondaryAccentColor": "#{{Scheme.Method}}",
 			  		"buttonForeground": "#{{Scheme.Text}}",
-			  		"primaryForeground": "#{{Scheme.Text}}",
-			  		"primaryBackground": "#{{Scheme.Background}}",
-			  		"secondaryBackground": "#{{Scheme.Background}}",
 			  		"inactiveBackground": "#{{Scheme.TextHidden}}",
-			  		"panelForeground": "#{{Scheme.Text}}",
-			  		"panelBackground": "#{{Scheme.Background}}",
-			  		"toolbarBackground": "#{{Scheme.Background}}",
-			  		"hoverBackground": "#{{Scheme.Highlight}}",
-			  		"pressedBackground": "#{{Scheme.HighlightHigh}}",
-			  		"selectionForeground": "#{{Scheme.Text}}",
-			  		"selectionBackground": "#{{Scheme.Highlight}}",
-			  		"selectionInactiveBackground": "#{{Scheme.HighlightLow}}",
-			  		"borderColor": "#{{Scheme.HighlightLow}}",
-			  		"separatorColor": "#{{Scheme.BackgroundEdges}}",
-			  		"searchMatchBackground": "#{{Scheme.Highlight}}",
+			  		"inactiveForeground": "#{{Scheme.TextHidden}}",
+			  		"hoverBackground": "#{{Scheme.HoverBackground}}",
+			  		"hoverForeground": "#{{Scheme.HoverText}}",
+			  		"pressedBackground": "#{{Scheme.PressedBackground}}",
+			  		"selectionBackground": "#{{Scheme.SelectionBackground}}",
+			  		"selectionForeground": "#{{Scheme.SelectionText}}",
+			  		"selectionInactiveBackground": "#{{Scheme.SelectionInactiveBackground}}",
+			  		"selectionInactiveForeground": "#{{Scheme.SelectionInactiveText}}",
+			  		"searchMatchBackground": "#{{Scheme.HighlightLow}}",
 			  		"gitLogBackground": "#{{Scheme.Background}}",
 			  		"dragAndDropBackground": "#{{Scheme.Background}}"
 			  	},
 			  	"ui": {
 			  		"*": {
 			  			"arc": "7",
-			  			"foreground": "primaryForeground",
-			  			"background": "primaryBackground",
-			  			"disabledForeground": "primaryBackground",
-			  			"disabledBackground": "primaryBackground",
-			  			"disabledText": "primaryBackground",
-			  			"disabledBorderColor": "primaryBackground",
-			  			"inactiveBackground": "primaryBackground",
+			  			"foreground": "text",
+			  			"background": "bg",
+			  			"borderColor": "border",
+			  			"disabledForeground": "inactive",
+			  			"disabledBackground": "bg",
+			  			"disabledBorderColor": "borderLow",
+			  			"disabledShadow": "borderLow",
+			  			"disabledText": "inactive",
+			  			"focusColor": "hiHigh",
+			  			"focusedBorderColor": "hiHigh",
+			  			"inactiveBackground": "inactiveBackground",
+			  			"inactiveForeground": "inactiveForeground",
+			  			"infoForeground": "text",
+			  			"hoverForeground": "hoverForeground",
+			  			"hoverBackground": "hoverBackground",
+			  			"pressedBackground": "pressedBackground",
 			  			"selectionBackground": "selectionBackground",
 			  			"selectionForeground": "selectionForeground",
 			  			"selectionInactiveBackground": "selectionInactiveBackground",
-			  			"selectionInactiveForeground": "primaryForeground",
-			  			"separatorColor": "separatorColor",
-			  			"borderColor": "borderColor",
-			  			"focusColor": "accentColor",
-			  			"infoForeground": "faded"
+			  			"selectionInactiveForeground": "selectionInactiveForeground",
+			  			"separatorColor": "border"
 			  		},
 			  		"ActionButton": {
-			  			"focusedBorderColor": "hoverBackground",
-			  			"hoverBackground": "hoverBackground",
 			  			"hoverBorderColor": "hoverBackground",
 			  			"hoverBackground": "hoverBackground",
 			  			"pressedBackground": "pressedBackground",
 			  			"pressedBorderColor": "selectionBackground"
 			  		},
 			  		"Banner": {
-			  			"errorBackground": "#{{Scheme.Error}}",
-			  			"errorBorderColor": "#{{Scheme.Error}}",
-			  			"warningBackground": "#{{Scheme.Info}}",
-			  			"warningBorderColor": "#{{Scheme.Info}}"
+			  			"errorBackground": "error",
+			  			"errorBorderColor": "error",
+			  			"warningBackground": "warning",
+			  			"warningBorderColor": "warning"
 			  		},
 			  		"Bookmark": {
 			  			"Mnemonic": {
-			  				"iconBackground": "secondaryBackground",
-			  				"iconForeground": "primaryForeground"
+			  				"iconForeground": "text"
 			  			},
 			  			"MnemonicAssigned": {
-			  				"background": "secondaryBackground",
-			  				"foreground": "primaryForeground"
+			  				"background": "bgOverlay",
+			  				"foreground": "text"
 			  			},
-			  			"MnemonicAvailable": {},
+			  			"MnemonicAvailable": {
+			  				"background": "bgOverlay",
+			  				"borderColor": "text",
+			  				"foreground": "text"
+			  			},
 			  			"MnemonicCurrent": {
 			  				"background": "selectionBackground",
-			  				"foreground": "selectionForeground"
+			  				"foreground": "text"
 			  			},
 			  			"iconBackground": "accentColor"
 			  		},
 			  		"Borders": {
-			  			"ContrastBorderColor": "separatorColor",
-			  			"color": "borderColor"
+			  			"ContrastBorderColor": "border",
+			  			"color": "borderLow"
 			  		},
 			  		"Button": {
-			  			"background": "panelBackground",
+			  			"background": "bg",
 			  			"default": {
-			  				"endBackground": "accentColor",
-			  				"endBorderColor": "accentColor",
+			  				"endBackground": "bg",
+			  				"endBorderColor": "border",
 			  				"focusColor": "accentColor",
 			  				"focusedBorderColor": "accentColor",
-			  				"foreground": "primaryBackground",
+			  				"foreground": "bg",
 			  				"startBackground": "accentColor",
 			  				"startBorderColor": "accentColor"
 			  			},
-			  			"disabledBorderColor": "secondaryBackground",
-			  			"endBackground": "secondaryBackground",
-			  			"endBorderColor": "secondaryBackground",
-			  			"focusedBorderColor": "secondaryBackground",
-			  			"foreground": "primaryForeground",
-			  			"startBackground": "secondaryBackground",
-			  			"startBorderColor": "secondaryBackground"
+			  			"disabledBorderColor": "border",
+			  			"disabledText": "inactive",
+			  			"endBackground": "bgOverlay",
+			  			"endBorderColor": "bgOverlay",
+			  			"focusedBorderColor": "bgOverlay",
+			  			"foreground": "text",
+			  			"shadowColor": "bgOverlay",
+			  			"startBackground": "bgOverlay",
+			  			"startBorderColor": "bgOverlay"
 			  		},
 			  		"CheckBox": {
-			  			"background": "panelBackground"
+			  			"background": "bg",
+			  			"disabledText": "inactive",
+			  			"foreground": "text",
+			  			"select": "highlight"
 			  		},
 			  		"ComboBox": { 
 			  			"ArrowButton": {
-			  				"background": "secondaryBackground",
-			  				"disabledIconColor": "lavender",
+			  				"background": "bgOverlay",
+			  				"disabledIconColor": "keyword",
 			  				"iconColor": "accentColor",
-			  				"nonEditableBackground": "secondaryBackground"
+			  				"nonEditableBackground": "bgOverlay"
 			  			},
 			  			"modifiedItemForeground": "accentColor",
-			  			"nonEditableBackground": "secondaryBackground",
-			  			"selectionBackground": "selectionBackground"
+			  			"nonEditableBackground": "bgOverlay"
 			  		},
 			  		"CompletionPopup": {
-			  			"foreground": "primaryForeground",
+			  			"foreground": "text",
 			  			"matchForeground": "selectionForeground",
 			  			"selectionBackground": "selectionBackground",
-			  			"selectionInactiveBackground": "primaryBackground"
+			  			"selectionInactiveBackground": "selectionInactiveBackground"
 			  		},
 			  		"Component": {
-			  			"borderColor": "borderColor",
+			  			"borderColor": "border",
 			  			"disabledBorderColor": "selectionBackground",
 			  			"errorFocusColor": "red",
 			  			"focusColor": "accentColor",
 			  			"focusedBorderColor": "selectionBackground",
-			  			"iconColor": "primaryForeground",
-			  			"inactiveErrorFocusColor": "red",
-			  			"inactiveWarningFocusColor": "yellow",
-			  			"warningFocusColor": "yellow",
-			  			"infoForeground": "faded"
+			  			"iconColor": "text",
+			  			"inactiveErrorFocusColor": "error",
+			  			"inactiveWarningFocusColor": "warning",
+			  			"warningFocusColor": "warning",
+			  			"infoForeground": "info"
 			  		},
 			  		"Counter": {
 			  			"background": "accentColor",
-			  			"foreground": "primaryBackground"
+			  			"foreground": "bg"
 			  		},
 			  		"DefaultTabs": {
-			  			"background": "panelBackground",
+			  			"background": "bg",
 			  			"hoverBackground": "hoverBackground",
-			  			"underlinedTabBackground": "panelBackground"
+			  			"underlinedTabBackground": "bg"
 			  		},
 			  		"DragAndDrop": {
+			  			"areaBackground": "text",
+			  			"areaForeground": "text",
 			  			"borderColor": "selectionBackground",
-			  			"rowBackground": "dragAndDropBackground",
-			  			"areaForeground": "primaryForeground",
-			  			"areaBackground": "panelBackground",
-			  			"areaBorderColor": "accentColor"
+			  			"rowBackground": "dragAndDropBackground"
 			  		},
 			  		"Editor": {
 			  			"Toolbar": {
-			  				"borderColor": "separatorColor"
+			  				"borderColor": "border"
 			  			},
-			  			"background": "primaryBackground",
+			  			"background": "bg",
 			  			"shortcutForeground": "accentColor"
 			  		},
 			  		"EditorPane": {
-			  			"splitBorder": "separatorColor"
+			  			"caretForeground": "text",
+			  			"splitBorder": "border"
 			  		},
 			  		"EditorTabs": {
-			  			"background": "primaryBackground",
-			  			"inactiveUnderlineColor": "#{{Scheme.Method}}",
+			  			"background": "bg",
+			  			"inactiveUnderlineColor": "secondaryAccentColor",
 			  			"hoverBackground": "hoverBackground",
 			  			"underlineColor": "accentColor",
 			  			"underlineHeight": 1,
-			  			"underlinedTabBackground": "panelBackground",
+			  			"underlinedTabBackground": "bg",
 			  			"unselectedBlend": 0.9
 			  		},
 			  		"FileColor": {
-			  			"Blue": "#{{Scheme.Field}}",
+			  			"Blue": "{{Scheme.Field}}",
 			  			"Green": "#{{Scheme.Numeral}}",
 			  			"Orange": "#{{Scheme.Warning}}",
 			  			"Rose": "#{{Scheme.Error}}",
@@ -211,14 +228,14 @@ public class RiderJson : ITheme
 			  			"Yellow": "#{{Scheme.Info}}"
 			  		},
 			  		"Label": {
-			  			"background": "panelBackground",
-			  			"selectedForeground": "selectionBackground"
+			  			"background": "bg",
+			  			"selectedForeground": "selectionForeground"
 			  		},
 			  		"GotItTooltip": {
-			  			"background": "panelBackground",
-			  			"codeBackground": "#{{Scheme.Error}}",
-			  			"codeBorderColor": "#{{Scheme.Field}}",
-			  			"shortcutForeground": "{{Scheme.Class}}"
+			  			"background": "background",
+			  			"codeBackground": "overlay",
+			  			"codeBorderColor": "border",
+			  			"shortcutForeground": "text"
 			  		},
 			  		"Link": {
 			  			"activeForeground": "accentColor",
@@ -232,7 +249,8 @@ public class RiderJson : ITheme
 			  				"separatorInset": 4,
 			  				"hoverBackground": "hoverBackground"
 			  			},
-			  			"background": "panelBackground",
+			  			"dropLineColor": "bg",
+			  			"background": "bg",
 			  			"hoverBackground": "hoverBackground",
 			  			"rowHeight": "24",
 			  			"selectionInactiveBackground": "selectionInactiveBackground"
@@ -244,94 +262,94 @@ public class RiderJson : ITheme
 			  			"Icon": {
 			  				"insets": "5,5,5,5"
 			  			},
-			  			"background": "toolbarBackground"
+			  			"background": "background"
 			  		},
 			  		"MainWindow": {
 			  			"Tab": {
-			  				"background": "toolbarBackground",
-			  				"borderColor": "toolbarBackground",
-			  				"selectedBackground": "panelBackground",
-			  				"selectedForeground": "primaryForeground",
+			  				"background": "bg",
+			  				"borderColor": "border",
+			  				"selectedBackground": "selectionBackground",
+			  				"selectedForeground": "selectionForeground",
 			  				"hoverBackground": "hoverBackground",
-			  				"selectedInactiveBackground": "primaryBackground",
-			  				"separatorColor": "separatorColor"
+			  				"selectedInactiveBackground": "selectionInactiveBackground",
+			  				"separatorColor": "border"
 			  			}
 			  		},
 			  		"MemoryIndicator": {
-			  			"allocatedBackground": "panelBackground",
+			  			"allocatedBackground": "bg",
 			  			"usedBackground": "selectionBackground"
 			  		},
 			  		"Notification": {
 			  			"ToolWindow": {
-			  				"errorBackground": "primaryBackground",
-			  				"errorBorderColor": "red",
-			  				"errorForeground": "primaryForeground",
-			  				"informativeBackground": "primaryBackground",
-			  				"informativeBorderColor": "secondaryAccentColor",
-			  				"informativeForeground": "primaryForeground",
-			  				"warningBackground": "primaryBackground",
-			  				"warningBorderColor": "yellow",
-			  				"warningForeground": "primaryForeground"
+			  				"errorBackground": "bg",
+			  				"errorBorderColor": "error",
+			  				"errorForeground": "text",
+			  				"informativeBackground": "bg",
+			  				"informativeBorderColor": "info",
+			  				"informativeForeground": "text",
+			  				"warningBackground": "bg",
+			  				"warningBorderColor": "warning",
+			  				"warningForeground": "text"
 			  			},
-			  			"background": "panelBackground",
-			  			"borderColor": "borderColor",
-			  			"errorBackground": "primaryBackground",
+			  			"background": "bg",
+			  			"borderColor": "border",
+			  			"errorBackground": "bg",
 			  			"errorBorderColor": "red",
-			  			"errorForeground": "primaryForeground"
+			  			"errorForeground": "text"
 			  		},
 			  		"NotificationsToolwindow": {
 			  			"newNotification": {
-			  				"background": "primaryBackground",
+			  				"background": "bg",
 			  				"hoverBackground": "hoverBackground"
 			  			}
 			  		},
 			  		"Panel": {
-			  			"foreground": "panelForeground",
-			  			"background": "panelBackground"
+			  			"foreground": "text",
+			  			"background": "bg"
 			  		},
 			  		"PasswordField": {
-			  			"background": "secondaryBackground"
+			  			"background": "bgOverlay"
 			  		},
 			  		"Plugins": {
 			  			"Button": {
-			  				"installBackground": "primaryBackground",
+			  				"installBackground": "bg",
 			  				"installBorderColor": "secondaryAccentColor",
 			  				"installFillBackground": "secondaryAccentColor",
-			  				"installFillForeground": "primaryBackground",
-			  				"installFocusedBackground": "primaryBackground",
+			  				"installFillForeground": "buttonBackground",
+			  				"installFocusedBackground": "bg",
 			  				"installForeground": "secondaryAccentColor",
 			  				"updateBackground": "accentColor",
 			  				"updateBorderColor": "accentColor",
-			  				"updateForeground": "primaryBackground"
+			  				"updateForeground": "bg"
 			  			},
 			  			"SearchField": {
-			  				"background": "panelBackground"
+			  				"background": "bg"
 			  			},
 			  			"SectionHeader": {
-			  				"foreground": "primaryForeground"
+			  				"foreground": "text"
 			  			},
 			  			"Tab": {
 			  				"hoverBackground": "hoverBackground",
 			  				"selectedBackground": "selectionBackground",
 			  				"selectedForeground": "selectionForeground"
 			  			},
-			  			"borderColor": "borderColor",
+			  			"borderColor": "border",
 			  			"hoverBackground": "hoverBackground",
 			  			"lightSelectionBackground": "selectionBackground",
-			  			"tagBackground": "panelBackground"
+			  			"tagBackground": "bg"
 			  		},
 			  		"Popup": {
 			  			"Advertiser": {
-			  				"background": "panelBackground",
+			  				"background": "bg",
 			  				"foreground": "text"
 			  			},
 			  			"Header": {
-			  				"activeBackground": "panelBackground",
-			  				"inactiveBackground": "panelBackground"
+			  				"activeBackground": "bg",
+			  				"inactiveBackground": "bg"
 			  			},
-			  			"borderColor": "separatorColor",
+			  			"borderColor": "border",
 			  			"borderWidth": 1,
-			  			"inactiveBorderColor": "separatorColor",
+			  			"inactiveBorderColor": "border",
 			  			"paintBorder": false
 			  		},
 			  		"ProgressBar": {
@@ -345,11 +363,11 @@ public class RiderJson : ITheme
 			  			"trackColor": "selectionBackground"
 			  		},
 			  		"RadioButton": {
-			  			"background": "panelBackground"
+			  			"background": "bg"
 			  		},
 			  		"RunWidget": {
 			  			"foreground": "text",
-			  			"iconColor": "primaryForeground",
+			  			"iconColor": "text",
 			  			"pressedBackground": "pressedBackground",
 			  			"stopBackground": "red"
 			  		},
@@ -367,11 +385,11 @@ public class RiderJson : ITheme
 			  		},
 			  		"SearchEverywhere": {
 			  			"SearchField": {
-			  				"background": "secondaryBackground"
+			  				"background": "bgOverlay"
 			  			},
 			  			"Tab": {
-			  				"selectedBackground": "secondaryBackground",
-			  				"selectedForeground": "primaryForeground"
+			  				"selectedBackground": "bgOverlay",
+			  				"selectedForeground": "text"
 			  			}
 			  		},
 			  		"SearchMatch": {
@@ -379,29 +397,28 @@ public class RiderJson : ITheme
 			  			"startBackground": "searchMatchBackground"
 			  		},
 			  		"SegmentedButton": {
-			  			"focusedSelectedButtonColor": "secondaryBackground",
-			  			"selectedButtonColor": "secondaryBackground",
-			  			"selectedEndBorderColor": "secondaryBackground",
-			  			"selectedStartBorderColor": "secondaryBackground"
+			  			"focusedSelectedButtonColor": "bgOverlay",
+			  			"selectedButtonColor": "bgOverlay",
+			  			"selectedEndBorderColor": "bgOverlay",
+			  			"selectedStartBorderColor": "bgOverlay"
 			  		},
 			  		"Separator": {
-			  			"separatorColor": "separatorColor"
+			  			"separatorColor": "border"
 			  		},
 			  		"SidePanel": {
-			  			"background": "panelBackground"
+			  			"background": "bg"
 			  		},
 			  		"Slider": {
-			  			"background": "panelBackground"
+			  			"background": "bg"
 			  		},
 			  		"StatusBar": {
 			  			"Breadcrumbs": {
 			  			},
-			  			"borderColor": "borderColor",
-			  			"hoverBackground": "hoverBackground"
+			  			"borderColor": "border"
 			  		},
 			  		"TabbedPane": {
-			  			"background": "panelBackground",
-			  			"contentAreaColor": "borderColor",
+			  			"background": "bg",
+			  			"contentAreaColor": "border",
 			  			"focusColor": "selectionBackground",
 			  			"hoverColor": "hoverBackground",
 			  			"tabHeight": 40,
@@ -414,27 +431,27 @@ public class RiderJson : ITheme
 			  			"lightSelectionBackground": "selectionBackground"
 			  		},
 			  		"TableHeader": {
-			  			"bottomSeparatorColor": "primaryBackground"
+			  			"bottomSeparatorColor": "bg"
 			  		},
 			  		"TextArea": {
-			  			"background": "panelBackground"
+			  			"background": "bg"
 			  		},
 			  		"TextField": {
 			  			"background": "#{{Scheme.Background}}",
-			  			"caretForeground": "secondaryBackground",
+			  			"caretForeground": "bgOverlay",
 			  			"foreground": "#{{Scheme.Text}}",
 			  			"selectionForeground": "#{{Scheme.Text}}",
 			  			"selectionBackground": "#{{Scheme.Highlight}}"
 			  		},
 			  		"ToggleButton": {
-			  			"buttonColor": "primaryForeground",
+			  			"buttonColor": "text",
 			  			"offBackground": "selectionBackground",
 			  			"offForeground": "hoverBackground",
 			  			"onBackground": "green",
 			  			"onForeground": "hoverBackground"
 			  		},
 			  		"ToolBar": {
-			  			"background": "panelBackground",
+			  			"background": "bg",
 			  			"borderHandleColor": "secondaryAccentColor"
 			  		},
 			  		"ToolWindow": {
@@ -444,9 +461,9 @@ public class RiderJson : ITheme
 			  				"selectedForeground": "selectionForeground"
 			  			},
 			  			"Header": {
-			  				"background": "panelBackground",
-			  				"borderColor": "borderColor",
-			  				"inactiveBackground": "panelBackground"
+			  				"background": "bg",
+			  				"borderColor": "border",
+			  				"inactiveBackground": "bg"
 			  			},
 			  			"HeaderTab": {
 			  				"hoverBackground": "surface0",
@@ -455,32 +472,32 @@ public class RiderJson : ITheme
 			  			},
 			  			"Stripe": {
 			  			},
-			  			"background": "panelBackground"
+			  			"background": "bg"
 			  		},
 			  		"Tree": {
-			  			"background": "#{{Scheme.Background}}",
-			  			"foreground": "#{{Scheme.Text}}",
+			  			"background": "bg",
+			  			"foreground": "text",
 			  			"hoverBackground": "hoverBackground",
 			  			"modifiedItemForeground": "accentColor",
 			  			"rowHeight": 24,
-			  			"selectionBackground": "#{{Scheme.Highlight}}",
-			  			"selectionInactiveBackground": "#{{Scheme.Highlight}}",
-			  			"selectionForeground": "#{{Scheme.Text}}"
+			  			"selectionBackground": "selectionBackground",
+			  			"selectionInactiveBackground": "selectionInactiveBackground",
+			  			"selectionForeground": "selectionForeground"
 			  		},
 			  		"UiDesigner": {
-			  			"Panel.background": "panelBackground",
-			  			"Preview.background": "panelBackground"
+			  			"Panel.background": "bg",
+			  			"Preview.background": "bg"
 			  		},
 			  		"ValidationTooltip": {
-			  			"errorBackground": "panelBackground",
+			  			"errorBackground": "bg",
 			  			"errorBorderColor": "red",
-			  			"warningBackground": "panelBackground",
-			  			"warningBorderColor": "secondaryAccentColor"
+			  			"warningBackground": "bg",
+			  			"warningBorderColor": "warning"
 			  		},
 			  		"VersionControl": {
 			  			"FileHistory": {
 			  				"Commit": {
-			  					"selectedBranchBackground": "secondaryBackground"
+			  					"selectedBranchBackground": "bgOverlay"
 			  				}
 			  			},
 			  			"GitLog": {
@@ -494,11 +511,11 @@ public class RiderJson : ITheme
 			  				"Commit": {
 			  					"currentBranchBackground": "gitLogBackground",
 			  					"hoveredBackground": "hoverBackground",
-			  					"selectionInactiveBackground": "hoverBackground"
+			  					"selectionInactiveBackground": "selectionInactiveBackground"
 			  				}
 			  			},
 			  			"RefLabel": {
-			  				"foreground": "primaryForeground"
+			  				"foreground": "text"
 			  			}
 			  		},
 			  		"WelcomeScreen": {
@@ -506,14 +523,14 @@ public class RiderJson : ITheme
 			  				"actions": {
 			  					"background": "hoverBackground"
 			  				},
-			  				"background": "primaryBackground",
+			  				"background": "bg",
 			  				"selectionBackground": "selectionBackground",
-			  				"selectionInactiveBackground": "secondaryBackground"
+			  				"selectionInactiveBackground": "selectionInactiveBackground"
 			  			},
 			  			"SidePanel": {
-			  				"background": "panelBackground"
+			  				"background": "bg"
 			  			},
-			  			"separatorColor": "separatorColor"
+			  			"separatorColor": "border"
 			  		}
 			  	},
 			  	"icons": {
