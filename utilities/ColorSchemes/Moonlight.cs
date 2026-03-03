@@ -74,14 +74,14 @@ public static partial class ColorSchemeFactory
 			Magenta    = colors.Error,
 			Cyan       = colors.Keyword,
 			White      = colors.Text,
-			BlackAlt   = colors.BackgroundOverlay,
+			BlackAlt   = colors.TextFaded,
 			RedAlt     = colors.Class,
 			GreenAlt   = colors.Method,
 			YellowAlt  = colors.String,
 			BlueAlt    = colors.Field,
 			MagentaAlt = colors.Error,
 			CyanAlt    = colors.Keyword,
-			WhiteAlt   = colors.TextHidden
+			WhiteAlt   = colors.TextFaded
 		};
 
 		UiColors ui = new()
@@ -95,12 +95,14 @@ public static partial class ColorSchemeFactory
 			HoverText                   = colors.BackgroundOverlay,
 			InactiveBackground          = colors.BackgroundOverlay,
 			InactiveText                = colors.Text,
+			MatchText                   = colors.TextFaded,
+			MatchBackground             = colors.BackgroundOverlay,
 			SelectionBackground         = colors.Highlight,
 			SelectionText               = colors.BackgroundOverlay,
 			SelectionInactiveText       = colors.Text,
 			SelectionInactiveBackground = colors.HighlightLow,
 			PressedBackground           = colors.Highlight,
-			PressedText                 = colors.BackgroundOverlay,
+			PressedText                 = colors.Text,
 		};
 
 		return new()
