@@ -7,7 +7,7 @@ public class KvantumSvg : ITheme
 
 	public KvantumSvg(ColorScheme scheme)
 	{
-		FilePath = Path.Combine("Kvantum", $"{scheme.Name}.svg");
+		FilePath = Path.Combine("Kvantum", scheme.Name, $"{scheme.Name}.svg");
 		Scheme   = scheme;
 	}
 	

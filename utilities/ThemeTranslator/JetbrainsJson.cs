@@ -1,13 +1,13 @@
 namespace Rikai.Colorschemes;
 
-public class RiderJson : ITheme
+public class JetbrainsJson : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public RiderJson(ColorScheme scheme)
+	public JetbrainsJson(ColorScheme scheme)
 	{
-		FilePath = Path.Combine("Jetbrains", $"{scheme.Name}.theme.json");
+		FilePath = Path.Combine("Jetbrains", "resources", "theme", $"{scheme.Name}.theme.json");
 		Scheme   = scheme;
 	}
 	
