@@ -15,8 +15,8 @@ public class Program
 		// create a list of ITheme constructors.
 		List<Func<ColorScheme, ITheme>> constructors = new()
 		{
-			(scheme) => new RiderJson(scheme),
-			(scheme) => new RiderXml(scheme),
+			(scheme) => new JetbrainsJson(scheme),
+			(scheme) => new JetbrainsXml(scheme),
 			(scheme) => new Sublime(scheme),
 			(scheme) => new KvantumConfig(scheme),
 			(scheme) => new KvantumSvg(scheme),

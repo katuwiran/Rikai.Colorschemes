@@ -1,13 +1,13 @@
 namespace Rikai.Colorschemes;
 
-public class RiderXml : ITheme
+public class JetbrainsXml : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public RiderXml(ColorScheme scheme)
+	public JetbrainsXml(ColorScheme scheme)
 	{
-		FilePath = Path.Combine("Jetbrains", $"{scheme.Name}.xml");
+		FilePath = Path.Combine("Jetbrains", "resources", "theme", $"{scheme.Name}.xml");
 		Scheme   = scheme;
 	}
 
