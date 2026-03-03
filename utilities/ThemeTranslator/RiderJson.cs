@@ -88,7 +88,7 @@ public class RiderJson : ITheme
 			  			"hoverForeground": "hoverForeground",
 			  			"hoverBackground": "hoverBackground",
 			  			"pressedBackground": "pressedBackground",
-			  			"selectionBackground": "selectionBackground",
+			  			"selectionBackground": "pressedBackground",
 			  			"selectionForeground": "selectionForeground",
 			  			"selectionInactiveBackground": "selectionInactiveBackground",
 			  			"selectionInactiveForeground": "selectionInactiveForeground",
@@ -97,8 +97,8 @@ public class RiderJson : ITheme
 			  		"ActionButton": {
 			  			"hoverBorderColor": "hoverBackground",
 			  			"hoverBackground": "hoverBackground",
-			  			"pressedBackground": "pressedBackground",
-			  			"pressedBorderColor": "selectionBackground"
+			  			"pressedBackground": "hoverBackground",
+			  			"pressedBorderColor": "hoverBackground"
 			  		},
 			  		"Banner": {
 			  			"errorBackground": "error",
@@ -132,8 +132,8 @@ public class RiderJson : ITheme
 			  		"Button": {
 			  			"background": "bg",
 			  			"default": {
-			  				"endBackground": "bg",
-			  				"endBorderColor": "border",
+			  				"endBackground": "accentColor",
+			  				"endBorderColor": "accentColor",
 			  				"focusColor": "accentColor",
 			  				"focusedBorderColor": "accentColor",
 			  				"foreground": "bg",
@@ -182,7 +182,7 @@ public class RiderJson : ITheme
 			  			"inactiveErrorFocusColor": "error",
 			  			"inactiveWarningFocusColor": "warning",
 			  			"warningFocusColor": "warning",
-			  			"infoForeground": "info"
+			  			"infoForeground": "faded"
 			  		},
 			  		"Counter": {
 			  			"background": "accentColor",
@@ -253,6 +253,7 @@ public class RiderJson : ITheme
 			  			"background": "bg",
 			  			"hoverBackground": "hoverBackground",
 			  			"rowHeight": "24",
+			  			"selectionForeground": "hoverForeground",
 			  			"selectionInactiveBackground": "selectionInactiveBackground"
 			  		},
 			  		"MainToolbar": {
@@ -372,13 +373,18 @@ public class RiderJson : ITheme
 			  			"stopBackground": "red"
 			  		},
 			  		"ScrollBar": {
-			  			"thumbBorderColor": "surface0",
-			  			"thumbColor": "surface0",
+			  			"Transparent": {
+			  				"background": "bg",
+			  				"thumbColor": "bgOverlay",
+			  				"hoverThumbColor": "bgOverlay"
+			  			},
+			  			"thumbBorderColor": "border",
+			  			"thumbColor": "bgOverlay",
 			  			"hoverThumbColor": "selectionBackground",
 			  			"hoverThumbBorderColor": "selectionBackground",
 			  			"Mac": {
-			  				"thumbBorderColor": "surface0",
-			  				"thumbColor": "surface0",
+			  				"thumbBorderColor": "border",
+			  				"thumbColor": "bgOverlay",
 			  				"hoverThumbColor": "selectionBackground",
 			  				"hoverThumbBorderColor": "selectionBackground"
 			  			}
@@ -419,7 +425,7 @@ public class RiderJson : ITheme
 			  		"TabbedPane": {
 			  			"background": "bg",
 			  			"contentAreaColor": "border",
-			  			"focusColor": "selectionBackground",
+			  			"focusColor": "bgOverlay",
 			  			"hoverColor": "hoverBackground",
 			  			"tabHeight": 40,
 			  			"tabSelectionArc": 4,
@@ -444,11 +450,11 @@ public class RiderJson : ITheme
 			  			"selectionBackground": "#{{Scheme.Highlight}}"
 			  		},
 			  		"ToggleButton": {
-			  			"buttonColor": "text",
-			  			"offBackground": "selectionBackground",
-			  			"offForeground": "hoverBackground",
-			  			"onBackground": "green",
-			  			"onForeground": "hoverBackground"
+			  			"buttonColor": "secondaryAccentColor",
+			  			"offBackground": "text",
+			  			"offForeground": "hoverForegroun",
+			  			"onBackground": "pressedBackground",
+			  			"onForeground": "bg"
 			  		},
 			  		"ToolBar": {
 			  			"background": "bg",
