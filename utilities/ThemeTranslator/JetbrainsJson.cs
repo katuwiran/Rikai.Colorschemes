@@ -1,13 +1,13 @@
 namespace Rikai.Colorschemes;
 
-public class JetbrainsJson : ITheme
+public class RiderJson : ITheme
 {
 	public string      FilePath { get; set; }
 	public ColorScheme Scheme   { get; set; }
 
-	public JetbrainsJson(ColorScheme scheme)
+	public RiderJson(ColorScheme scheme)
 	{
-		FilePath = Path.Combine("Jetbrains", "resources", "theme", $"{scheme.Name}.theme.json");
+		FilePath = Path.Combine("Jetbrains", $"{scheme.Name}.theme.json");
 		Scheme   = scheme;
 	}
 	
@@ -49,8 +49,8 @@ public class JetbrainsJson : ITheme
 			  		"magenta": "#{{Scheme.Base8.Magenta}}",
 			  		"cyan": "#{{Scheme.Base8.Cyan}}",
 			  		"white": "#{{Scheme.Base8.White}}",
-			  		"accent": "#{{Scheme.Colors.Keyword}}",
-			  		"secondaryAccent": "#{{Scheme.Colors.Method}}",
+			  		"accentColor": "#{{Scheme.Colors.Keyword}}",
+			  		"secondaryAccentColor": "#{{Scheme.Colors.Method}}",
 			  		"buttonForeground": "#{{Scheme.Colors.Text}}",
 			  		"inactiveBackground": "#{{Scheme.Colors.TextHidden}}",
 			  		"inactiveForeground": "#{{Scheme.Colors.TextHidden}}",
@@ -119,7 +119,7 @@ public class JetbrainsJson : ITheme
 			  				"background": "selectionBackground",
 			  				"foreground": "text"
 			  			},
-			  			"iconBackground": "accent"
+			  			"iconBackground": "accentColor"
 			  		},
 			  		"Borders": {
 			  			"ContrastBorderColor": "border",
@@ -128,13 +128,13 @@ public class JetbrainsJson : ITheme
 			  		"Button": {
 			  			"background": "bg",
 			  			"default": {
-			  				"endBackground": "accent",
-			  				"endBorderColor": "accent",
-			  				"focusColor": "accent",
-			  				"focusedBorderColor": "accent",
+			  				"endBackground": "accentColor",
+			  				"endBorderColor": "accentColor",
+			  				"focusColor": "accentColor",
+			  				"focusedBorderColor": "accentColor",
 			  				"foreground": "bg",
-			  				"startBackground": "accent",
-			  				"startBorderColor": "accent"
+			  				"startBackground": "accentColor",
+			  				"startBorderColor": "accentColor"
 			  			},
 			  			"disabledBorderColor": "border",
 			  			"disabledText": "inactive",
@@ -156,10 +156,10 @@ public class JetbrainsJson : ITheme
 			  			"ArrowButton": {
 			  				"background": "bgOverlay",
 			  				"disabledIconColor": "keyword",
-			  				"iconColor": "accent",
+			  				"iconColor": "accentColor",
 			  				"nonEditableBackground": "bgOverlay"
 			  			},
-			  			"modifiedItemForeground": "accent",
+			  			"modifiedItemForeground": "accentColor",
 			  			"nonEditableBackground": "bgOverlay"
 			  		},
 			  		"CompletionPopup": {
@@ -172,7 +172,7 @@ public class JetbrainsJson : ITheme
 			  			"borderColor": "border",
 			  			"disabledBorderColor": "selectionBackground",
 			  			"errorFocusColor": "red",
-			  			"focusColor": "accent",
+			  			"focusColor": "accentColor",
 			  			"focusedBorderColor": "selectionBackground",
 			  			"iconColor": "text",
 			  			"inactiveErrorFocusColor": "error",
@@ -181,7 +181,7 @@ public class JetbrainsJson : ITheme
 			  			"infoForeground": "faded"
 			  		},
 			  		"Counter": {
-			  			"background": "accent",
+			  			"background": "accentColor",
 			  			"foreground": "bg"
 			  		},
 			  		"DefaultTabs": {
@@ -200,7 +200,7 @@ public class JetbrainsJson : ITheme
 			  				"borderColor": "border"
 			  			},
 			  			"background": "bg",
-			  			"shortcutForeground": "accent"
+			  			"shortcutForeground": "accentColor"
 			  		},
 			  		"EditorPane": {
 			  			"caretForeground": "text",
@@ -208,9 +208,9 @@ public class JetbrainsJson : ITheme
 			  		},
 			  		"EditorTabs": {
 			  			"background": "bg",
-			  			"inactiveUnderlineColor": "secondaryAccent",
+			  			"inactiveUnderlineColor": "secondaryAccentColor",
 			  			"hoverBackground": "hoverBackground",
-			  			"underlineColor": "accent",
+			  			"underlineColor": "accentColor",
 			  			"underlineHeight": 1,
 			  			"underlinedTabBackground": "bg",
 			  			"unselectedBlend": 0.9
@@ -234,10 +234,10 @@ public class JetbrainsJson : ITheme
 			  			"shortcutForeground": "text"
 			  		},
 			  		"Link": {
-			  			"activeForeground": "accent",
-			  			"hoverForeground": "accent",
-			  			"pressedForeground": "secondaryAccent",
-			  			"visitedForeground": "secondaryAccent"
+			  			"activeForeground": "accentColor",
+			  			"hoverForeground": "accentColor",
+			  			"pressedForeground": "secondaryAccentColor",
+			  			"visitedForeground": "secondaryAccentColor"
 			  		},
 			  		"List": {
 			  			"Button": {
@@ -314,13 +314,13 @@ public class JetbrainsJson : ITheme
 			  		"Plugins": {
 			  			"Button": {
 			  				"installBackground": "bg",
-			  				"installBorderColor": "secondaryAccent",
-			  				"installFillBackground": "secondaryAccent",
+			  				"installBorderColor": "secondaryAccentColor",
+			  				"installFillBackground": "secondaryAccentColor",
 			  				"installFillForeground": "buttonBackground",
 			  				"installFocusedBackground": "bg",
-			  				"installForeground": "secondaryAccent",
-			  				"updateBackground": "accent",
-			  				"updateBorderColor": "accent",
+			  				"installForeground": "secondaryAccentColor",
+			  				"updateBackground": "accentColor",
+			  				"updateBorderColor": "accentColor",
 			  				"updateForeground": "bg"
 			  			},
 			  			"SearchField": {
@@ -356,11 +356,11 @@ public class JetbrainsJson : ITheme
 			  		"ProgressBar": {
 			  			"failedColor": "red",
 			  			"failedEndColor": "red",
-			  			"indeterminateEndColor": "secondaryAccent",
-			  			"indeterminateStartColor": "accent",
+			  			"indeterminateEndColor": "secondaryAccentColor",
+			  			"indeterminateStartColor": "accentColor",
 			  			"passedColor": "green",
 			  			"passedEndColor": "green",
-			  			"progressColor": "accent",
+			  			"progressColor": "accentColor",
 			  			"trackColor": "selectionBackground"
 			  		},
 			  		"RadioButton": {
@@ -429,7 +429,7 @@ public class JetbrainsJson : ITheme
 			  			"hoverColor": "hoverBackground",
 			  			"tabHeight": 40,
 			  			"tabSelectionArc": 4,
-			  			"underlineColor": "accent"
+			  			"underlineColor": "accentColor"
 			  		},
 			  		"Table": {
 			  			"gridColor": "hoverBackground",
@@ -443,14 +443,14 @@ public class JetbrainsJson : ITheme
 			  			"background": "bg"
 			  		},
 			  		"TextField": {
-			  			"background": "bg",
-			  			"caretForeground": "accent",
-			  			"foreground": "text",
-			  			"selectionForeground": "selectionForeground",
-			  			"selectionBackground": "selectionBackground"
+			  			"background": "#{{Scheme.Colors.Background}}",
+			  			"caretForeground": "bgOverlay",
+			  			"foreground": "#{{Scheme.Colors.Text}}",
+			  			"selectionForeground": "#{{Scheme.Colors.Text}}",
+			  			"selectionBackground": "#{{Scheme.Colors.Highlight}}"
 			  		},
 			  		"ToggleButton": {
-			  			"buttonColor": "secondaryAccent",
+			  			"buttonColor": "secondaryAccentColor",
 			  			"offBackground": "text",
 			  			"offForeground": "hoverForegroun",
 			  			"onBackground": "pressedBackground",
@@ -458,7 +458,7 @@ public class JetbrainsJson : ITheme
 			  		},
 			  		"ToolBar": {
 			  			"background": "bg",
-			  			"borderHandleColor": "secondaryAccent"
+			  			"borderHandleColor": "secondaryAccentColor"
 			  		},
 			  		"ToolWindow": {
 			  			"Button": {
@@ -474,7 +474,7 @@ public class JetbrainsJson : ITheme
 			  			"HeaderTab": {
 			  				"hoverBackground": "surface0",
 			  				"inactiveUnderlineColor": "text",
-			  				"underlineColor": "accent"
+			  				"underlineColor": "accentColor"
 			  			},
 			  			"Stripe": {
 			  			},
@@ -484,7 +484,7 @@ public class JetbrainsJson : ITheme
 			  			"background": "bg",
 			  			"foreground": "text",
 			  			"hoverBackground": "hoverBackground",
-			  			"modifiedItemForeground": "accent",
+			  			"modifiedItemForeground": "accentColor",
 			  			"rowHeight": 24,
 			  			"selectionBackground": "selectionBackground",
 			  			"selectionInactiveBackground": "selectionInactiveBackground",
@@ -507,11 +507,11 @@ public class JetbrainsJson : ITheme
 			  				}
 			  			},
 			  			"GitLog": {
-			  				"headIconColor": "secondaryAccent",
+			  				"headIconColor": "secondaryAccentColor",
 			  				"localBranchIconColor": "green",
 			  				"otherIconColor": "green",
-			  				"remoteBranchIconColor": "secondaryAccent",
-			  				"tagIconColor": "accent"
+			  				"remoteBranchIconColor": "secondaryAccentColor",
+			  				"tagIconColor": "accentColor"
 			  			},
 			  			"Log": {
 			  				"Commit": {
