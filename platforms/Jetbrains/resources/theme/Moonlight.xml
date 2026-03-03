@@ -5,7 +5,7 @@
     <property name="originalScheme">Moonlight</property>
   </metaInfo>
   <colors>
-    <option name="ADDED_LINES_COLOR" value="6a3654"/>
+    <option name="ADDED_LINES_COLOR" value="c8e899"/>
     <option name="ANNOTATIONS_COLOR" value="c0c0ff"/>
     <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="2a2840"/>
     <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="2a2840"/>
@@ -29,8 +29,8 @@
     <option name="DOCUMENTATION_COLOR" value="" />
     <option name="DOC_COMMENT_LINK" value="ec93c1" />
     <option name="EDITOR_GUTTER_BACKGROUND" value="" />
-    <option name="FILESTATUS_ADDED" value="6a3654"/>
-    <option name="FILESTATUS_COPIED" value="6a3654"/>
+    <option name="FILESTATUS_ADDED" value="c8e899"/>
+    <option name="FILESTATUS_COPIED" value="c8e899"/>
     <option name="FILESTATUS_DELETED" value="ef5abf"/>
     <option name="FILESTATUS_HIJACKED" value="ff8c4f"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="ef5abf"/>
@@ -38,7 +38,7 @@
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="ec93c1"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="ec93c1"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="ec93c1"/>
-    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="6a3654"/>
+    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="c8e899"/>
     <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="908caa"/>
     <option name="FILESTATUS_MERGED" value="c188ef"/>
     <option name="FILESTATUS_MODIFIED" value="c188ef"/>
@@ -47,7 +47,7 @@
     <option name="FILESTATUS_SUPPRESSED" value="908caa"/>
     <option name="FILESTATUS_SWITCHED" value="ec93c1"/>
     <option name="FILESTATUS_UNKNOWN" value="908caa"/>
-    <option name="FILESTATUS_addedOutside" value="6a3654"/>
+    <option name="FILESTATUS_addedOutside" value="c8e899"/>
     <option name="FILESTATUS_changelistConflict" value="ec93c1"/>
     <option name="FILESTATUS_modifiedOutside" value="c188ef"/>
     <option name="FOLDED_TEXT_BORDER_COLOR" value="" />
@@ -139,7 +139,7 @@
     </option>
     <option name="BASH.CONDITIONAL">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="BASH.EXTERNAL_COMMAND" baseAttributes="DEFAULT_IDENTIFIER"/>
@@ -189,14 +189,14 @@
     </option>
     <option name="BLOCK_TERMINAL_CYAN">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
-        <option name="BACKGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
+        <option name="BACKGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_GREEN">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
-        <option name="BACKGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
+        <option name="BACKGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_MAGENTA">
@@ -237,14 +237,14 @@
     </option>
     <option name="BLOCK_TERMINAL_CYAN_BRIGHT">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
-        <option name="BACKGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
+        <option name="BACKGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_GREEN_BRIGHT">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
-        <option name="BACKGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
+        <option name="BACKGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_MAGENTA_BRIGHT">
@@ -317,7 +317,7 @@
     </option>
     <option name="BUILDOUT.VALUE">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CLASS_REFERENCE">
@@ -367,7 +367,7 @@
     <!-- ANSI Color 02 -->
     <option name="CONSOLE_GREEN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <!-- ANSI Color 03 -->
@@ -391,7 +391,7 @@
     <!-- ANSI Color 06 -->
     <option name="CONSOLE_CYAN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <!-- ANSI Color 07 -->
@@ -442,7 +442,7 @@
     </option>
     <option name="CONSOLE_USER_INPUT">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CONSOLE_WHITE_OUTPUT">
@@ -467,7 +467,7 @@
     </option>
     <option name="CSS.CLASS_NAME">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CSS.COLOR" baseAttributes="CSS.IDENT"/>
@@ -508,7 +508,7 @@
     </option>
     <option name="CSS.PSEUDO">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CSS.TAG_NAME">
@@ -518,7 +518,7 @@
     </option>
     <option name="CSS.URL">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_1">
@@ -533,7 +533,7 @@
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_3">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_4">
@@ -548,7 +548,7 @@
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_6">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_7">
@@ -607,7 +607,7 @@
     </option>
     <option name="Clojure Character">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="Clojure Keyword">
@@ -628,7 +628,7 @@
     </option>
     <option name="Clojure Strings">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_1_MARKER">
@@ -663,12 +663,12 @@
     </option>
     <option name="CodeWithMe.USER_4_MARKER">
       <value>
-        <option name="BACKGROUND" value="6a3654"/>
+        <option name="BACKGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_4_SELECTION">
       <value>
-        <option name="BACKGROUND" value="6a3654"/>
+        <option name="BACKGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_5_MARKER">
@@ -727,7 +727,7 @@
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="6a3654" />
+        <option name="FOREGROUND" value="c8e899" />
       </value>
     </option>
     <option name="DEFAULT_COMMA">
@@ -748,7 +748,7 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
       <value>
-        <option name="FOREGROUND" value="6a3654" />
+        <option name="FOREGROUND" value="c8e899" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -789,7 +789,7 @@
     </option>
     <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="6a3654" />
+        <option name="FOREGROUND" value="c8e899" />
       </value>
     </option>
     <option name="DEFAULT_IDENTIFIER">
@@ -939,8 +939,8 @@
     </option>
     <option name="DIFF_INSERTED">
       <value>
-        <option name="BACKGROUND" value="6a3654"/>
-        <option name="ERROR_STRIPE_COLOR" value="6a3654"/>
+        <option name="BACKGROUND" value="c8e899"/>
+        <option name="ERROR_STRIPE_COLOR" value="c8e899"/>
       </value>
     </option>
     <option name="DIFF_MODIFIED">
@@ -1110,7 +1110,7 @@
     </option>
     <option name="LOGCAT_FILTER_STRING_KVALUE">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="LOGCAT_INFO_OUTPUT">
@@ -1145,7 +1145,7 @@
     </option>
     <option name="LOG_INFO_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="LOG_VERBOSE_OUTPUT">
@@ -1171,7 +1171,7 @@
     </option>
     <option name="MARKDOWN_BLOCK_QUOTE_MARKER">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="MARKDOWN_BOLD">
@@ -1193,7 +1193,7 @@
     </option>
     <option name="MARKDOWN_CODE_SPAN">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="MARKDOWN_CODE_SPAN_MARKER">
@@ -1218,7 +1218,7 @@
     </option>
     <option name="MARKDOWN_HEADER_LEVEL_4">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="MARKDOWN_HEADER_LEVEL_5">
@@ -1233,7 +1233,7 @@
     </option>
     <option name="MARKDOWN_HRULE">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="MARKDOWN_HTML_BLOCK">
@@ -1270,7 +1270,7 @@
     </option>
     <option name="MARKDOWN_LINK_TITLE">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="MARKDOWN_LIST_ITEM">
@@ -1280,7 +1280,7 @@
     </option>
     <option name="MARKDOWN_LIST_MARKER">
       <value>
-        <option name="FOREGROUND" value="6a3654"/>
+        <option name="FOREGROUND" value="c8e899"/>
       </value>
     </option>
     <option name="MARKDOWN_ORDERED_LIST">
@@ -1345,7 +1345,7 @@
     </option>
     <option name="ReSharper.CSHARP_TYPE_PARAMETER_IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="6a3654" />
+        <option name="FOREGROUND" value="c8e899" />
       </value>
     </option>
     <option name="ReSharper.FORMAT_STRING_ITEM">
@@ -1391,7 +1391,7 @@
         <option name="FOREGROUND" value="c0c0ff" />
         <option name="BACKGROUND" value="89537f" />
         <option name="EFFECT_COLOR" value="" />
-        <option name="ERROR_STRIPE_COLOR" value="6a3654" />
+        <option name="ERROR_STRIPE_COLOR" value="c8e899" />
       </value>
     </option>
     <option name="ReSharper.IL_INSTRUCTION">
@@ -1537,14 +1537,14 @@
         <option name="FOREGROUND" value="c0c0ff" />
         <option name="BACKGROUND" value="89537f" />
         <option name="EFFECT_COLOR" value="" />
-        <option name="ERROR_STRIPE_COLOR" value="6a3654" />
+        <option name="ERROR_STRIPE_COLOR" value="c8e899" />
       </value>
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="6a3654" />
+        <option name="FOREGROUND" value="c8e899" />
         <option name="FONT_TYPE" value="2" />
-        <option name="ERROR_STRIPE_COLOR" value="6a3654" />
+        <option name="ERROR_STRIPE_COLOR" value="c8e899" />
       </value>
     </option>
     <option name="TYPEDEF">
@@ -1599,7 +1599,7 @@
         <option name="FOREGROUND" value="c0c0ff" />
         <option name="BACKGROUND" value="89537f" />
         <option name="EFFECT_COLOR" value="" />
-        <option name="ERROR_STRIPE_COLOR" value="6a3654" />
+        <option name="ERROR_STRIPE_COLOR" value="c8e899" />
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">

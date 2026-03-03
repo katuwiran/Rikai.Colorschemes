@@ -14,7 +14,7 @@
 		"blue": "#848bf4",
 		"purple": "#c188ef",
 		"cyan": "#80b5f7",
-		"green": "#6a3654",
+		"green": "#c8e899",
 		"yellow": "#fcb986",
 		"red": "#eb517c",
 		"orange": "#ff8c4f",
@@ -177,7 +177,7 @@
 		},
 		"FileColor": {
 			"Blue": "#848bf4",
-			"Green": "#6a3654",
+			"Green": "#c8e899",
 			"Orange": "#ff8c4f",
 			"Rose": "#eb517c",
 			"Violet": "#c188ef",
@@ -492,7 +492,7 @@
 	"icons": {
 		"ColorPalette": {
 			"Actions.Blue": "#848bf4",
-			"Actions.Green": "#6a3654",
+			"Actions.Green": "#c8e899",
 			"Actions.Grey": "#696383",
 			"Actions.GreyInline": "#848bf4",
 			"Actions.GreyInline.Dark": "#848bf4",
@@ -500,7 +500,7 @@
 			"Actions.Yellow": "#fcb986",
 			"Objects.BlackText": "#332e51",
 			"Objects.Blue": "#848bf4",
-			"Objects.Green": "#6a3654",
+			"Objects.Green": "#c8e899",
 			"Objects.Grey": "#696383",
 			"Objects.Pink": "#ec93c1",
 			"Objects.Purple": "#c188ef",
