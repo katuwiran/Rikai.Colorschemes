@@ -123,7 +123,7 @@ public static partial class ColorSchemeFactory
 		return new()
 		{
 			Name        = "Moonlight",
-			Description = "Rikai's opinionated color scheme, derivative of Material Palenight & Rose Pine Moon",
+			Description = "Rikai's scheme signifying a star-laden, well-lit, night sky. Inspired by Material Palenight, Rose Pine Moon, and Catpuccin",
 			IsDark      = true,
 			Colors      = colors,
 			Base8       = base8,
