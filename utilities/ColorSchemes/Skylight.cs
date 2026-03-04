@@ -110,7 +110,7 @@ public static partial class ColorSchemeFactory
 		return new()
 		{
 			Name        = "Skylight",
-			Description = "Rikai's opinionated light color scheme, fully my own",
+			Description = "Rikai's scheme signifying a bright, beautiful, clear sky. Fully my own",
 			IsDark      = true,
 			Colors      = colors,
 			Base8       = base8,
