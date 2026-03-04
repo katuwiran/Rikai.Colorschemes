@@ -24,6 +24,7 @@ public class Program
 			(scheme) => new Alacritty(scheme),
 			(scheme) => new Btop(scheme),
 			(scheme) => new SourceGit(scheme),
+			(scheme) => new Noctalia(scheme),
 		};
 
 		// create a list that holds all theme settings generator later
