@@ -10,7 +10,6 @@ public class Program
 		// todo: refactor with named variables
 		// - highlighting is wrong
 		// - highlighted text in rider
-		int columns = 7;
 
 		// create a list of ITheme constructors.
 		List<Func<ColorScheme, ITheme>> constructors = new()
@@ -27,24 +26,33 @@ public class Program
 			(scheme) => new SourceGit(scheme),
 		};
 
-		// create a list that holds all themes later
-		List<ITheme> themes = new();
+		// create a list that holds all theme settings generator later
+		List<ITheme> themeGenerator = new();
+
+		// create a list that holds all 
+		List<ColorScheme> colorSchemes = new()
+		{
+			ColorSchemeFactory.Moonlight(),
+			ColorSchemeFactory.Skylight()
+		};
 
 		// iterates over the constructors list, creating one for each color scheme below
 		foreach (var constructor in constructors)
 		{
-			themes.Add(constructor(ColorSchemeFactory.Moonlight()));
-			themes.Add(constructor(ColorSchemeFactory.Skylight()));
+			foreach (var scheme in colorSchemes)
+			{
+				themeGenerator.Add(constructor(scheme));
+			}
 		}
 
 		Console.WriteLine("Generating themes...");
-		
+
 		// for each theme configuration file generated,
 		// copy from the target directory the files
 		// to the platforms directory.
 		// the file structure definitions defined in each theme.cs is respected
 		// hence one only has to bother with the individual files themselves.
-		foreach (ITheme theme in themes)
+		foreach (ITheme theme in themeGenerator)
 		{
 			string targetDir  = ConvertToTargetPath($"{theme.FilePath}");
 			string projectDir = ConvertToPlatformsPath($"{theme.FilePath}");
@@ -53,10 +61,10 @@ public class Program
 			CopyThemeToProjectDir(targetDir, projectDir);
 		}
 
+		// Generates the diagrams of the palette for each
+		// of the defined colorschemes on the list
 		DiagramGenerator generator = new();
-
-		generator.Generate(ColorSchemeEntry.Moonlight, columns, $"{AssetsPath}moonlight.png");
-		generator.Generate(ColorSchemeEntry.Skylight,  columns, $"{AssetsPath}skylight.png");
+		generator.GenerateDiagrams(colorSchemes);
 
 		Console.WriteLine("Finished.");
 	}
@@ -107,10 +115,7 @@ public class Program
 	{
 		File.Copy(sourcePath, platformsPath, overwrite: true);
 	}
-
-	static string AssetsPath =>
-		$"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}assets{Path.DirectorySeparatorChar}";
-
+	
 	static string BinPath => $"{Directory.GetParent(AppContext.BaseDirectory).FullName}";
 
 	static string PlatformsPath =>

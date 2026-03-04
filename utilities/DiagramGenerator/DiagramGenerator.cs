@@ -3,7 +3,9 @@ using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.Fonts;
-using SixLabors.ImageSharp.Drawing;
+using Path = System.IO.Path;
+
+namespace Rikai.Colorschemes;
 
 public class DiagramGenerator
 {
@@ -13,6 +15,7 @@ public class DiagramGenerator
 	private const int FontSizeLarge = 28;
 	private const int FontSizeSmall = 18;
 	private const int Padding       = 10;
+	private const int Columns       = 7;
 
 	// Path to a font file (using System fonts for this example)
 	private readonly Font _fontLarge;
@@ -89,7 +92,7 @@ public class DiagramGenerator
 			HorizontalAlignment = HorizontalAlignment.Right,
 			VerticalAlignment   = VerticalAlignment.Top
 		};
-		ctx.DrawText(indexOpts, entry.Index.ToString(), dimTextColor);
+		ctx.DrawText(indexOpts, entry.Index, dimTextColor);
 
 		// 2. Name (Center)
 		var nameOpts = new RichTextOptions(_fontLarge)
@@ -132,4 +135,14 @@ public class DiagramGenerator
 		// If brightness > 128, color is light, so return Black text. Else White.
 		return brightness > 128 ? Color.FromRgba(30, 30, 30, 255) : Color.FromRgba(235, 235, 235, 255);
 	}
+
+	public void GenerateDiagrams(IEnumerable<ColorScheme> schemes)
+	{
+		foreach (var scheme in schemes)
+		{
+			Generate(ColorSchemeEntry.FromColorScheme(scheme), Columns, $"{AssetsPath}{scheme.Name.ToLower()}.png");
+		}
+	}
+	static string AssetsPath =>
+		$"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}assets{Path.DirectorySeparatorChar}" ?? throw new InvalidOperationException("The assets output folder cannot be accessed.");
 }
