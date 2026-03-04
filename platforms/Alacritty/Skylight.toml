@@ -13,8 +13,8 @@ text = "#eaeef1"
 cursor = "#85bbff"
 
 [colors.search.matches]
-foreground = "#d2e1f2"
-background = "#acc2df"
+foreground = "#818ec9"
+background = "#d2e1f2"
 
 [colors.search.focused_match]
 foreground = "#d2e1f2"
