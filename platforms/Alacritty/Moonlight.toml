@@ -13,8 +13,8 @@ text = "#2a2840"
 cursor = "#e981c6"
 
 [colors.search.matches]
-foreground = "#3d375f"
-background = "#89537f"
+foreground = "#696383"
+background = "#3d375f"
 
 [colors.search.focused_match]
 foreground = "#3d375f"
@@ -47,14 +47,14 @@ cyan = "#ec93c1"
 white = "#c0c0ff"
 
 [colors.bright]
-black = "#3d375f"
+black = "#908caa"
 red = "#ef5abf"
 green = "#c188ef"
 yellow = "#80b5f7"
 blue = "#848bf4"
 magenta = "#eb517c"
 cyan = "#ec93c1"
-white = "#696383"
+white = "#908caa"
 
 [[colors.indexed_colors]]
 index = 16

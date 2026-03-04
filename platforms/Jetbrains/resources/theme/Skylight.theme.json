@@ -32,8 +32,8 @@
 		"magenta": "#e153b3",
 		"cyan": "#4897e8",
 		"white": "#525b8f",
-		"accentColor": "#dd6e96",
-		"secondaryAccentColor": "#9e55dd",
+		"accent": "#dd6e96",
+		"secondaryAccent": "#9e55dd",
 		"buttonForeground": "#525b8f",
 		"inactiveBackground": "#9ca4d1",
 		"inactiveForeground": "#9ca4d1",
@@ -102,7 +102,7 @@
 				"background": "selectionBackground",
 				"foreground": "text"
 			},
-			"iconBackground": "accentColor"
+			"iconBackground": "accent"
 		},
 		"Borders": {
 			"ContrastBorderColor": "border",
@@ -111,13 +111,13 @@
 		"Button": {
 			"background": "bg",
 			"default": {
-				"endBackground": "accentColor",
-				"endBorderColor": "accentColor",
-				"focusColor": "accentColor",
-				"focusedBorderColor": "accentColor",
+				"endBackground": "accent",
+				"endBorderColor": "accent",
+				"focusColor": "accent",
+				"focusedBorderColor": "accent",
 				"foreground": "bg",
-				"startBackground": "accentColor",
-				"startBorderColor": "accentColor"
+				"startBackground": "accent",
+				"startBorderColor": "accent"
 			},
 			"disabledBorderColor": "border",
 			"disabledText": "inactive",
@@ -139,10 +139,10 @@
 			"ArrowButton": {
 				"background": "bgOverlay",
 				"disabledIconColor": "keyword",
-				"iconColor": "accentColor",
+				"iconColor": "accent",
 				"nonEditableBackground": "bgOverlay"
 			},
-			"modifiedItemForeground": "accentColor",
+			"modifiedItemForeground": "accent",
 			"nonEditableBackground": "bgOverlay"
 		},
 		"CompletionPopup": {
@@ -155,7 +155,7 @@
 			"borderColor": "border",
 			"disabledBorderColor": "selectionBackground",
 			"errorFocusColor": "red",
-			"focusColor": "accentColor",
+			"focusColor": "accent",
 			"focusedBorderColor": "selectionBackground",
 			"iconColor": "text",
 			"inactiveErrorFocusColor": "error",
@@ -164,7 +164,7 @@
 			"infoForeground": "faded"
 		},
 		"Counter": {
-			"background": "accentColor",
+			"background": "accent",
 			"foreground": "bg"
 		},
 		"DefaultTabs": {
@@ -183,7 +183,7 @@
 				"borderColor": "border"
 			},
 			"background": "bg",
-			"shortcutForeground": "accentColor"
+			"shortcutForeground": "accent"
 		},
 		"EditorPane": {
 			"caretForeground": "text",
@@ -191,9 +191,9 @@
 		},
 		"EditorTabs": {
 			"background": "bg",
-			"inactiveUnderlineColor": "secondaryAccentColor",
+			"inactiveUnderlineColor": "secondaryAccent",
 			"hoverBackground": "hoverBackground",
-			"underlineColor": "accentColor",
+			"underlineColor": "accent",
 			"underlineHeight": 1,
 			"underlinedTabBackground": "bg",
 			"unselectedBlend": 0.9
@@ -217,10 +217,10 @@
 			"shortcutForeground": "text"
 		},
 		"Link": {
-			"activeForeground": "accentColor",
-			"hoverForeground": "accentColor",
-			"pressedForeground": "secondaryAccentColor",
-			"visitedForeground": "secondaryAccentColor"
+			"activeForeground": "accent",
+			"hoverForeground": "accent",
+			"pressedForeground": "secondaryAccent",
+			"visitedForeground": "secondaryAccent"
 		},
 		"List": {
 			"Button": {
@@ -297,13 +297,13 @@
 		"Plugins": {
 			"Button": {
 				"installBackground": "bg",
-				"installBorderColor": "secondaryAccentColor",
-				"installFillBackground": "secondaryAccentColor",
+				"installBorderColor": "secondaryAccent",
+				"installFillBackground": "secondaryAccent",
 				"installFillForeground": "buttonBackground",
 				"installFocusedBackground": "bg",
-				"installForeground": "secondaryAccentColor",
-				"updateBackground": "accentColor",
-				"updateBorderColor": "accentColor",
+				"installForeground": "secondaryAccent",
+				"updateBackground": "accent",
+				"updateBorderColor": "accent",
 				"updateForeground": "bg"
 			},
 			"SearchField": {
@@ -339,11 +339,11 @@
 		"ProgressBar": {
 			"failedColor": "red",
 			"failedEndColor": "red",
-			"indeterminateEndColor": "secondaryAccentColor",
-			"indeterminateStartColor": "accentColor",
+			"indeterminateEndColor": "secondaryAccent",
+			"indeterminateStartColor": "accent",
 			"passedColor": "green",
 			"passedEndColor": "green",
-			"progressColor": "accentColor",
+			"progressColor": "accent",
 			"trackColor": "selectionBackground"
 		},
 		"RadioButton": {
@@ -412,7 +412,7 @@
 			"hoverColor": "hoverBackground",
 			"tabHeight": 40,
 			"tabSelectionArc": 4,
-			"underlineColor": "accentColor"
+			"underlineColor": "accent"
 		},
 		"Table": {
 			"gridColor": "hoverBackground",
@@ -426,14 +426,14 @@
 			"background": "bg"
 		},
 		"TextField": {
-			"background": "#eaeef1",
-			"caretForeground": "bgOverlay",
-			"foreground": "#525b8f",
-			"selectionForeground": "#525b8f",
-			"selectionBackground": "#acc2df"
+			"background": "bg",
+			"caretForeground": "accent",
+			"foreground": "text",
+			"selectionForeground": "selectionForeground",
+			"selectionBackground": "selectionBackground"
 		},
 		"ToggleButton": {
-			"buttonColor": "secondaryAccentColor",
+			"buttonColor": "secondaryAccent",
 			"offBackground": "text",
 			"offForeground": "hoverForegroun",
 			"onBackground": "pressedBackground",
@@ -441,7 +441,7 @@
 		},
 		"ToolBar": {
 			"background": "bg",
-			"borderHandleColor": "secondaryAccentColor"
+			"borderHandleColor": "secondaryAccent"
 		},
 		"ToolWindow": {
 			"Button": {
@@ -457,7 +457,7 @@
 			"HeaderTab": {
 				"hoverBackground": "surface0",
 				"inactiveUnderlineColor": "text",
-				"underlineColor": "accentColor"
+				"underlineColor": "accent"
 			},
 			"Stripe": {
 			},
@@ -467,7 +467,7 @@
 			"background": "bg",
 			"foreground": "text",
 			"hoverBackground": "hoverBackground",
-			"modifiedItemForeground": "accentColor",
+			"modifiedItemForeground": "accent",
 			"rowHeight": 24,
 			"selectionBackground": "selectionBackground",
 			"selectionInactiveBackground": "selectionInactiveBackground",
@@ -490,11 +490,11 @@
 				}
 			},
 			"GitLog": {
-				"headIconColor": "secondaryAccentColor",
+				"headIconColor": "secondaryAccent",
 				"localBranchIconColor": "green",
 				"otherIconColor": "green",
-				"remoteBranchIconColor": "secondaryAccentColor",
-				"tagIconColor": "accentColor"
+				"remoteBranchIconColor": "secondaryAccent",
+				"tagIconColor": "accent"
 			},
 			"Log": {
 				"Commit": {
