@@ -95,7 +95,7 @@ public static partial class ColorSchemeFactory
 			HoverText                   = colors.BackgroundOverlay,
 			InactiveBackground          = colors.BackgroundOverlay,
 			InactiveText                = colors.Text,
-			MatchText                   = colors.TextFaded,
+			MatchText                   = colors.TextHidden,
 			MatchBackground             = colors.BackgroundOverlay,
 			SelectionBackground         = colors.Highlight,
 			SelectionText               = colors.BackgroundOverlay,
