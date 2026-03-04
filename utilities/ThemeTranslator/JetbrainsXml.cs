@@ -1520,8 +1520,8 @@ public class JetbrainsXml : ITheme
 			     </option>
 			     <option name="TAB_SELECTED">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Method}"/>
-			         <option name="BACKGROUND" value="{Scheme.Colors.HighlightLow}"/>
+			         <option name="FOREGROUND" value="{Scheme.Ui.SelectionText}"/>
+			         <option name="BACKGROUND" value="{Scheme.Ui.SelectionBackground}"/>
 			       </value>
 			     </option>
 			     <option name="TAB_SELECTED_INACTIVE">
