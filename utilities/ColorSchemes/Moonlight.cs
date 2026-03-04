@@ -4,6 +4,7 @@ public static partial class ColorSchemeFactory
 {
 	public static ColorScheme Moonlight()
 	{
+		// primary definition of colors
 		BasicColors colors = new()
 		{
 			Background        = "2a2840",
@@ -38,7 +39,10 @@ public static partial class ColorSchemeFactory
 			Highlight     = "89537f",
 			HighlightHigh = "e981c6",
 		};
-
+		
+		// the expected colors for most editors, you can base them on your basic colors,
+		// I strongly suggest to adhere to the colors here,
+		// e.g. base8.Red defines errors, base8.Orange defines warnings, etc.
 		Base8Colors base8 = new()
 		{
 			Black   = colors.Background,
@@ -50,7 +54,10 @@ public static partial class ColorSchemeFactory
 			Cyan    = colors.String,
 			White   = colors.Text,
 		};
-
+		
+		// Colors that define the typical git file changes.
+		// the highlight definitions are used for SourceGit's theming.
+		// Skip them if you don't use it.
 		DiffColors diff = new()
 		{
 			Added             = base8.Green,
@@ -63,7 +70,12 @@ public static partial class ColorSchemeFactory
 			DeletedHighlight  = "9a4063",
 			DeletedBackground = "51304c",
 		};
-
+		
+		// Definitions for console colors.
+		// I opted to differentiate this because I am absolutely not
+		// going to comply on Ansi standard's color definitions,
+		// Becase my eyes are aversive to Green, Orange, etc.
+		// But of course, YMMV!
 		ConsoleColors console = new()
 		{
 			Black      = colors.Background,
@@ -83,7 +95,9 @@ public static partial class ColorSchemeFactory
 			CyanAlt    = colors.Keyword,
 			WhiteAlt   = colors.TextFaded
 		};
-
+		
+		// Defines ui, selections, highlights, buttons.
+		// Most of this will be used by IDEs and Kvantum (software theming).
 		UiColors ui = new()
 		{
 			Accent                      = colors.Highlight,
@@ -104,7 +118,8 @@ public static partial class ColorSchemeFactory
 			PressedBackground           = colors.Highlight,
 			PressedText                 = colors.Text,
 		};
-
+		
+		// Tying all of them together.
 		return new()
 		{
 			Name        = "Moonlight",
