@@ -35,6 +35,7 @@ public class Program
 		{
 			themes.Add(constructor(ColorSchemeFactory.Moonlight()));
 			themes.Add(constructor(ColorSchemeFactory.Skylight()));
+			themes.Add(constructor(ColorSchemeFactory.Chaos()));
 		}
 
 		Console.WriteLine("Generating themes...");
@@ -55,8 +56,9 @@ public class Program
 
 		DiagramGenerator generator = new();
 
-		generator.Generate(ColorSchemeEntry.Moonlight, columns, $"{AssetsPath}moonlight.png");
-		generator.Generate(ColorSchemeEntry.Skylight,  columns, $"{AssetsPath}skylight.png");
+		generator.Generate(ColorSchemeEntry.MoonlightEntries, columns, $"{AssetsPath}moonlight.png");
+		generator.Generate(ColorSchemeEntry.SkylightEntries, columns, $"{AssetsPath}skylight.png");
+		generator.Generate(ColorSchemeEntry.ChaosEntries, columns, $"{AssetsPath}skylight.png");
 
 		Console.WriteLine("Finished.");
 	}

@@ -7,9 +7,8 @@ public static class ColorSchemeEntry
 {
 	public static List<ColorEntry> MoonlightEntries = FromColorScheme(ColorSchemeFactory.Moonlight());
 	public static List<ColorEntry> SkylightEntries  = FromColorScheme(ColorSchemeFactory.Skylight());
-	public static List<ColorEntry> ChaosEntries     = FromColorScheme(ColorSchemeFactory.Chaos);
+	public static List<ColorEntry> ChaosEntries     = FromColorScheme(ColorSchemeFactory.Chaos());
 	
-
 	private static List<ColorEntry> FromColorScheme(ColorScheme scheme)
 	{
 		// ColorEntry padding = new() { Index = "", Name = "", HexCode = $"00000000" };
