@@ -5,12 +5,14 @@ namespace Rikai.Colorschemes;
 /// </summary>
 public static class ColorSchemeEntry
 {
-	public static List<ColorEntry> Moonlight = FromColorScheme(ColorSchemeFactory.Moonlight());
-	public static List<ColorEntry> Skylight  = FromColorScheme(ColorSchemeFactory.Skylight());
+	public static List<ColorEntry> MoonlightEntries = FromColorScheme(ColorSchemeFactory.Moonlight());
+	public static List<ColorEntry> SkylightEntries  = FromColorScheme(ColorSchemeFactory.Skylight());
+	public static List<ColorEntry> ChaosEntries     = FromColorScheme(ColorSchemeFactory.Chaos);
+	
 
 	private static List<ColorEntry> FromColorScheme(ColorScheme scheme)
 	{
-		ColorEntry padding = new() { Index = "", Name = "", HexCode = $"00000000" };
+		// ColorEntry padding = new() { Index = "", Name = "", HexCode = $"00000000" };
 		List<ColorEntry> entries = new()
 		{
 			new() { Index = "bg0", Name = "background", HexCode   = $"#{scheme.Colors.Background}" },
