@@ -123,6 +123,8 @@ public class UiColors
 	public required string AccentText                  { get; set; }
 	public required string SecondaryAccent             { get; set; }
 	public required string SecondaryAccentText         { get; set; }
+	public required string TertiaryAccent              { get; set; }
+	public required string TertiaryAccentText          { get; set; }
 	public required string MenuBackground              { get; set; }
 	public required string HoverBackground             { get; set; } // on hover
 	public required string HoverText                   { get; set; } // text on hover

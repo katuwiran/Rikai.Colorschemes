@@ -88,10 +88,12 @@ public static partial class ColorSchemeFactory
 
 		UiColors ui = new()
 		{
-			Accent                      = colors.Highlight,
+			Accent                      = colors.HighlightHigh,
 			AccentText                  = colors.BackgroundOverlay,
-			SecondaryAccent             = colors.HighlightLow,
+			SecondaryAccent             = colors.Highlight,
 			SecondaryAccentText         = colors.Text,
+			TertiaryAccent              = colors.HighlightLow,
+			TertiaryAccentText          = colors.Text,
 			MenuBackground              = colors.Background,
 			HoverBackground             = colors.HighlightHigh,
 			HoverText                   = colors.BackgroundOverlay,
