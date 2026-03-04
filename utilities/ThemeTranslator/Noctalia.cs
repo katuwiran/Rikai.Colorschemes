@@ -7,7 +7,7 @@ public class Noctalia : ITheme
 	
 	public Noctalia(ColorScheme scheme)
 	{
-		FilePath = Path.Combine("Noctalia", $"{scheme.Name}.json");
+		FilePath = Path.Combine("Noctalia", scheme.Name, $"{scheme.Name}.json");
 		Scheme   = scheme;
 	}
 
@@ -17,10 +17,10 @@ public class Noctalia : ITheme
 			$$"""
 			  {
 			      "dark": {
-			          "mPrimary": "#{{Scheme.Colors.Class}}",
+			          "mPrimary": "#{{Scheme.Ui.Accent}}",
 			          "mOnPrimary": "#{{Scheme.Ui.AccentText}}",
-			          "mSecondary": "#{{Scheme.Colors.Keyword}}",
-			          "mOnSecondary": "#{{Scheme.Ui.AccentText}}",
+			          "mSecondary": "#{{Scheme.Ui.SecondaryAccent}}",
+			          "mOnSecondary": "#{{Scheme.Ui.SecondaryAccentText}}",
 			          "mTertiary": "#{{Scheme.Colors.Method}}",
 			          "mOnTertiary": "#{{Scheme.Ui.AccentText}}",
 			          "mError": "#{{Scheme.Colors.Error}}",
