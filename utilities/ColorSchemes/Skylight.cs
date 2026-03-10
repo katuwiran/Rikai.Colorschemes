@@ -8,7 +8,7 @@ public static partial class ColorSchemeFactory
 		{
 			Background        = "eaeef1",
 			BackgroundEdges   = "e2ebf2",
-			BackgroundOverlay = "d2e1f2",
+			BackgroundOverlay = "e3eaf1",
 			TextHidden        = "9ca4d1",
 			TextInactive      = "6f78aa",
 			TextFaded         = "818ec9",
