@@ -60,10 +60,10 @@ public static partial class ColorSchemeFactory
 			Modified          = colors.Keyword,
 			Ignored           = colors.TextFaded,
 			Conflict          = colors.Field,
-			AddedHighlight    = "61766f",
-			AddedBackground   = "36394a",
-			DeletedHighlight  = "9a4063",
-			DeletedBackground = "51304c",
+			AddedHighlight    = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.6,  colors.Background).AdjustHsv(deltaV: +0.05),
+			AddedBackground   = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.85, colors.Background),
+			DeletedHighlight  = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.5,  colors.Background).AdjustHsv(deltaV: +0.05),
+			DeletedBackground = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.85, colors.Background),
 		};
 
 		ConsoleColors console = new()
@@ -88,11 +88,11 @@ public static partial class ColorSchemeFactory
 
 		UiColors ui = new()
 		{
-			Accent                      = colors.HighlightHigh,
+			Accent                      = colors.Keyword,
 			AccentText                  = colors.BackgroundOverlay,
-			SecondaryAccent             = colors.Highlight,
+			SecondaryAccent             = colors.Keyword.AdjustHsv(deltaV: +0.2),
 			SecondaryAccentText         = colors.Text,
-			TertiaryAccent              = colors.HighlightLow,
+			TertiaryAccent              = colors.Keyword.AdjustHsv(deltaV: +0.5),
 			TertiaryAccentText          = colors.Text,
 			MenuBackground              = colors.Background,
 			HoverBackground             = colors.HighlightHigh,

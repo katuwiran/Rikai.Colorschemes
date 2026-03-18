@@ -65,10 +65,10 @@ public static partial class ColorSchemeFactory
 			Modified          = colors.Keyword,
 			Ignored           = colors.TextFaded,
 			Conflict          = colors.Field,
-			AddedHighlight    = "61766f",
-			AddedBackground   = "36394a",
-			DeletedHighlight  = "9a4063",
-			DeletedBackground = "51304c",
+			AddedHighlight    = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.3, colors.Background).AdjustHsv(deltaV: -0.12),
+			AddedBackground   = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.85,  colors.Background),
+			DeletedHighlight  = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background).AdjustHsv(deltaV: -0.05),
+			DeletedBackground = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.85,  colors.Background),
 		};
 
 		// Definitions for console colors.
