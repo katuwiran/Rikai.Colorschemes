@@ -23,4 +23,44 @@ public static class ColorApi
 
         return newColor.Hex.TrimStart('#');
     }
+
+	/// <summary>
+	/// Adjusts the alpha of a color and flattens it over a background, returning a 6-hex.
+	/// </summary>
+	public static string AdjustAlphaAndFlatten(this string foregroundHex, double deltaAlpha, string backgroundHex = "FFFFFF")
+	{
+		var fg = new Unicolour(foregroundHex);
+		var bg = new Unicolour(backgroundHex);
+
+		// Calculate the new alpha
+		double newAlpha = Math.Clamp(fg.Alpha.A + deltaAlpha, 0, 1);
+
+		// Apply the new alpha to the foreground color
+		var transparentFg = new Unicolour(
+			ColourSpace.Rgb,
+			fg.Rgb.R,
+			fg.Rgb.G,
+			fg.Rgb.B,
+			newAlpha
+		);
+
+		// Blend over the background
+		var result = transparentFg.Blend(bg, BlendMode.Normal);
+
+		// Return the solid 6-character hex
+		return result.Hex.TrimStart('#');
+	}
+
+	public static string FlattenAlpha(this string hex8, string backgroundHex = "FFFFFF")
+	{
+		var foreground = new Unicolour(hex8);
+		var background = new Unicolour(backgroundHex);
+
+		// Blend the foreground over the background
+		var result = foreground.Blend(background, BlendMode.Normal);
+
+		// Because the background is solid, the result is solid.
+		// .Hex automatically returns a 6-character string here.
+		return result.Hex.TrimStart('#');
+	}
 }
