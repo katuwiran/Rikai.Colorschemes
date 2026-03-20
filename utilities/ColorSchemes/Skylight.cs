@@ -34,10 +34,9 @@ public static partial class ColorSchemeFactory
 			WarningName = "orange",
 			ErrorName   = "red",
 
-			// todo follow changes in moonlight's highlighting
-			HighlightLow  = "e3e9ed",
-			Highlight     = "acc2df",
-			HighlightHigh = "85bbff",
+			HighlightLow  = "4d5de5".AdjustAlphaAndFlatten(deltaAlpha: -0.95, "eaeef1"),
+			Highlight     = "4d5de5".AdjustAlphaAndFlatten(deltaAlpha: -0.85, "eaeef1"),
+			HighlightHigh = "4d5de5".AdjustAlphaAndFlatten(deltaAlpha: -0.3,  "eaeef1"),
 		};
 
 		Base8Colors base8 = new()
@@ -52,7 +51,6 @@ public static partial class ColorSchemeFactory
 			White   = colors.Text,
 		};
 
-		// todo adapt this to light mode
 		DiffColors diff = new()
 		{
 			Added             = base8.Green,
