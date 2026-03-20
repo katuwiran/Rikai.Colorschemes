@@ -27,6 +27,7 @@ public class Sublime : ITheme
 		                 "edges":          "#{{Scheme.Colors.BackgroundEdges}}",
 		                 "overlay":        "#{{Scheme.Colors.BackgroundOverlay}}",
 		                 "faded":          "#{{Scheme.Colors.TextFaded}}",
+		                 "inactive":       "#{{Scheme.Colors.TextInactive}}",
 		                 "hidden":         "#{{Scheme.Colors.TextHidden}}",
 		                 "magenta":        "#{{Scheme.Colors.Class}}",
 		                 "plum":           "#{{Scheme.Colors.Keyword}}",
@@ -106,7 +107,7 @@ public class Sublime : ITheme
 
 		                 // Gutter
 		                 "gutter":                      "var(background)", // background
-		                 "gutter_foreground":           "var(faded)",
+		                 "gutter_foreground":           "var(inactive)",
 		                 "gutter_foreground_highlight": "var(info)",
 
 		                 // Diff
