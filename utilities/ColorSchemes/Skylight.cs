@@ -26,8 +26,8 @@ public static partial class ColorSchemeFactory
 
 			ClassName   = "magenta",
 			KeywordName = "plum",
-			MethodName  = "blue",
-			FieldName   = "purple",
+			MethodName  = "purple",
+			FieldName   = "blue",
 			StringName  = "cyan",
 			NumeralName = "green",
 			InfoName    = "yellow",
