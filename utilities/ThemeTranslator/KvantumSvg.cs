@@ -15,9 +15,9 @@ public class KvantumSvg : ITheme
 	public override string ToString()
 	{
 		// Brand Colors
-		string primary       = $"#{Scheme.Colors.Keyword}";
-		string primaryActive = $"#{Scheme.Colors.Method}";
 		string alert         = $"#{Scheme.Colors.Class}";
+		string primary       = $"#{Scheme.Accent.Primary}";
+		string primaryActive = $"#{Scheme.Accent.Secondary}";
 
 		string titleBar              = $"#{Scheme.Colors.BackgroundEdges}";
 		string gray                  = $"#{Scheme.Colors.TextInactive}";

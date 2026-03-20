@@ -83,15 +83,19 @@ public static partial class ColorSchemeFactory
 			CyanAlt    = colors.Keyword,
 			WhiteAlt   = colors.TextHidden
 		};
+		
+		AccentColors accent = new()
+		{
+			Primary       = colors.Keyword.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
+			PrimaryText   = colors.BackgroundOverlay,
+			Secondary     = colors.Method.AdjustAlphaAndFlatten(deltaAlpha: -0.3, colors.Background),
+			SecondaryText = colors.BackgroundOverlay,
+			Tertiary      = colors.Field.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
+			TertiaryText  = colors.BackgroundOverlay,
+		};
 
 		UiColors ui = new()
 		{
-			Accent                      = colors.Keyword,
-			AccentText                  = colors.BackgroundOverlay,
-			SecondaryAccent             = colors.Keyword.AdjustHsv(deltaV: +0.2),
-			SecondaryAccentText         = colors.Text,
-			TertiaryAccent              = colors.Keyword.AdjustHsv(deltaV: +0.5),
-			TertiaryAccentText          = colors.Text,
 			MenuBackground              = colors.Background,
 			HoverBackground             = colors.HighlightHigh,
 			HoverText                   = colors.BackgroundOverlay,
@@ -99,7 +103,7 @@ public static partial class ColorSchemeFactory
 			InactiveText                = colors.Text,
 			MatchText                   = colors.TextFaded,
 			MatchBackground             = colors.BackgroundOverlay,
-			SelectionBackground         = colors.Highlight,
+			SelectionBackground         = colors.HighlightHigh,
 			SelectionText               = colors.BackgroundOverlay,
 			SelectionInactiveText       = colors.Text,
 			SelectionInactiveBackground = colors.HighlightLow,
@@ -115,6 +119,7 @@ public static partial class ColorSchemeFactory
 			Colors      = colors,
 			Base8       = base8,
 			Diff        = diff,
+			Accent      = accent,
 			Console     = console,
 			Ui          = ui
 		};

@@ -11,6 +11,7 @@ public class ColorScheme
 	public required Base8Colors   Base8   { get; set; }
 	public required ConsoleColors Console { get; set; }
 	public required DiffColors    Diff    { get; set; }
+	public required AccentColors  Accent { get; set; }
 	public required UiColors      Ui      { get; set; }
 
 	public override string ToString()
@@ -117,14 +118,18 @@ public class DiffColors
 	}
 }
 
+public class AccentColors
+{
+	public required string Primary       { get; set; }
+	public required string PrimaryText   { get; set; }
+	public required string Secondary     { get; set; }
+	public required string SecondaryText { get; set; }
+	public required string Tertiary      { get; set; }
+	public required string TertiaryText  { get; set; }
+}
+
 public class UiColors
 {
-	public required string Accent                      { get; set; }
-	public required string AccentText                  { get; set; }
-	public required string SecondaryAccent             { get; set; }
-	public required string SecondaryAccentText         { get; set; }
-	public required string TertiaryAccent              { get; set; }
-	public required string TertiaryAccentText          { get; set; }
 	public required string MenuBackground              { get; set; }
 	public required string HoverBackground             { get; set; } // on hover
 	public required string HoverText                   { get; set; } // text on hover

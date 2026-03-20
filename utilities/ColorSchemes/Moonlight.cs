@@ -65,10 +65,10 @@ public static partial class ColorSchemeFactory
 			Modified          = colors.Keyword,
 			Ignored           = colors.TextFaded,
 			Conflict          = colors.Field,
-			AddedHighlight    = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.3, colors.Background).AdjustHsv(deltaV: -0.12),
-			AddedBackground   = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.85,  colors.Background),
-			DeletedHighlight  = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background).AdjustHsv(deltaV: -0.05),
-			DeletedBackground = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.85,  colors.Background),
+			AddedHighlight    = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.3,  colors.Background).AdjustHsv(deltaV: -0.12),
+			AddedBackground   = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.85, colors.Background),
+			DeletedHighlight  = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.2,  colors.Background).AdjustHsv(deltaV: -0.05),
+			DeletedBackground = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.85, colors.Background),
 		};
 
 		// Definitions for console colors.
@@ -96,16 +96,20 @@ public static partial class ColorSchemeFactory
 			WhiteAlt   = colors.TextFaded
 		};
 
+		AccentColors accent = new()
+		{
+			Primary       = colors.HighlightHigh,
+			PrimaryText   = colors.BackgroundOverlay,
+			Secondary     = colors.Highlight,
+			SecondaryText = colors.Text,
+			Tertiary      = colors.HighlightLow,
+			TertiaryText  = colors.Text,
+		};
+
 		// Defines ui, selections, highlights, buttons.
 		// Most of this will be used by IDEs and Kvantum (software theming).
 		UiColors ui = new()
 		{
-			Accent                      = colors.HighlightHigh,
-			AccentText                  = colors.BackgroundOverlay,
-			SecondaryAccent             = colors.Highlight,
-			SecondaryAccentText         = colors.Text,
-			TertiaryAccent              = colors.HighlightLow,
-			TertiaryAccentText          = colors.Text,
 			MenuBackground              = colors.Background,
 			HoverBackground             = colors.HighlightHigh,
 			HoverText                   = colors.BackgroundOverlay,
@@ -131,6 +135,7 @@ public static partial class ColorSchemeFactory
 			Base8       = base8,
 			Diff        = diff,
 			Console     = console,
+			Accent     = accent,
 			Ui          = ui
 		};
 	}
