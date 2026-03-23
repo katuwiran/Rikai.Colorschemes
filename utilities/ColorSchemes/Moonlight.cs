@@ -35,9 +35,9 @@ public static partial class ColorSchemeFactory
 			WarningName = "orange",
 			ErrorName   = "red",
 
-			HighlightLow  = "6c3b62",
-			Highlight     = "89537f",
-			HighlightHigh = "e981c6",
+			HighlightLow  = "848bf4".AdjustAlphaAndFlatten(deltaAlpha: -0.85, "2a2840"),
+			Highlight     = "848bf4".AdjustAlphaAndFlatten(deltaAlpha: -0.60, "2a2840"),
+			HighlightHigh = "848bf4".AdjustAlphaAndFlatten(deltaAlpha: -0.3,  "2a2840"),
 		};
 
 		// the expected colors for most editors, you can base them on your basic colors,
@@ -98,12 +98,12 @@ public static partial class ColorSchemeFactory
 
 		AccentColors accent = new()
 		{
-			Primary       = colors.HighlightHigh,
+			Primary       = colors.Keyword.AdjustAlphaAndFlatten(deltaAlpha: -0.05, colors.Background),
 			PrimaryText   = colors.BackgroundOverlay,
-			Secondary     = colors.Highlight,
-			SecondaryText = colors.Text,
-			Tertiary      = colors.HighlightLow,
-			TertiaryText  = colors.Text,
+			Secondary     = colors.Field.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
+			SecondaryText = colors.BackgroundOverlay,
+			Tertiary      = colors.Method.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
+			TertiaryText  = colors.BackgroundOverlay,
 		};
 
 		// Defines ui, selections, highlights, buttons.
@@ -111,18 +111,18 @@ public static partial class ColorSchemeFactory
 		UiColors ui = new()
 		{
 			MenuBackground              = colors.Background,
-			HoverBackground             = colors.HighlightHigh,
-			HoverText                   = colors.BackgroundOverlay,
+			HoverBackground             = accent.Tertiary,
+			HoverText                   = accent.TertiaryText,
 			InactiveBackground          = colors.BackgroundOverlay,
 			InactiveText                = colors.Text,
-			MatchText                   = colors.TextHidden,
+			MatchText                   = colors.TextFaded,
 			MatchBackground             = colors.BackgroundOverlay,
-			SelectionBackground         = colors.Highlight,
+			SelectionBackground         = colors.HighlightHigh,
 			SelectionText               = colors.BackgroundOverlay,
 			SelectionInactiveText       = colors.Text,
 			SelectionInactiveBackground = colors.HighlightLow,
-			PressedBackground           = colors.Highlight,
-			PressedText                 = colors.Text,
+			PressedBackground           = accent.Secondary,
+			PressedText                 = accent.SecondaryText,
 		};
 
 		// Tying all of them together.
@@ -135,7 +135,7 @@ public static partial class ColorSchemeFactory
 			Base8       = base8,
 			Diff        = diff,
 			Console     = console,
-			Accent     = accent,
+			Accent      = accent,
 			Ui          = ui
 		};
 	}

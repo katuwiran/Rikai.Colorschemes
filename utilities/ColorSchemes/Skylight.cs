@@ -86,19 +86,19 @@ public static partial class ColorSchemeFactory
 		
 		AccentColors accent = new()
 		{
-			Primary       = colors.Keyword.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
+			Primary       = colors.Keyword.AdjustAlphaAndFlatten(deltaAlpha: -0.05, colors.Background),
 			PrimaryText   = colors.BackgroundOverlay,
-			Secondary     = colors.Method.AdjustAlphaAndFlatten(deltaAlpha: -0.3, colors.Background),
+			Secondary     = colors.Field.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
 			SecondaryText = colors.BackgroundOverlay,
-			Tertiary      = colors.Field.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
+			Tertiary      = colors.Method.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
 			TertiaryText  = colors.BackgroundOverlay,
 		};
 
 		UiColors ui = new()
 		{
 			MenuBackground              = colors.Background,
-			HoverBackground             = colors.HighlightHigh,
-			HoverText                   = colors.BackgroundOverlay,
+			HoverBackground             = accent.Secondary,
+			HoverText                   = accent.SecondaryText,
 			InactiveBackground          = colors.BackgroundOverlay,
 			InactiveText                = colors.Text,
 			MatchText                   = colors.TextFaded,
@@ -107,8 +107,8 @@ public static partial class ColorSchemeFactory
 			SelectionText               = colors.BackgroundOverlay,
 			SelectionInactiveText       = colors.Text,
 			SelectionInactiveBackground = colors.HighlightLow,
-			PressedBackground           = colors.Highlight,
-			PressedText                 = colors.BackgroundOverlay,
+			PressedBackground           = accent.Tertiary,
+			PressedText                 = accent.TertiaryText,
 		};
 
 		return new()
