@@ -115,7 +115,7 @@ public static partial class ColorSchemeFactory
 		{
 			Name        = "Skylight",
 			Description = "Rikai's opinionated light color scheme, fully my own",
-			IsDark      = true,
+			IsDark      = false,
 			Colors      = colors,
 			Base8       = base8,
 			Diff        = diff,
