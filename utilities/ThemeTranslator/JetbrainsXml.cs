@@ -15,9 +15,11 @@ public class JetbrainsXml : ITheme
 	{
 		const string fontBold   = "1";
 		const string fontItalic = "2";
+
+		string parent = Scheme.IsDark? "Darcula" : "Default";
 		return
 			$"""
-			 <scheme name="{Scheme.Name}" version="142" parent_scheme="Darcula">
+			 <scheme name="{Scheme.Name}" version="142" parent_scheme="{parent}">
 			   <metaInfo>
 			     <property name="ide">Rider</property>
 			     <property name="ideVersion">2025.3.1.0.0</property>
@@ -37,17 +39,13 @@ public class JetbrainsXml : ITheme
 			     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="{Scheme.Colors.BackgroundEdges}"/>
 			     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="{Scheme.Colors.Field}"/>
 			     <option name="CARET_COLOR" value="{Scheme.Colors.Text}"/>
-			     <option name="CARET_ROW_COLOR" value="{Scheme.Colors.Text}"/>
+			     <option name="CARET_ROW_COLOR" value="{Scheme.Colors.HighlightLow}"/>
 			     <option name="CONSOLE_BACKGROUND_KEY" value="{Scheme.Colors.Background}"/>
 			     <option name="DELETED_LINES_COLOR" value="{Scheme.Colors.Class}"/>
 			     <option name="DIFF_SEPARATORS_BACKGROUND" value="{Scheme.Colors.BackgroundOverlay}"/>
 			     <option name="DOCUMENTATION_COLOR" value="{Scheme.Colors.Background}"/>
 			     <option name="DOC_COMMENT_LINK" value="{Scheme.Colors.Field}"/>
 			     <option name="ERROR_HINT" value="{Scheme.Colors.Error}"/>
-			     <option name="CARET_ROW_COLOR" value="{Scheme.Colors.BackgroundOverlay}" />
-			     <option name="DOCUMENTATION_COLOR" value="" />
-			     <option name="DOC_COMMENT_LINK" value="{Scheme.Colors.Keyword}" />
-			     <option name="EDITOR_GUTTER_BACKGROUND" value="" />
 			     <option name="FILESTATUS_ADDED" value="{Scheme.Colors.Numeral}"/>
 			     <option name="FILESTATUS_COPIED" value="{Scheme.Colors.Numeral}"/>
 			     <option name="FILESTATUS_DELETED" value="{Scheme.Colors.Class}"/>
@@ -78,13 +76,13 @@ public class JetbrainsXml : ITheme
 			     <option name="HTML_TAG_TREE_LEVEL4" value="{Scheme.Colors.Method}"/>
 			     <option name="HTML_TAG_TREE_LEVEL5" value="{Scheme.Colors.Info}"/>
 			     <option name="INDENT_GUIDE" value="{Scheme.Colors.BackgroundEdges}" />
-			     <option name="INFORMATION_HINT" value="{Scheme.Colors.BackgroundEdges}"/>
-			     <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="{Scheme.Colors.TextFaded}" />
+			     <option name="INFORMATION_HINT" value="{Scheme.Colors.BackgroundOverlay}"/>
+			     <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="{Scheme.Colors.Text}" />
 			     <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="" />
 			     <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="" />
-			     <option name="LINE_NUMBERS_COLOR" value="{Scheme.Colors.TextFaded}" />
+			     <option name="LINE_NUMBERS_COLOR" value="{Scheme.Colors.Text}" />
 			     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="{Scheme.Colors.Text}" />
-			     <option name="LOOKUP_COLOR" value="{Scheme.Colors.BackgroundEdges}"/>
+			     <option name="LOOKUP_COLOR" value="{Scheme.Colors.BackgroundOverlay}"/>
 			     <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="{Scheme.Colors.TextHidden}" />
 			     <option name="METHOD_SEPARATORS_COLOR" value="" />
 			     <option name="MODIFIED_LINES_COLOR" value="{Scheme.Colors.Keyword}"/>
@@ -108,12 +106,14 @@ public class JetbrainsXml : ITheme
 			     <option name="ScrollBar.Mac.thumbBorderColor" value="{Scheme.Colors.BackgroundOverlay}"/>
 			     <option name="ScrollBar.Mac.hoverThumbColor" value="{Scheme.Colors.HighlightLow}"/>
 			     <option name="ScrollBar.Mac.hoverThumbBorderColor" value="{Scheme.Colors.HighlightLow}"/>
+			     <option name="TAB_UNDERLINE" value="{Scheme.Accent.Primary}"/>
+			     <option name="TAB_UNDERLINE_INACTIVE" value="{Scheme.Colors.BackgroundOverlay}"/>
+			     <option name="TEARLINE_COLOR" value="{Scheme.Colors.TextHidden}" />
 			     <option name="VCS_ANNOTATIONS_COLOR_1" value="{Scheme.Colors.Text}"/>
 			     <option name="VCS_ANNOTATIONS_COLOR_2" value="{Scheme.Colors.Text}"/>
 			     <option name="VCS_ANNOTATIONS_COLOR_3" value="{Scheme.Colors.Text}"/>
 			     <option name="VCS_ANNOTATIONS_COLOR_4" value="{Scheme.Colors.Text}"/>
 			     <option name="VCS_ANNOTATIONS_COLOR_5" value="{Scheme.Colors.Text}"/>
-			     <option name="TEARLINE_COLOR" value="{Scheme.Colors.TextHidden}" />
 			     <option name="VISUAL_INDENT_GUIDE" value="{Scheme.Colors.TextHidden}" />
 			     <option name="WHITESPACES" value="{Scheme.Colors.BackgroundEdges}" />
 			     <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="{Scheme.Colors.BackgroundEdges}"/>
@@ -1520,14 +1520,14 @@ public class JetbrainsXml : ITheme
 			     </option>
 			     <option name="TAB_SELECTED">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Ui.SelectionText}"/>
-			         <option name="BACKGROUND" value="{Scheme.Ui.SelectionBackground}"/>
+			         <option name="FOREGROUND" value="{Scheme.Colors.Text}"/>
+			         <option name="BACKGROUND" value="{Scheme.Colors.HighlightLow}"/>
 			       </value>
 			     </option>
 			     <option name="TAB_SELECTED_INACTIVE">
 			       <value>
-			         <option name="FOREGROUND" value="{Scheme.Colors.Method}"/>
-			         <option name="BACKGROUND" value="{Scheme.Colors.BackgroundOverlay}"/>
+			         <option name="FOREGROUND" value="{Scheme.Colors.Text}"/>
+			         <option name="BACKGROUND" value="{Scheme.Colors.Background}"/>
 			       </value>
 			     </option>
 			     <option name="TAG_ATTR_KEY">
