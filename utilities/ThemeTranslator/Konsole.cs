@@ -29,82 +29,82 @@ public class Konsole : ITheme
 			 Color=#{Scheme.Console.Black}
 
 			 [Color0Faint]
-			 Color=#{Scheme.Console.Black}
+			 Color=#{Scheme.Console.BlackAlt}
 
 			 [Color0Intense]
-			 Color=#{Scheme.Console.Black}
+			 Color=#{Scheme.Console.BlackAlt}
 
 			 [Color1]
 			 Color=#{Scheme.Console.Red}
 
 			 [Color1Faint]
-			 Color=#{Scheme.Console.Red}
+			 Color=#{Scheme.Console.RedAlt}
 
 			 [Color1Intense]
-			 Color=#{Scheme.Console.Red}
+			 Color=#{Scheme.Console.RedAlt}
 
 			 [Color2]
 			 Color=#{Scheme.Console.Green}
 
 			 [Color2Faint]
-			 Color=#{Scheme.Console.Green}
+			 Color=#{Scheme.Console.GreenAlt}
 
 			 [Color2Intense]
-			 Color=#{Scheme.Console.Green}
+			 Color=#{Scheme.Console.GreenAlt}
 
 			 [Color3]
 			 Color=#{Scheme.Console.Yellow}
 
 			 [Color3Faint]
-			 Color=#{Scheme.Console.Yellow}
+			 Color=#{Scheme.Console.YellowAlt}
 
 			 [Color3Intense]
-			 Color=#{Scheme.Console.Yellow}
+			 Color=#{Scheme.Console.YellowAlt}
 
 			 [Color4]
 			 Color=#{Scheme.Console.Blue}
 
 			 [Color4Faint]
-			 Color=#{Scheme.Console.Blue}
+			 Color=#{Scheme.Console.BlueAlt}
 
 			 [Color4Intense]
-			 Color=#{Scheme.Console.Blue}
+			 Color=#{Scheme.Console.BlueAlt}
 
 			 [Color5]
 			 Color=#{Scheme.Console.Magenta}
 
 			 [Color5Faint]
-			 Color=#{Scheme.Console.Magenta}
+			 Color=#{Scheme.Console.MagentaAlt}
 
 			 [Color5Intense]
-			 Color=#{Scheme.Console.Magenta}
+			 Color=#{Scheme.Console.MagentaAlt}
 
 			 [Color6]
 			 Color=#{Scheme.Console.Cyan}
 
 			 [Color6Faint]
-			 Color=#{Scheme.Console.Cyan}
+			 Color=#{Scheme.Console.CyanAlt}
 
 			 [Color6Intense]
-			 Color=#{Scheme.Console.Cyan}
+			 Color=#{Scheme.Console.CyanAlt}
 
 			 [Color7]
 			 Color=#{Scheme.Console.White}
 
 			 [Color7Faint]
-			 Color=#{Scheme.Console.White}
+			 Color=#{Scheme.Console.WhiteAlt}
 
 			 [Color7Intense]
-			 Color=#{Scheme.Console.White}
+			 Color=#{Scheme.Console.WhiteAlt}
 
 			 [Foreground]
 			 Color=#{Scheme.Colors.Text}
 
 			 [ForegroundFaint]
-			 Color=#{Scheme.Colors.Text}
+			 Color=#{Scheme.Colors.TextHidden}
 
 			 [ForegroundIntense]
-			 Color=#{Scheme.Colors.Text}
+			 Color=#{Scheme.Colors.TextHidden}
 
 			 [General]
 			 Blur=false
