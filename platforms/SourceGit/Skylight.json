@@ -13,22 +13,22 @@
     "Conflict.Foreground": "#eaeef1",
 
     "Border0": "#e2ebf2",
-    "Border1": "#d2e1f2",
-    "Border2": "#9ca4d1",
+    "Border1": "#97b0c4",
+    "Border2": "#bec4d6",
 
     "FlatButton.Background": "#e2ebf2",
-    "FlatButton.BackgroundHovered": "#85bbff",
+    "FlatButton.BackgroundHovered": "#6C7AE7",
 
-    "FG1": "#525b8f",
-    "FG2": "#818ec9",
+    "FG1": "#4f5789",
+    "FG2": "#7b83b0",
 
     "Diff.EmptyBG": "#eaeef1",
 
-    "Diff.AddedBG": "#36394a",
-    "Diff.AddedHighlight": "#61766f",
+    "Diff.AddedBG": "#D8E5CF",
+    "Diff.AddedHighlight": "#C4E39E",
 
-    "Diff.DeletedBG": "#51304c",
-    "Diff.DeletedHighlight": "#9a4063",
+    "Diff.DeletedBG": "#EBD6D9",
+    "Diff.DeletedHighlight": "#FAA7A9",
 
     "SystemAccentColor": "#dd6e96",
     "Link": "#4d5de5"

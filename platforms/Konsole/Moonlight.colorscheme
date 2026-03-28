@@ -11,10 +11,10 @@ Color=#3d375f
 Color=#2a2840
 
 [Color0Faint]
-Color=#2a2840
+Color=#696383
 
 [Color0Intense]
-Color=#2a2840
+Color=#696383
 
 [Color1]
 Color=#ef5abf
@@ -74,19 +74,19 @@ Color=#ec93c1
 Color=#c0c0ff
 
 [Color7Faint]
-Color=#c0c0ff
+Color=#908caa
 
 [Color7Intense]
-Color=#c0c0ff
+Color=#908caa
 
 [Foreground]
 Color=#c0c0ff
 
 [ForegroundFaint]
-Color=#c0c0ff
+Color=#696383
 
 [ForegroundIntense]
-Color=#c0c0ff
+Color=#696383
 
 [General]
 Blur=false

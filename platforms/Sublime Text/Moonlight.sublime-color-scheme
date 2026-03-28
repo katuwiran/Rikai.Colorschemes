@@ -10,6 +10,7 @@
         "edges":          "#332e51",
         "overlay":        "#3d375f",
         "faded":          "#908caa",
+        "inactive":       "#666684",
         "hidden":         "#696383",
         "magenta":        "#ef5abf",
         "plum":           "#ec93c1",
@@ -21,9 +22,9 @@
         "yellow":         "#fcb986",
         "red":            "#eb517c",
         "orange":         "#ff8c4f",
-        "high-inactive":  "#6c3b62",
-        "highlight":      "#89537f",
-        "high-focused":   "#e981c6",
+        "high-inactive":  "#38375B",
+        "highlight":      "#4E5088",
+        "high-focused":   "#696DBE",
 
         "comments":    "var(faded)",
         "variables":   "var(text)",
@@ -89,7 +90,7 @@
 
         // Gutter
         "gutter":                      "var(background)", // background
-        "gutter_foreground":           "var(faded)",
+        "gutter_foreground":           "var(inactive)",
         "gutter_foreground_highlight": "var(info)",
 
         // Diff

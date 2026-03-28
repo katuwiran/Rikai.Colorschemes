@@ -8,10 +8,10 @@ theme[main_fg]="#c0c0ff"
 theme[title]="#c0c0ff"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#89537f"
+theme[hi_fg]="#4E5088"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#89537f"
+theme[selected_bg]="#4E5088"
 
 # Foreground color of selected item in processes box
 theme[selected_fg]="#c0c0ff"
@@ -23,7 +23,7 @@ theme[inactive_fg]="#666684"
 theme[graph_text]="#eb517c"
 
 # Background color of the percentage meters
-theme[meter_bg]="#89537f"
+theme[meter_bg]="#4E5088"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
 theme[proc_misc]="#eb517c"

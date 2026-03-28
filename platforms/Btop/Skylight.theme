@@ -2,28 +2,28 @@
 theme[main_bg]="#eaeef1"
 
 # Main text color
-theme[main_fg]="#525b8f"
+theme[main_fg]="#4f5789"
 
 # Title color for boxes
-theme[title]="#525b8f"
+theme[title]="#4f5789"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#acc2df"
+theme[hi_fg]="#D2D8EF"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#acc2df"
+theme[selected_bg]="#D2D8EF"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#525b8f"
+theme[selected_fg]="#4f5789"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#6f78aa"
+theme[inactive_fg]="#8f99b3"
 
 # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
 theme[graph_text]="#f04f4e"
 
 # Background color of the percentage meters
-theme[meter_bg]="#acc2df"
+theme[meter_bg]="#D2D8EF"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
 theme[proc_misc]="#f04f4e"
@@ -35,7 +35,7 @@ theme[net_box]="#e153b3" #Maroon
 theme[proc_box]="#4d5de5" #Blue
 
 # Box divider line and small boxes line color
-theme[div_line]="#6f78aa"
+theme[div_line]="#8f99b3"
 
 # Temperature graph color (Green -> Yellow -> Red)
 theme[temp_start]="#70b20c"

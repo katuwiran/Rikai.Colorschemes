@@ -5,16 +5,16 @@ Color=#eaeef1
 Color=#e2ebf2
 
 [BackgroundIntense]
-Color=#d2e1f2
+Color=#97b0c4
 
 [Color0]
 Color=#eaeef1
 
 [Color0Faint]
-Color=#eaeef1
+Color=#bec4d6
 
 [Color0Intense]
-Color=#eaeef1
+Color=#bec4d6
 
 [Color1]
 Color=#e153b3
@@ -71,22 +71,22 @@ Color=#dd6e96
 Color=#dd6e96
 
 [Color7]
-Color=#525b8f
+Color=#4f5789
 
 [Color7Faint]
-Color=#525b8f
+Color=#bec4d6
 
 [Color7Intense]
-Color=#525b8f
+Color=#bec4d6
 
 [Foreground]
-Color=#525b8f
+Color=#4f5789
 
 [ForegroundFaint]
-Color=#525b8f
+Color=#bec4d6
 
 [ForegroundIntense]
-Color=#525b8f
+Color=#bec4d6
 
 [General]
 Blur=false

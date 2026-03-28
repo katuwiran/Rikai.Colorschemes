@@ -1,16 +1,16 @@
 {
     "dark": {
-        "mPrimary": "#89537f",
+        "mPrimary": "#E28EBB",
         "mOnPrimary": "#3d375f",
-        "mSecondary": "#6c3b62",
-        "mOnSecondary": "#c0c0ff",
-        "mTertiary": "#c188ef",
+        "mSecondary": "#7277D0",
+        "mOnSecondary": "#3d375f",
+        "mTertiary": "#A375CC",
         "mOnTertiary": "#3d375f",
         "mError": "#eb517c",
         "mOnError": "#3d375f",
         "mSurface": "#2a2840",
         "mOnSurface": "#c0c0ff",
-        "mHover": "#e981c6",
+        "mHover": "#A375CC",
         "mOnHover": "#3d375f",
         "mSurfaceVariant": "#3d375f",
         "mOnSurfaceVariant": "#c0c0ff",
@@ -19,9 +19,9 @@
         "terminal": {
             "background": "#2a2840",
             "foreground": "#c0c0ff",
-            "cursor": "#89537f",
+            "cursor": "#4E5088",
             "cursorText": "#2a2840",
-            "selectionBackground": "#89537f",
+            "selectionBackground": "#696DBE",
             "selectionForeground": "#3d375f",
             "normal": {
                 "black": "#2a2840",
@@ -34,7 +34,7 @@
                 "white": "#c0c0ff"
             },
             "bright": {
-                "black": "#908caa",
+                "black": "#696383",
                 "red": "#ef5abf",
                 "green": "#c188ef",
                 "yellow": "#80b5f7",
@@ -46,17 +46,17 @@
         }
     },
     "light": {
-        "mPrimary": "#89537f",
+        "mPrimary": "#E28EBB",
         "mOnPrimary": "#3d375f",
-        "mSecondary": "#89537f",
+        "mSecondary": "#7277D0",
         "mOnSecondary": "#3d375f",
-        "mTertiary": "#6c3b62",
-        "mOnTertiary": "#c0c0ff",
+        "mTertiary": "#A375CC",
+        "mOnTertiary": "#3d375f",
         "mError": "#eb517c",
         "mOnError": "#3d375f",
         "mSurface": "#2a2840",
         "mOnSurface": "#c0c0ff",
-        "mHover": "#e981c6",
+        "mHover": "#A375CC",
         "mOnHover": "#3d375f",
         "mSurfaceVariant": "#3d375f",
         "mOnSurfaceVariant": "#c0c0ff",
@@ -65,9 +65,9 @@
         "terminal": {
             "background": "#2a2840",
             "foreground": "#c0c0ff",
-            "cursor": "#89537f",
+            "cursor": "#4E5088",
             "cursorText": "#2a2840",
-            "selectionBackground": "#89537f",
+            "selectionBackground": "#696DBE",
             "selectionForeground": "#3d375f",
             "normal": {
                 "black": "#2a2840",
@@ -80,7 +80,7 @@
                 "white": "#c0c0ff"
             },
             "bright": {
-                "black": "#908caa",
+                "black": "#696383",
                 "red": "#ef5abf",
                 "green": "#c188ef",
                 "yellow": "#80b5f7",

@@ -2,28 +2,29 @@
 	// "inspired" by https://github.com/rose-pine/sublime-text/
     "name": "Skylight",
     "description": "Rikai's opinionated light color scheme, fully my own",
-    "type": "True",
+    "type": "False",
     // "project": "",
     "author": "Rikaisuru",
     "variables": {
         "background":     "#eaeef1",
         "edges":          "#e2ebf2",
-        "overlay":        "#d2e1f2",
-        "faded":          "#818ec9",
-        "hidden":         "#9ca4d1",
+        "overlay":        "#97b0c4",
+        "faded":          "#7b83b0",
+        "inactive":       "#8f99b3",
+        "hidden":         "#bec4d6",
         "magenta":        "#e153b3",
         "plum":           "#dd6e96",
         "blue":           "#4d5de5",
         "purple":         "#9e55dd",
         "cyan":           "#4897e8",
-        "text":           "#525b8f",
+        "text":           "#4f5789",
         "green":          "#70b20c",
         "yellow":         "#d19700",
         "red":            "#f04f4e",
         "orange":         "#f28a70",
-        "high-inactive":  "#e3e9ed",
-        "highlight":      "#acc2df",
-        "high-focused":   "#85bbff",
+        "high-inactive":  "#E2E7F0",
+        "highlight":      "#D2D8EF",
+        "high-focused":   "#7C88E9",
 
         "comments":    "var(faded)",
         "variables":   "var(text)",
@@ -89,7 +90,7 @@
 
         // Gutter
         "gutter":                      "var(background)", // background
-        "gutter_foreground":           "var(faded)",
+        "gutter_foreground":           "var(inactive)",
         "gutter_foreground_highlight": "var(info)",
 
         // Diff

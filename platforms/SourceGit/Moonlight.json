@@ -17,18 +17,18 @@
     "Border2": "#696383",
 
     "FlatButton.Background": "#332e51",
-    "FlatButton.BackgroundHovered": "#e981c6",
+    "FlatButton.BackgroundHovered": "#A375CC",
 
     "FG1": "#c0c0ff",
     "FG2": "#908caa",
 
     "Diff.EmptyBG": "#2a2840",
 
-    "Diff.AddedBG": "#36394a",
-    "Diff.AddedHighlight": "#61766f",
+    "Diff.AddedBG": "#42454D",
+    "Diff.AddedHighlight": "#7E8F68",
 
-    "Diff.DeletedBG": "#51304c",
-    "Diff.DeletedHighlight": "#9a4063",
+    "Diff.DeletedBG": "#472E49",
+    "Diff.DeletedHighlight": "#B74469",
 
     "SystemAccentColor": "#ec93c1",
     "Link": "#848bf4"
