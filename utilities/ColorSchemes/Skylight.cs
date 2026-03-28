@@ -8,7 +8,7 @@ public static partial class ColorSchemeFactory
 		{
 			Background        = "eaeef1",
 			BackgroundEdges   = "e2ebf2",
-			BackgroundOverlay = "e3eaf1",
+			BackgroundOverlay = "97b0c4",
 			TextHidden        = "bec4d6",
 			TextInactive      = "8f99b3",
 			TextFaded         = "7b83b0",
@@ -74,7 +74,7 @@ public static partial class ColorSchemeFactory
 			Magenta    = colors.Error,
 			Cyan       = colors.Keyword,
 			White      = colors.Text,
-			BlackAlt   = colors.BackgroundOverlay,
+			BlackAlt   = colors.TextHidden,
 			RedAlt     = colors.Class,
 			GreenAlt   = colors.Method,
 			YellowAlt  = colors.String,

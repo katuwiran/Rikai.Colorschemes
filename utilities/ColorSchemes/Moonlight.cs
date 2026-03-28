@@ -86,7 +86,7 @@ public static partial class ColorSchemeFactory
 			Magenta    = colors.Error,
 			Cyan       = colors.Keyword,
 			White      = colors.Text,
-			BlackAlt   = colors.TextFaded,
+			BlackAlt   = colors.TextHidden,
 			RedAlt     = colors.Class,
 			GreenAlt   = colors.Method,
 			YellowAlt  = colors.String,
