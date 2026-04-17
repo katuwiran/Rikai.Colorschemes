@@ -45,7 +45,7 @@ public static class ColorApi
 		);
 
 		// Blend over the background
-		var result = transparentFg.Blend(bg, BlendMode.Normal);
+		Unicolour result = transparentFg.Blend(bg, BlendMode.Normal);
 
 		// Return the solid 6-character hex
 		return result.Hex.TrimStart('#');
@@ -57,7 +57,7 @@ public static class ColorApi
 		var background = new Unicolour(backgroundHex);
 
 		// Blend the foreground over the background
-		var result = foreground.Blend(background, BlendMode.Normal);
+		Unicolour result = foreground.Blend(background, BlendMode.Normal);
 
 		// Because the background is solid, the result is solid.
 		// .Hex automatically returns a 6-character string here.

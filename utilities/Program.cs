@@ -24,7 +24,7 @@ public class Program
 			(scheme) => new Alacritty(scheme),
 			(scheme) => new Btop(scheme),
 			(scheme) => new SourceGit(scheme),
-			(scheme) => new Noctalia(scheme),
+			(scheme) => new Noctalia(scheme)
 		};
 
 		// create a list that holds all theme settings generator later
@@ -38,9 +38,9 @@ public class Program
 		};
 
 		// iterates over the constructors list, creating one for each color scheme below
-		foreach (var constructor in constructors)
+		foreach (Func<ColorScheme, ITheme> constructor in constructors)
 		{
-			foreach (var scheme in colorSchemes)
+			foreach (ColorScheme scheme in colorSchemes)
 			{
 				themeGenerator.Add(constructor(scheme));
 			}
@@ -70,15 +70,15 @@ public class Program
 		Console.WriteLine("Finished.");
 	}
 
-	static void Publish(ITheme theme, string path)
+	private static void Publish(ITheme theme, string path)
 	{
-		using (StreamWriter sw = new StreamWriter(path))
+		using (var sw = new StreamWriter(path))
 		{
 			sw.Write(theme);
 		}
 	}
 
-	static string ConvertToTargetPath(string themePath)
+	private static string ConvertToTargetPath(string themePath)
 	{
 		// Get the path to the bin folder (TargetDir)
 		string binPath = BinPath;
@@ -95,7 +95,7 @@ public class Program
 		return filePath;
 	}
 
-	static string ConvertToPlatformsPath(string themePath)
+	private static string ConvertToPlatformsPath(string themePath)
 	{
 		// Get the path to output folder
 		string targetPath = PlatformsPath;
@@ -112,13 +112,12 @@ public class Program
 		return sourceFilePath;
 	}
 
-	static void CopyThemeToProjectDir(string sourcePath, string platformsPath)
+	private static void CopyThemeToProjectDir(string sourcePath, string platformsPath)
 	{
-		File.Copy(sourcePath, platformsPath, overwrite: true);
+		File.Copy(sourcePath, platformsPath, true);
 	}
-	
-	static string BinPath => $"{Directory.GetParent(AppContext.BaseDirectory).FullName}";
 
-	static string PlatformsPath =>
-		$"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}platforms{Path.DirectorySeparatorChar}";
+	private static string BinPath => $"{Directory.GetParent(AppContext.BaseDirectory).FullName}";
+
+	private static string PlatformsPath => $"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}platforms{Path.DirectorySeparatorChar}";
 }

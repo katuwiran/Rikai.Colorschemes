@@ -15,54 +15,54 @@ public class SourceGit : ITheme
 	{
 		return
 			$$"""
-			  {
-			    "BasicColors": {
-			      "Window": "#{{Scheme.Colors.Background}}",
-			      "WindowBorder": "#{{Scheme.Colors.BackgroundEdges}}",
-			      "TitleBar": "#{{Scheme.Colors.Background}}",
-			      "ToolBar": "#{{Scheme.Colors.Background}}",
-			      "Popup": "#{{Scheme.Colors.Background}}",
-			      "Contents": "#{{Scheme.Colors.Background}}",
+			{
+			  "BasicColors": {
+			    "Window": "#{{Scheme.Colors.Background}}",
+			    "WindowBorder": "#{{Scheme.Colors.BackgroundEdges}}",
+			    "TitleBar": "#{{Scheme.Colors.Background}}",
+			    "ToolBar": "#{{Scheme.Colors.Background}}",
+			    "Popup": "#{{Scheme.Colors.Background}}",
+			    "Contents": "#{{Scheme.Colors.Background}}",
 
-			      "Badge": "#{{Scheme.Colors.Keyword}}",
-			      "BadgeFG": "#{{Scheme.Colors.Background}}",
-			      "Conflict": "#{{Scheme.Diff.Conflict}}",
-			      "Conflict.Foreground": "#{{Scheme.Colors.Background}}",
+			    "Badge": "#{{Scheme.Colors.Keyword}}",
+			    "BadgeFG": "#{{Scheme.Colors.Background}}",
+			    "Conflict": "#{{Scheme.Diff.Conflict}}",
+			    "Conflict.Foreground": "#{{Scheme.Colors.Background}}",
 
-			      "Border0": "#{{Scheme.Colors.BackgroundEdges}}",
-			      "Border1": "#{{Scheme.Colors.BackgroundOverlay}}",
-			      "Border2": "#{{Scheme.Colors.TextHidden}}",
+			    "Border0": "#{{Scheme.Colors.BackgroundEdges}}",
+			    "Border1": "#{{Scheme.Colors.BackgroundOverlay}}",
+			    "Border2": "#{{Scheme.Colors.TextHidden}}",
 
-			      "FlatButton.Background": "#{{Scheme.Colors.BackgroundEdges}}",
-			      "FlatButton.BackgroundHovered": "#{{Scheme.Ui.HoverBackground}}",
+			    "FlatButton.Background": "#{{Scheme.Colors.BackgroundEdges}}",
+			    "FlatButton.BackgroundHovered": "#{{Scheme.Ui.HoverBackground}}",
 
-			      "FG1": "#{{Scheme.Colors.Text}}",
-			      "FG2": "#{{Scheme.Colors.TextFaded}}",
+			    "FG1": "#{{Scheme.Colors.Text}}",
+			    "FG2": "#{{Scheme.Colors.TextFaded}}",
 
-			      "Diff.EmptyBG": "#{{Scheme.Colors.Background}}",
+			    "Diff.EmptyBG": "#{{Scheme.Colors.Background}}",
 
-			      "Diff.AddedBG": "#{{Scheme.Diff.AddedBackground}}",
-			      "Diff.AddedHighlight": "#{{Scheme.Diff.AddedHighlight}}",
+			    "Diff.AddedBG": "#{{Scheme.Diff.AddedBackground}}",
+			    "Diff.AddedHighlight": "#{{Scheme.Diff.AddedHighlight}}",
 
-			      "Diff.DeletedBG": "#{{Scheme.Diff.DeletedBackground}}",
-			      "Diff.DeletedHighlight": "#{{Scheme.Diff.DeletedHighlight}}",
+			    "Diff.DeletedBG": "#{{Scheme.Diff.DeletedBackground}}",
+			    "Diff.DeletedHighlight": "#{{Scheme.Diff.DeletedHighlight}}",
 
-			      "SystemAccentColor": "#{{Scheme.Colors.Keyword}}",
-			      "Link": "#{{Scheme.Colors.Field}}"
-			    },
+			    "SystemAccentColor": "#{{Scheme.Colors.Keyword}}",
+			    "Link": "#{{Scheme.Colors.Field}}"
+			  },
 
-			    "GraphPenThickness": 2,
-			    "OpacityForNotMergedCommits": 0.5,
+			  "GraphPenThickness": 2,
+			  "OpacityForNotMergedCommits": 0.5,
 
-			    "GraphColors": [
-			      "#{{Scheme.Colors.Class}}",
-			      "#{{Scheme.Colors.Method}}",
-			      "#{{Scheme.Colors.Keyword}}",
-			      "#{{Scheme.Colors.Field}}",
-			      "#{{Scheme.Colors.String}}",
-			      "#{{Scheme.Colors.Warning}}"
-			    ]
-			  }
-			  """;
+			  "GraphColors": [
+			    "#{{Scheme.Colors.Class}}",
+			    "#{{Scheme.Colors.Method}}",
+			    "#{{Scheme.Colors.Keyword}}",
+			    "#{{Scheme.Colors.Field}}",
+			    "#{{Scheme.Colors.String}}",
+			    "#{{Scheme.Colors.Warning}}"
+			  ]
+			}
+			""";
 	}
 }

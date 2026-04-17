@@ -25,7 +25,7 @@ public class DiagramGenerator
 	{
 		// Attempt to find a Monospace font on the system (Consolas, Menlo, Courier)
 		// In a real app, you might embed a .ttf file and load it specifically.
-		var fontFamily = SystemFonts.Get("IosevkaRikai Nerd Font");
+		FontFamily fontFamily = SystemFonts.Get("IosevkaRikai Nerd Font");
 		_fontLarge = fontFamily.CreateFont(FontSizeLarge, FontStyle.Regular);
 		_fontSmall = fontFamily.CreateFont(FontSizeSmall, FontStyle.Regular);
 	}
@@ -46,7 +46,7 @@ public class DiagramGenerator
 			// 3. Loop through colors and draw cells
 			for (int i = 0; i < colors.Count; i++)
 			{
-				var entry = colors[i];
+				ColorEntry entry = colors[i];
 
 				// Calculate grid position
 				int row = i   / columns;
@@ -97,7 +97,7 @@ public class DiagramGenerator
 		// 2. Name (Center)
 		var nameOpts = new RichTextOptions(_fontLarge)
 		{
-			Origin              = new PointF(x + (CellWidth / 2), y + (CellHeight / 2) - 10),
+			Origin              = new PointF(x + CellWidth / 2, y + CellHeight / 2 - 10),
 			HorizontalAlignment = HorizontalAlignment.Center,
 			VerticalAlignment   = VerticalAlignment.Center
 		};
@@ -106,7 +106,7 @@ public class DiagramGenerator
 		// 3. Hex Code (Bottom Center)
 		var hexOpts = new RichTextOptions(_fontSmall)
 		{
-			Origin              = new PointF(x + (CellWidth / 2), y + CellHeight - Padding - 5),
+			Origin              = new PointF(x + CellWidth / 2, y + CellHeight - Padding - 5),
 			HorizontalAlignment = HorizontalAlignment.Center,
 			VerticalAlignment   = VerticalAlignment.Bottom
 		};
@@ -124,9 +124,9 @@ public class DiagramGenerator
 
 	private Color GetContrastingTextColor(string hex)
 	{
-		var c = Color.ParseHex(hex);
+		Color c = Color.ParseHex(hex);
 		// Convert to Rgba32 to access components
-		Rgba32 pixel = c.ToPixel<Rgba32>();
+		var pixel = c.ToPixel<Rgba32>();
 
 		// Perceived brightness formula
 		// https://www.w3.org/TR/AERT/#color-contrast
@@ -138,11 +138,11 @@ public class DiagramGenerator
 
 	public void GenerateDiagrams(IEnumerable<ColorScheme> schemes)
 	{
-		foreach (var scheme in schemes)
+		foreach (ColorScheme scheme in schemes)
 		{
 			Generate(ColorSchemeEntry.FromColorScheme(scheme), Columns, $"{AssetsPath}{scheme.Name.ToLower()}.png");
 		}
 	}
-	static string AssetsPath =>
-		$"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}assets{Path.DirectorySeparatorChar}" ?? throw new InvalidOperationException("The assets output folder cannot be accessed.");
+
+	private static string AssetsPath => $"{Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName}{Path.DirectorySeparatorChar}assets{Path.DirectorySeparatorChar}" ?? throw new InvalidOperationException("The assets output folder cannot be accessed.");
 }

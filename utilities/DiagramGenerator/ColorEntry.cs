@@ -10,9 +10,9 @@ public class ColorEntry
 
 	public ColorEntry(string name, string hexCode, string index)
 	{
-		this.Name    = name;
-		this.HexCode = hexCode;
-		this.Index   = index;
+		Name    = name;
+		HexCode = hexCode;
+		Index   = index;
 	}
 
 	public override string ToString()
