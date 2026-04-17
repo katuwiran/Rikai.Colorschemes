@@ -8,7 +8,7 @@
     "variables": {
         "background":     "#eaeef1",
         "edges":          "#e2ebf2",
-        "overlay":        "#97b0c4",
+        "overlay":        "#dde6ee",
         "faded":          "#7b83b0",
         "inactive":       "#8f99b3",
         "hidden":         "#bec4d6",

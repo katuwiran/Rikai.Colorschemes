@@ -38,12 +38,12 @@
 		"secondaryAccent": "#7277D0",
 		"buttonForeground": "#c0c0ff",
 		"inactiveBg": "#3d375f",
-		"inactiveFg": "#c0c0ff",
-		"hoverBg": "#664E86",
-		"hoverFg": "#3d375f",
-		"pressedBg": "#4E5088",
-		"selectionBg": "#4A4A7F",
-		"selectionFg": "#3d375f",
+		"inactiveFg": "#666684",
+		"hoverBg": "#31304E",
+		"hoverFg": "#A375CC",
+		"pressedBg": "#4A4A7F",
+		"selectionBg": "#3C3C64",
+		"selectionFg": "#c0c0ff",
 		"selectionInactiveBg": "#38375B",
 		"selectionInactiveFg": "#c0c0ff",
 		"searchMatchBg": "#38375B",
@@ -427,7 +427,7 @@
 			"background": "bg",
 			"caretForeground": "accent",
 			"foreground": "text",
-			"selectionForeground": "selectionFg",
+			"selectionForeground": "hoverFg",
 			"selectionBackground": "selectionBg"
 		},
 		"ToggleButton": {
@@ -465,13 +465,13 @@
 		"Tree": {
 			"background": "bg",
 			"foreground": "text",
-			"hash": "bgOverlay",
+			"hash": "border",
 			"hoverBackground": "hoverBg",
 			"modifiedItemForeground": "accent",
 			"rowHeight": 24,
 			"selectionBackground": "selectionBg",
 			"selectionInactiveBackground": "selectionInactiveBg",
-			"selectionForeground": "selectionFg",
+			"selectionForeground": "hoverFg",
 			"textBackground": "bgOverlay"
 		},
 		"UiDesigner": {
@@ -551,10 +551,10 @@
 			"Checkbox.Border.Default": "border",
 			"Checkbox.Border.Disabled": "inactiveBg",
 			"Checkbox.Border.Selected": "selectionBg",
-			"Checkbox.Foreground.Disabled": "#c0c0ff",
-			"Checkbox.Foreground.Disabled.Dark": "#c0c0ff",
-			"Checkbox.Foreground.Selected": "#3d375f",
-			"Checkbox.Foreground.Selected.Dark": "#3d375f",
+			"Checkbox.Foreground.Disabled": "#666684",
+			"Checkbox.Foreground.Disabled.Dark": "#666684",
+			"Checkbox.Foreground.Selected": "#c0c0ff",
+			"Checkbox.Foreground.Selected.Dark": "#c0c0ff",
 			"Tree.iconColor": "text"
 		}
 	}

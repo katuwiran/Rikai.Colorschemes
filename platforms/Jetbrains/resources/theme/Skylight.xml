@@ -13,7 +13,7 @@
     <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="4f5789"/>
     <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="f04f4e"/>
     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="E2E7F0"/>
-    <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="97b0c4"/>
+    <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="dde6ee"/>
     <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="E2E7F0"/>
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="e2ebf2"/>
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="4d5de5"/>
@@ -21,7 +21,7 @@
     <option name="CARET_ROW_COLOR" value="E2E7F0"/>
     <option name="CONSOLE_BACKGROUND_KEY" value="eaeef1"/>
     <option name="DELETED_LINES_COLOR" value="e153b3"/>
-    <option name="DIFF_SEPARATORS_BACKGROUND" value="97b0c4"/>
+    <option name="DIFF_SEPARATORS_BACKGROUND" value="dde6ee"/>
     <option name="DOCUMENTATION_COLOR" value="eaeef1"/>
     <option name="DOC_COMMENT_LINK" value="4d5de5"/>
     <option name="ERROR_HINT" value="f04f4e"/>
@@ -55,13 +55,13 @@
     <option name="HTML_TAG_TREE_LEVEL4" value="9e55dd"/>
     <option name="HTML_TAG_TREE_LEVEL5" value="d19700"/>
     <option name="INDENT_GUIDE" value="e2ebf2" />
-    <option name="INFORMATION_HINT" value="97b0c4"/>
+    <option name="INFORMATION_HINT" value="dde6ee"/>
     <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="4f5789" />
     <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="" />
     <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="" />
     <option name="LINE_NUMBERS_COLOR" value="4f5789" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="4f5789" />
-    <option name="LOOKUP_COLOR" value="97b0c4"/>
+    <option name="LOOKUP_COLOR" value="dde6ee"/>
     <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="bec4d6" />
     <option name="METHOD_SEPARATORS_COLOR" value="" />
     <option name="MODIFIED_LINES_COLOR" value="dd6e96"/>
@@ -71,22 +71,22 @@
     <option name="PROMOTION_PANE" value="e2ebf2"/>
     <option name="QUESTION_HINT" value="e2ebf2"/>
     <option name="RECENT_LOCATIONS_SELECTION" value="e2ebf2"/>
-    <option name="RIGHT_MARGIN_COLOR" value="97b0c4" />
-    <option name="SELECTED_INDENT_GUIDE" value="97b0c4" />
+    <option name="RIGHT_MARGIN_COLOR" value="dde6ee" />
+    <option name="SELECTED_INDENT_GUIDE" value="dde6ee" />
     <option name="SELECTED_TEARLINE_COLOR" value="bec4d6" />
     <option name="SELECTION_BACKGROUND" value="D2D8EF" />
     <option name="SELECTION_FOREGROUND" value="4f5789" />
     <option name="SEPARATOR_BELOW_COLOR" value=""/>
-    <option name="ScrollBar.thumbColor" value="97b0c4" />
-    <option name="ScrollBar.thumbBorderColor" value="97b0c4"/>
+    <option name="ScrollBar.thumbColor" value="dde6ee" />
+    <option name="ScrollBar.thumbBorderColor" value="dde6ee"/>
     <option name="ScrollBar.hoverThumbColor" value="E2E7F0" />
     <option name="ScrollBar.hoverThumbBorderColor" value="E2E7F0"/>
-    <option name="ScrollBar.Mac.thumbColor" value="97b0c4"/>
-    <option name="ScrollBar.Mac.thumbBorderColor" value="97b0c4"/>
+    <option name="ScrollBar.Mac.thumbColor" value="dde6ee"/>
+    <option name="ScrollBar.Mac.thumbBorderColor" value="dde6ee"/>
     <option name="ScrollBar.Mac.hoverThumbColor" value="E2E7F0"/>
     <option name="ScrollBar.Mac.hoverThumbBorderColor" value="E2E7F0"/>
     <option name="TAB_UNDERLINE" value="DE749B"/>
-    <option name="TAB_UNDERLINE_INACTIVE" value="97b0c4"/>
+    <option name="TAB_UNDERLINE_INACTIVE" value="dde6ee"/>
     <option name="TEARLINE_COLOR" value="bec4d6" />
     <option name="VCS_ANNOTATIONS_COLOR_1" value="4f5789"/>
     <option name="VCS_ANNOTATIONS_COLOR_2" value="4f5789"/>
@@ -998,7 +998,7 @@
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="97b0c4" />
+        <option name="BACKGROUND" value="dde6ee" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -1180,7 +1180,7 @@
     </option>
     <option name="MARKDOWN_BOLD_MARKER">
       <value>
-        <option name="FOREGROUND" value="97b0c4"/>
+        <option name="FOREGROUND" value="dde6ee"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
@@ -1246,7 +1246,7 @@
     </option>
     <option name="MARKDOWN_ITALIC_MARKER">
       <value>
-        <option name="FOREGROUND" value="97b0c4"/>
+        <option name="FOREGROUND" value="dde6ee"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>

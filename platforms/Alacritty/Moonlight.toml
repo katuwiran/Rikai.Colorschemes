@@ -14,11 +14,11 @@ cursor = "#696DBE"
 
 [colors.search.matches]
 foreground = "#908caa"
-background = "#3d375f"
+background = "#38375B"
 
 [colors.search.focused_match]
-foreground = "#3d375f"
-background = "#696DBE"
+foreground = "#c0c0ff"
+background = "#4E5088"
 
 [colors.footer_bar]
 foreground = "#2a2840"
@@ -33,8 +33,8 @@ foreground = "#2a2840"
 background = "#38375B"
 
 [colors.selection]
-text = "#3d375f"
-background = "#696DBE"
+text = "#c0c0ff"
+background = "#4E5088"
 
 [colors.normal]
 black = "#2a2840"

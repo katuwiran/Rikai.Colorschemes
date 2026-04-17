@@ -13,11 +13,11 @@
     "Conflict.Foreground": "#eaeef1",
 
     "Border0": "#e2ebf2",
-    "Border1": "#97b0c4",
+    "Border1": "#dde6ee",
     "Border2": "#bec4d6",
 
     "FlatButton.Background": "#e2ebf2",
-    "FlatButton.BackgroundHovered": "#6C7AE7",
+    "FlatButton.BackgroundHovered": "#E2E7F0",
 
     "FG1": "#4f5789",
     "FG2": "#7b83b0",
