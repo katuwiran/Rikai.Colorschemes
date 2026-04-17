@@ -4812,7 +4812,7 @@ public class KvantumSvg : ITheme
 			        x="32.808334"
 			        y="27.78125" />
 			     <rect
-			        style="opacity:1;fill:{primary};fill-opacity:1;stroke:none;stroke-width:0.0144189;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:1;fill:{lineEditFocused};fill-opacity:1;stroke:none;stroke-width:0.0144189;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="rect44045"
 			        width="0.52916664"
 			        height="1.5875"
@@ -4830,7 +4830,7 @@ public class KvantumSvg : ITheme
 			        x="34.395832"
 			        y="26.19375" />
 			     <rect
-			        style="opacity:1;fill:{primary};fill-opacity:1;stroke:none;stroke-width:0.0203914;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:1;fill:{lineEditFocused};fill-opacity:1;stroke:none;stroke-width:0.0203914;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="rect44051"
 			        width="3.175"
 			        height="0.52916664"
@@ -4846,7 +4846,7 @@ public class KvantumSvg : ITheme
 			        d="m 39.158333,27.78125 c 0,-0.879475 -0.708025,-1.5875 -1.5875,-1.5875 v 1.5875 z" />
 			     <path
 			        id="use44057"
-			        style="opacity:1;fill:{primary};fill-opacity:1;stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:1;fill:{lineEditFocused};fill-opacity:1;stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 39.158333,27.78125 c 0,-0.879475 -0.708025,-1.5875 -1.5875,-1.5875 v 0.529167 c 0.586317,0 1.058334,0.472016 1.058334,1.058333 z" />
 			   </g>
 			   <g
@@ -4859,7 +4859,7 @@ public class KvantumSvg : ITheme
 			        transform="scale(0.26458333)" />
 			     <path
 			        id="path44063"
-			        style="opacity:1;fill:{primary};fill-opacity:1;stroke:none;stroke-width:0.0943911;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:1;fill:{lineEditFocused};fill-opacity:1;stroke:none;stroke-width:0.0943911;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 130,99 c -3.324,0 -6,2.676 -6,6 h 2 c 0,-2.216 1.784,-4 4,-4 z"
 			        transform="scale(0.26458333)" />
 			   </g>
@@ -4872,7 +4872,7 @@ public class KvantumSvg : ITheme
 			        d="m 37.570833,30.95625 c 0.879475,0 1.5875,-0.708025 1.5875,-1.5875 h -1.5875 z" />
 			     <path
 			        id="use44069"
-			        style="opacity:1;fill:{primary};fill-opacity:1;stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:1;fill:{lineEditFocused};fill-opacity:1;stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 37.570833,30.95625 c 0.879475,0 1.5875,-0.708025 1.5875,-1.5875 h -0.529167 c 0,0.586317 -0.472016,1.058334 -1.058333,1.058334 z" />
 			   </g>
 			   <g
@@ -4884,7 +4884,7 @@ public class KvantumSvg : ITheme
 			        d="m 32.808333,29.36875 c 0,0.879475 0.708025,1.5875 1.5875,1.5875 v -1.5875 z" />
 			     <path
 			        id="use44075"
-			        style="opacity:1;fill:{primary};fill-opacity:1;stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:1;fill:{lineEditFocused};fill-opacity:1;stroke:none;stroke-width:0.0249743;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        d="m 32.808333,29.36875 c 0,0.879475 0.708025,1.5875 1.5875,1.5875 v -0.529167 c -0.586317,0 -1.058334,-0.472016 -1.058334,-1.058333 z" />
 			   </g>
 			   <g
@@ -4899,7 +4899,7 @@ public class KvantumSvg : ITheme
 			        y="27.78125"
 			        transform="scale(-1,1)" />
 			     <rect
-			        style="opacity:1;fill:{primary};fill-opacity:1;stroke:none;stroke-width:0.0144189;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:1;fill:{lineEditFocused};fill-opacity:1;stroke:none;stroke-width:0.0144189;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="use44081"
 			        width="0.52916664"
 			        height="1.5875"
@@ -4919,7 +4919,7 @@ public class KvantumSvg : ITheme
 			        y="-30.956251"
 			        transform="scale(1,-1)" />
 			     <rect
-			        style="opacity:1;fill:{primary};fill-opacity:1;stroke:none;stroke-width:0.0203914;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
+			        style="opacity:1;fill:{lineEditFocused};fill-opacity:1;stroke:none;stroke-width:0.0203914;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:{black}"
 			        id="use44087"
 			        width="3.175"
 			        height="0.52916664"
