@@ -34,9 +34,9 @@ public static partial class ColorSchemeFactory
 			WarningName = "orange",
 			ErrorName   = "red",
 
-			HighlightLow  = "4d5de5".AdjustAlphaAndFlatten(deltaAlpha: -0.95, "eaeef1"),
-			Highlight     = "4d5de5".AdjustAlphaAndFlatten(deltaAlpha: -0.85, "eaeef1"),
-			HighlightHigh = "4d5de5".AdjustAlphaAndFlatten(deltaAlpha: -0.3,  "eaeef1"),
+			HighlightLow  = "4d5de5".AdjustAlphaAndFlatten(-0.95, "eaeef1"),
+			Highlight     = "4d5de5".AdjustAlphaAndFlatten(-0.85, "eaeef1"),
+			HighlightHigh = "4d5de5".AdjustAlphaAndFlatten(-0.3,  "eaeef1")
 		};
 
 		Base8Colors base8 = new()
@@ -48,7 +48,7 @@ public static partial class ColorSchemeFactory
 			Blue    = colors.Method,
 			Magenta = colors.Class,
 			Cyan    = colors.String,
-			White   = colors.Text,
+			White   = colors.Text
 		};
 
 		DiffColors diff = new()
@@ -58,10 +58,10 @@ public static partial class ColorSchemeFactory
 			Modified          = colors.Keyword,
 			Ignored           = colors.TextFaded,
 			Conflict          = colors.Field,
-			AddedHighlight    = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.6,  colors.Background).AdjustHsv(deltaV: +0.05),
-			AddedBackground   = base8.Green.AdjustAlphaAndFlatten(deltaAlpha: -0.85, colors.Background),
-			DeletedHighlight  = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.5,  colors.Background).AdjustHsv(deltaV: +0.05),
-			DeletedBackground = base8.Red.AdjustAlphaAndFlatten(deltaAlpha: -0.85, colors.Background),
+			AddedHighlight    = base8.Green.AdjustAlphaAndFlatten(-0.6,  colors.Background).AdjustHsv(deltaV: +0.05),
+			AddedBackground   = base8.Green.AdjustAlphaAndFlatten(-0.85, colors.Background),
+			DeletedHighlight  = base8.Red.AdjustAlphaAndFlatten(-0.5,  colors.Background).AdjustHsv(deltaV: +0.05),
+			DeletedBackground = base8.Red.AdjustAlphaAndFlatten(-0.85, colors.Background)
 		};
 
 		ConsoleColors console = new()
@@ -83,35 +83,35 @@ public static partial class ColorSchemeFactory
 			CyanAlt    = colors.Keyword,
 			WhiteAlt   = colors.TextFaded
 		};
-		
+
 		AccentColors accent = new()
 		{
-			Primary       = colors.Keyword.AdjustAlphaAndFlatten(deltaAlpha: -0.05, colors.Background),
+			Primary       = colors.Keyword.AdjustAlphaAndFlatten(-0.05, colors.Background),
 			PrimaryText   = colors.BackgroundOverlay,
-			Secondary     = colors.Field.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
+			Secondary     = colors.Field.AdjustAlphaAndFlatten(-0.2, colors.Background),
 			SecondaryText = colors.BackgroundOverlay,
-			Tertiary      = colors.Method.AdjustAlphaAndFlatten(deltaAlpha: -0.2, colors.Background),
-			TertiaryText  = colors.BackgroundOverlay,
+			Tertiary      = colors.Method.AdjustAlphaAndFlatten(-0.2, colors.Background),
+			TertiaryText  = colors.BackgroundOverlay
 		};
 
 		UiColors ui = new()
 		{
 			MenuBackground              = colors.Background,
-			HoverBackground             = accent.Secondary,
-			Hover                   = accent.SecondaryText,
+			Hover                       = accent.Primary,
+			HoverBackground             = colors.HighlightLow,
+			Inactive                    = colors.TextInactive,
 			InactiveBackground          = colors.BackgroundOverlay,
-			Inactive                = colors.Text,
-			Match                   = colors.TextFaded,
-			MatchBackground             = colors.BackgroundOverlay,
-			SelectionBackground         = colors.HighlightHigh,
-			Selection               = colors.Text,
+			Match                       = colors.TextFaded,
+			MatchBackground             = colors.HighlightLow,
+			Selection                   = colors.Text,
+			SelectionBackground         = colors.Highlight,
+			SelectionInactive           = colors.Text,
 			SelectionInactiveBackground = colors.HighlightLow,
-			SelectionInactive       = colors.Text,
-			PressedBackground           = accent.Tertiary,
-			Pressed                 = accent.TertiaryText,
+			Pressed                     = colors.Text,
+			PressedBackground           = colors.HighlightHigh
 		};
 
-		return new()
+		return new ColorScheme
 		{
 			Name        = "Skylight",
 			Description = "Rikai's opinionated light color scheme, fully my own",
