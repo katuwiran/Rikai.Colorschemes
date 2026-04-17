@@ -38,7 +38,7 @@ public class KvantumSvg : ITheme
 		string toggled         = $"#{Scheme.Ui.SelectionInactiveBackground}"; // selected button on a list?
 		string disabled        = $"#{Scheme.Ui.InactiveBackground}";
 		string toggledFocus    = $"#{Scheme.Ui.HoverBackground}";
-		string toggledSelected = primary;
+		string toggledSelected = toggled;
 
 		// Opacity Levels
 		const string opacityHidden   = "0";
@@ -1435,7 +1435,7 @@ public class KvantumSvg : ITheme
 			        transform="matrix(0.72169,0,0,1,52.664,0.42535)"
 			        d="m 194.46,532.57 -6.9282,4 v -8 l 3.4641,2 z"
 			        id="path391"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="arrow-right-disabled"
@@ -1515,7 +1515,7 @@ public class KvantumSvg : ITheme
 			        transform="matrix(0.72169,0,0,1,52.664,0.42535)"
 			        d="m 194.46,532.57 -6.9282,4 v -8 l 3.4641,2 z"
 			        id="path416"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="arrow-left-disabled"
@@ -1595,7 +1595,7 @@ public class KvantumSvg : ITheme
 			        transform="matrix(0.72169,0,0,1,52.664,0.42535)"
 			        d="m 194.46,532.57 -6.9282,4 v -8 l 3.4641,2 z"
 			        id="path441"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="arrow-up-disabled"
@@ -1675,7 +1675,7 @@ public class KvantumSvg : ITheme
 			        transform="matrix(0.72169,0,0,1,52.664,0.42535)"
 			        d="m 194.46,532.57 -6.9282,4 v -8 l 3.4641,2 z"
 			        id="path466"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="arrow-down-disabled"
@@ -1808,7 +1808,7 @@ public class KvantumSvg : ITheme
 			     <path
 			        d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z"
 			        id="path506"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="arrow-minus-toggled"
@@ -1827,7 +1827,7 @@ public class KvantumSvg : ITheme
 			        width="2"
 			        height="8"
 			        id="rect511"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="arrow-plus-disabled"
@@ -1925,7 +1925,7 @@ public class KvantumSvg : ITheme
 			        transform="matrix(0.72169,0,0,1,52.664,0.42535)"
 			        d="m 194.46,532.57 -6.9282,4 v -8 l 3.4641,2 z"
 			        id="path541"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="tree-plus-disabled"
@@ -2005,7 +2005,7 @@ public class KvantumSvg : ITheme
 			        transform="matrix(0.72169,0,0,1,52.664,0.42535)"
 			        d="m 194.46,532.57 -6.9282,4 v -8 l 3.4641,2 z"
 			        id="path566"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="tree-minus-disabled"
@@ -2133,7 +2133,7 @@ public class KvantumSvg : ITheme
 			        transform="matrix(0.72169,0,0,1,52.664,0.42535)"
 			        d="m 194.46,532.57 -6.9282,4 v -8 l 3.4641,2 z"
 			        id="path606"
-			        style="opacity:{opacityNormal};fill:{black}" />
+			        style="opacity:{opacityNormal};fill:{toggled}" />
 			   </g>
 			   <g
 			      id="carrow-disabled"
@@ -2684,28 +2684,28 @@ public class KvantumSvg : ITheme
 			      y="287.02"
 			      width="8"
 			      height="8"
-			      style="fill:{primary};fill-opacity:1" />
+			      style="fill:{toggled};fill-opacity:1" />
 			   <rect
 			      id="slider-toggled-bottomright"
 			      x="290.95"
 			      y="303.02"
 			      width="8"
 			      height="8"
-			      style="fill:{primary};fill-opacity:1" />
+			      style="fill:{toggled};fill-opacity:1" />
 			   <rect
 			      id="slider-toggled-topleft"
 			      x="282.95"
 			      y="287.02"
 			      width="8"
 			      height="8"
-			      style="fill:{primary};fill-opacity:1" />
+			      style="fill:{toggled};fill-opacity:1" />
 			   <rect
 			      id="slider-toggled-bottomleft"
 			      x="282.95"
 			      y="303.02"
 			      width="8"
 			      height="8"
-			      style="fill:{primary};fill-opacity:1" />
+			      style="fill:{toggled};fill-opacity:1" />
 			   <rect
 			      id="slider-normal-topright"
 			      x="310.95"
@@ -2743,7 +2743,7 @@ public class KvantumSvg : ITheme
 			        width="8"
 			        height="8"
 			        id="rect802"
-			        style="fill:{primary};fill-opacity:1" />
+			        style="fill:{toggled};fill-opacity:1" />
 			   </g>
 			   <g
 			      id="slider-toggled-left"
@@ -2754,7 +2754,7 @@ public class KvantumSvg : ITheme
 			        width="8"
 			        height="8"
 			        id="rect805"
-			        style="fill:{primary};fill-opacity:1" />
+			        style="fill:{toggled};fill-opacity:1" />
 			   </g>
 			   <g
 			      id="slider-normal-left"
@@ -3630,7 +3630,7 @@ public class KvantumSvg : ITheme
 			        id="rect1573" />
 			     <path
 			        d="m1-80c-3.324 0-6 2.676-6 6h6z"
-			        style="paint-order:markers stroke fill;fill:{primary};fill-opacity:1"
+			        style="paint-order:markers stroke fill;fill:{toggled};fill-opacity:1"
 			        id="path1575" />
 			   </g>
 			   <g
@@ -3641,7 +3641,7 @@ public class KvantumSvg : ITheme
 			        y="-80"
 			        width="26"
 			        height="6"
-			        style="paint-order:markers stroke fill;fill:{primary};fill-opacity:1"
+			        style="paint-order:markers stroke fill;fill:{toggled};fill-opacity:1"
 			        id="rect1578" />
 			   </g>
 			   <g
@@ -3652,7 +3652,7 @@ public class KvantumSvg : ITheme
 			        y="-74"
 			        width="26"
 			        height="26.000259"
-			        style="fill:{primary};fill-opacity:1;stroke-width:1.00001;paint-order:markers stroke fill"
+			        style="fill:{toggled};fill-opacity:1;stroke-width:1.00001;paint-order:markers stroke fill"
 			        id="rect1581" />
 			   </g>
 			   <use

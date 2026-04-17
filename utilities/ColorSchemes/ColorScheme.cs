@@ -11,7 +11,7 @@ public class ColorScheme
 	public required Base8Colors   Base8   { get; set; }
 	public required ConsoleColors Console { get; set; }
 	public required DiffColors    Diff    { get; set; }
-	public required AccentColors  Accent { get; set; }
+	public required AccentColors  Accent  { get; set; }
 	public required UiColors      Ui      { get; set; }
 
 	public override string ToString()
@@ -132,15 +132,15 @@ public class UiColors
 {
 	public required string MenuBackground              { get; set; }
 	public required string HoverBackground             { get; set; } // on hover
-	public required string HoverText                   { get; set; } // text on hover
+	public required string Hover                       { get; set; } // text on hover
 	public required string InactiveBackground          { get; set; } // inactive button
-	public required string InactiveText                { get; set; } // inactive text on buttons
+	public required string Inactive                    { get; set; } // inactive text on buttons
 	public required string MatchBackground             { get; set; }
-	public required string MatchText                   { get; set; }
+	public required string Match                       { get; set; }
 	public required string SelectionBackground         { get; set; } // selection
-	public required string SelectionText               { get; set; } // selected text
-	public required string SelectionInactiveText       { get; set; } // selected text but unfocused
+	public required string Selection                   { get; set; } // selected text
+	public required string SelectionInactive           { get; set; } // selected text but unfocused
 	public required string SelectionInactiveBackground { get; set; } // inactive selection
 	public required string PressedBackground           { get; set; } // on press
-	public required string PressedText                 { get; set; } // text on press
+	public required string Pressed                     { get; set; } // text on press
 }

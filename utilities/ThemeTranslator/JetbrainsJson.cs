@@ -55,14 +55,14 @@ public class JetbrainsJson : ITheme
  			  		"secondaryAccent": "#{{Scheme.Accent.Secondary}}",
  			  		"buttonForeground": "#{{Scheme.Colors.Text}}",
  			  		"inactiveBg": "#{{Scheme.Ui.InactiveBackground}}",
- 			  		"inactiveFg": "#{{Scheme.Ui.InactiveText}}",
+ 			  		"inactiveFg": "#{{Scheme.Ui.Inactive}}",
  			  		"hoverBg": "#{{Scheme.Ui.HoverBackground.AdjustAlphaAndFlatten(-0.5, Scheme.Colors.Background)}}",
- 			  		"hoverFg": "#{{Scheme.Ui.HoverText}}",
+ 			  		"hoverFg": "#{{Scheme.Accent.Tertiary}}",
  			  		"pressedBg": "#{{Scheme.Ui.PressedBackground.AdjustAlphaAndFlatten(-0.5, Scheme.Colors.Background)}}",
  			  		"selectionBg": "#{{Scheme.Ui.SelectionBackground.AdjustAlphaAndFlatten(-0.5, Scheme.Colors.Background)}}",
- 			  		"selectionFg": "#{{Scheme.Ui.SelectionText}}",
+ 			  		"selectionFg": "#{{Scheme.Ui.Selection}}",
  			  		"selectionInactiveBg": "#{{Scheme.Ui.SelectionInactiveBackground}}",
- 			  		"selectionInactiveFg": "#{{Scheme.Ui.SelectionInactiveText}}",
+ 			  		"selectionInactiveFg": "#{{Scheme.Ui.SelectionInactive}}",
  			  		"searchMatchBg": "#{{Scheme.Colors.HighlightLow}}",
  			  		"gitLogBg": "#{{Scheme.Colors.Background}}",
  			  		"dragAndDropBg": "#{{Scheme.Colors.Background}}"
@@ -444,7 +444,7 @@ public class JetbrainsJson : ITheme
  			  			"background": "bg",
  			  			"caretForeground": "accent",
  			  			"foreground": "text",
- 			  			"selectionForeground": "selectionFg",
+ 			  			"selectionForeground": "hoverFg",
  			  			"selectionBackground": "selectionBg"
  			  		},
  			  		"ToggleButton": {
@@ -482,13 +482,13 @@ public class JetbrainsJson : ITheme
  			  		"Tree": {
  			  			"background": "bg",
  			  			"foreground": "text",
- 			  			"hash": "bgOverlay",
+ 			  			"hash": "border",
  			  			"hoverBackground": "hoverBg",
  			  			"modifiedItemForeground": "accent",
  			  			"rowHeight": 24,
  			  			"selectionBackground": "selectionBg",
  			  			"selectionInactiveBackground": "selectionInactiveBg",
- 			  			"selectionForeground": "selectionFg",
+ 			  			"selectionForeground": "hoverFg",
  			  			"textBackground": "bgOverlay"
  			  		},
  			  		"UiDesigner": {
@@ -568,10 +568,10 @@ public class JetbrainsJson : ITheme
  			  			"Checkbox.Border.Default": "border",
  			  			"Checkbox.Border.Disabled": "inactiveBg",
  			  			"Checkbox.Border.Selected": "selectionBg",
- 			  			"Checkbox.Foreground.Disabled": "#{{Scheme.Ui.InactiveText}}",
- 			  			"Checkbox.Foreground.Disabled.Dark": "#{{Scheme.Ui.InactiveText}}",
- 			  			"Checkbox.Foreground.Selected": "#{{Scheme.Ui.SelectionText}}",
- 			  			"Checkbox.Foreground.Selected.Dark": "#{{Scheme.Ui.SelectionText}}",
+ 			  			"Checkbox.Foreground.Disabled": "#{{Scheme.Ui.Inactive}}",
+ 			  			"Checkbox.Foreground.Disabled.Dark": "#{{Scheme.Ui.Inactive}}",
+ 			  			"Checkbox.Foreground.Selected": "#{{Scheme.Ui.Selection}}",
+ 			  			"Checkbox.Foreground.Selected.Dark": "#{{Scheme.Ui.Selection}}",
  			  			"Tree.iconColor": "text"
  			  		}
  			  	}

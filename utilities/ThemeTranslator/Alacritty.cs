@@ -31,11 +31,11 @@ public class Alacritty : ITheme
 			 cursor = "#{Scheme.Colors.HighlightHigh}"
 
 			 [colors.search.matches]
-			 foreground = "#{Scheme.Ui.MatchText}"
+			 foreground = "#{Scheme.Ui.Match}"
 			 background = "#{Scheme.Ui.MatchBackground}"
 
 			 [colors.search.focused_match]
-			 foreground = "#{Scheme.Ui.SelectionText}"
+			 foreground = "#{Scheme.Ui.Selection}"
 			 background = "#{Scheme.Ui.SelectionBackground}"
 
 			 [colors.footer_bar]
@@ -51,7 +51,7 @@ public class Alacritty : ITheme
 			 background = "#{Scheme.Colors.HighlightLow}"
 
 			 [colors.selection]
-			 text = "#{Scheme.Ui.SelectionText}"
+			 text = "#{Scheme.Ui.Selection}"
 			 background = "#{Scheme.Ui.SelectionBackground}"
 
 			 [colors.normal]

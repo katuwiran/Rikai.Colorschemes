@@ -8,7 +8,7 @@ public static partial class ColorSchemeFactory
 		{
 			Background        = "eaeef1",
 			BackgroundEdges   = "e2ebf2",
-			BackgroundOverlay = "97b0c4",
+			BackgroundOverlay = "dde6ee",
 			TextHidden        = "bec4d6",
 			TextInactive      = "8f99b3",
 			TextFaded         = "7b83b0",
@@ -81,7 +81,7 @@ public static partial class ColorSchemeFactory
 			BlueAlt    = colors.Field,
 			MagentaAlt = colors.Error,
 			CyanAlt    = colors.Keyword,
-			WhiteAlt   = colors.TextHidden
+			WhiteAlt   = colors.TextFaded
 		};
 		
 		AccentColors accent = new()
@@ -98,17 +98,17 @@ public static partial class ColorSchemeFactory
 		{
 			MenuBackground              = colors.Background,
 			HoverBackground             = accent.Secondary,
-			HoverText                   = accent.SecondaryText,
+			Hover                   = accent.SecondaryText,
 			InactiveBackground          = colors.BackgroundOverlay,
-			InactiveText                = colors.Text,
-			MatchText                   = colors.TextFaded,
+			Inactive                = colors.Text,
+			Match                   = colors.TextFaded,
 			MatchBackground             = colors.BackgroundOverlay,
 			SelectionBackground         = colors.HighlightHigh,
-			SelectionText               = colors.BackgroundOverlay,
-			SelectionInactiveText       = colors.Text,
+			Selection               = colors.Text,
 			SelectionInactiveBackground = colors.HighlightLow,
+			SelectionInactive       = colors.Text,
 			PressedBackground           = accent.Tertiary,
-			PressedText                 = accent.TertiaryText,
+			Pressed                 = accent.TertiaryText,
 		};
 
 		return new()

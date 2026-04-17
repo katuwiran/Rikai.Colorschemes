@@ -30,11 +30,10 @@ public class KvantumConfig : ITheme
 
 		// Typography
 		string textPrimary  = $"#{Scheme.Colors.Text}";
-		string textFocus    = $"#{Scheme.Ui.HoverText}";
-		string textPressed  = $"#{Scheme.Ui.PressedText}";
-		string textDisabled = $"#{Scheme.Ui.InactiveText}";
-		string textSelected = $"#{Scheme.Ui.SelectionText}";
-		string textToggled  = $"#{Scheme.Ui.SelectionText}";
+		string textFocus    = $"#{Scheme.Ui.Hover}";
+		string textPressed  = $"#00ff00";
+		string textDisabled = $"#ff00ff";
+		string textToggled  = $"#ff0000";
 
 		// focus frame
 		bool frame = true;
@@ -133,7 +132,7 @@ public class KvantumConfig : ITheme
 			 button.text.color={textPrimary}
 			 disabled.text.color={textDisabled}
 			 tooltip.text.color={textPrimary}
-			 highlight.text.color={textSelected}
+			 highlight.text.color={textPrimary}
 			 link.color={link}
 			 link.visited.color={linkVisited}
 			 progress.indicator.text.color={textPrimary}
@@ -180,7 +179,7 @@ public class KvantumConfig : ITheme
 			 text.focus.color={textFocus}
 			 text.press.color={textPressed}
 			 text.toggle.color={textToggled}
-			 highlight.text.color={textSelected}
+			 highlight.text.color={textFocus}
 			 text.shadow=0
 			 text.margin=4
 			 text.iconspacing=4
@@ -571,7 +570,7 @@ public class KvantumConfig : ITheme
 			 text.margin.right=2
 			 text.normal.color={textPrimary}
 			 text.focus.color={textFocus}
-			 text.press.color={textPressed}
+			 text.press.color={textToggled}
 			 text.toggle.color={textPressed}
 
 			 [GroupBox]
@@ -580,7 +579,7 @@ public class KvantumConfig : ITheme
 			 text.shadow=0
 			 text.margin=0
 			 text.normal.color={textPrimary}
-			 text.focus.color={textPressed}
+			 text.focus.color={textFocus}
 			 text.bold=false
 			 frame.expansion=0
 

@@ -111,18 +111,18 @@ public static partial class ColorSchemeFactory
 		UiColors ui = new()
 		{
 			MenuBackground              = colors.Background,
-			HoverBackground             = accent.Tertiary,
-			HoverText                   = accent.TertiaryText,
+			Hover                       = accent.Tertiary,
+			HoverBackground             = accent.TertiaryText,
+			Inactive                    = colors.Text,
 			InactiveBackground          = colors.BackgroundOverlay,
-			InactiveText                = colors.Text,
-			MatchText                   = colors.TextFaded,
+			Match                       = colors.TextFaded,
 			MatchBackground             = colors.BackgroundOverlay,
-			SelectionBackground         = colors.HighlightHigh,
-			SelectionText               = colors.BackgroundOverlay,
-			SelectionInactiveText       = colors.Text,
-			SelectionInactiveBackground = colors.HighlightLow,
-			PressedBackground           = accent.Secondary,
-			PressedText                 = accent.SecondaryText,
+			Selection                   = colors.HighlightHigh,
+			SelectionBackground         = colors.BackgroundOverlay,
+			SelectionInactive           = colors.HighlightLow,
+			SelectionInactiveBackground = colors.Text,
+			Pressed                     = accent.Secondary,
+			PressedBackground           = accent.SecondaryText,
 		};
 
 		// Tying all of them together.
