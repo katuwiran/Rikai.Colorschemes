@@ -1067,6 +1067,12 @@ public class JetbrainsXml : ITheme
 			        <option name="EFFECT_TYPE" value="{fontItalic}" />
 			      </value>
 			    </option>
+			    <option name="INJECTED_LANGUAGE_FRAGMENT">
+			      <value>
+			        <option name="FOREGROUND" value="{Scheme.Colors.Text}" />
+			        <option name="BACKGROUND" value="{Scheme.Colors.BackgroundOverlay}" />
+			      </value>
+			    </option>
 			    <option name="INLAY_DEFAULT">
 			      <value>
 			        <option name="FOREGROUND" value="{Scheme.Colors.Text}" />
@@ -1464,52 +1470,52 @@ public class JetbrainsXml : ITheme
 			    </option>
 			    <option name="SQUARE_BRACKETS_RAINBOW_COLOR0">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Class}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level0}"/>
 			      </value>
 			    </option>
 			    <option name="SQUARE_BRACKETS_RAINBOW_COLOR1">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Keyword}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level1}"/>
 			      </value>
 			    </option>
 			    <option name="SQUARE_BRACKETS_RAINBOW_COLOR2">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.String}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level2}"/>
 			      </value>
 			    </option>
 			    <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Field}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level3}"/>
 			      </value>
 			    </option>
 			    <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Method}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level4}"/>
 			      </value>
 			    </option>
 			    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR0">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Class}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level0}"/>
 			      </value>
 			    </option>
 			    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR1">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Keyword}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level1}"/>
 			      </value>
 			    </option>
 			    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR2">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.String}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level2}"/>
 			      </value>
 			    </option>
 			    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Field}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level3}"/>
 			      </value>
 			    </option>
 			    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Method}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level4}"/>
 			      </value>
 			    </option>
 			    <option name="SUGGESTION">
@@ -1646,27 +1652,27 @@ public class JetbrainsXml : ITheme
 			    <!-- Semantic Highlights -->
 			    <option name="RAINBOW_COLOR0">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Class}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level0}"/>
 			      </value>
 			    </option>
 			    <option name="RAINBOW_COLOR1">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Keyword}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level1}"/>
 			      </value>
 			    </option>
 			    <option name="RAINBOW_COLOR2">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.String}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level2}"/>
 			      </value>
 			    </option>
 			    <option name="RAINBOW_COLOR3">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Field}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level3}"/>
 			      </value>
 			    </option>
 			    <option name="RAINBOW_COLOR4">
 			      <value>
-			        <option name="FOREGROUND" value="{Scheme.Colors.Method}"/>
+			        <option name="FOREGROUND" value="{Scheme.Rainbow.Level4}"/>
 			      </value>
 			    </option>
 			  </attributes>
