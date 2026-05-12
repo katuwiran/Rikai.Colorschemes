@@ -24,15 +24,15 @@ public static class ColorSchemeEntry
 			new ColorEntry { Index = "ac2", Name = "accent 2", HexCode     = $"#{scheme.Accent.Secondary}" },
 			new ColorEntry { Index = "ac3", Name = "accent 3", HexCode     = $"#{scheme.Accent.Tertiary}" },
 			padding,
-			new ColorEntry { Index = "1", Name = scheme.Colors.ClassName, HexCode   = $"#{scheme.Colors.Class}" },
-			new ColorEntry { Index = "2", Name = scheme.Colors.KeywordName, HexCode = $"#{scheme.Colors.Keyword}" },
-			new ColorEntry { Index = "3", Name = scheme.Colors.MethodName, HexCode  = $"#{scheme.Colors.Method}" },
-			new ColorEntry { Index = "4", Name = scheme.Colors.FieldName, HexCode   = $"#{scheme.Colors.Field}" },
-			new ColorEntry { Index = "5", Name = scheme.Colors.StringName, HexCode  = $"#{scheme.Colors.String}" },
-			new ColorEntry { Index = "6", Name = scheme.Colors.ErrorName, HexCode   = $"#{scheme.Colors.Error}" },
-			new ColorEntry { Index = "7", Name = scheme.Colors.WarningName, HexCode = $"#{scheme.Colors.Warning}" },
-			new ColorEntry { Index = "8", Name = scheme.Colors.InfoName, HexCode    = $"#{scheme.Colors.Info}" },
-			new ColorEntry { Index = "9", Name = scheme.Colors.NumeralName, HexCode = $"#{scheme.Colors.Numeral}" }
+			new ColorEntry { Index = "class", Name   = scheme.Colors.ClassName, HexCode   = $"#{scheme.Colors.Class}" },
+			new ColorEntry { Index = "keyword", Name = scheme.Colors.KeywordName, HexCode = $"#{scheme.Colors.Keyword}" },
+			new ColorEntry { Index = "method", Name  = scheme.Colors.MethodName, HexCode  = $"#{scheme.Colors.Method}" },
+			new ColorEntry { Index = "field", Name   = scheme.Colors.FieldName, HexCode   = $"#{scheme.Colors.Field}" },
+			new ColorEntry { Index = "string", Name  = scheme.Colors.StringName, HexCode  = $"#{scheme.Colors.String}" },
+			new ColorEntry { Index = "error", Name   = scheme.Colors.ErrorName, HexCode   = $"#{scheme.Colors.Error}" },
+			new ColorEntry { Index = "warning", Name = scheme.Colors.WarningName, HexCode = $"#{scheme.Colors.Warning}" },
+			new ColorEntry { Index = "info", Name    = scheme.Colors.InfoName, HexCode    = $"#{scheme.Colors.Info}" },
+			new ColorEntry { Index = "numeral", Name = scheme.Colors.NumeralName, HexCode = $"#{scheme.Colors.Numeral}" }
 		};
 
 		return entries;
