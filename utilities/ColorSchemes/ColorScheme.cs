@@ -13,6 +13,7 @@ public class ColorScheme
 	public required DiffColors    Diff    { get; set; }
 	public required AccentColors  Accent  { get; set; }
 	public required UiColors      Ui      { get; set; }
+	public required Rainbow       Rainbow { get; set; }
 
 	public override string ToString()
 	{
@@ -126,6 +127,17 @@ public class AccentColors
 	public required string SecondaryText { get; set; }
 	public required string Tertiary      { get; set; }
 	public required string TertiaryText  { get; set; }
+}
+
+public class Rainbow
+{
+	public required string Level0 { get; set; }
+	public required string Level1 { get; set; }
+	public required string Level2 { get; set; }
+	public required string Level3 { get; set; }
+	public required string Level4 { get; set; }
+	public required string Level5 { get; set; }
+	public required string Level6 { get; set; }
 }
 
 public class UiColors

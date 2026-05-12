@@ -125,6 +125,17 @@ public static partial class ColorSchemeFactory
 			PressedBackground           = colors.HighlightHigh
 		};
 
+		Rainbow rb = new()
+		{
+			Level0 = colors.Class,
+			Level1 = colors.Keyword,
+			Level2 = colors.String,
+			Level3 = colors.Field,
+			Level4 = colors.Method,
+			Level5 = null,
+			Level6 = null
+		};
+
 		// Tying all of them together.
 		return new ColorScheme
 		{
@@ -136,7 +147,8 @@ public static partial class ColorSchemeFactory
 			Diff        = diff,
 			Console     = console,
 			Accent      = accent,
-			Ui          = ui
+			Ui          = ui,
+			Rainbow     = rb
 		};
 	}
 }

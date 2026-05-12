@@ -111,6 +111,17 @@ public static partial class ColorSchemeFactory
 			PressedBackground           = colors.HighlightHigh
 		};
 
+		Rainbow rb = new()
+		{
+			Level0 = colors.Class,
+			Level1 = colors.Keyword,
+			Level2 = colors.String,
+			Level3 = colors.Field,
+			Level4 = colors.Method,
+			Level5 = null,
+			Level6 = null
+		};
+
 		return new ColorScheme
 		{
 			Name        = "Skylight",
@@ -121,7 +132,8 @@ public static partial class ColorSchemeFactory
 			Diff        = diff,
 			Accent      = accent,
 			Console     = console,
-			Ui          = ui
+			Ui          = ui,
+			Rainbow     = rb
 		};
 	}
 }
